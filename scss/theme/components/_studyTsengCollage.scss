@@ -1,0 +1,138 @@
+.studyCenterContainer {
+    margin-bottom: 4.37rem;
+
+    .studyTsengCollegeSection {
+        h2 {
+            text-align: center;
+
+            span {
+                color: $tseng-secondary;
+            }
+        }
+
+        .studyCoursesScroller {
+
+            /*margin-top:1.87rem;*/
+            .course-1 {
+                @extend %courseName;
+                background: url(../images/homepage/study-1.jpg) #000 no-repeat;
+                background-size: cover;
+               
+            }
+
+            .course-2 {
+                @extend %courseName;
+                background: url(../images/homepage/study-2.jpg) #000 no-repeat;
+                background-size: cover;
+                
+            }
+
+            .course-3 {
+                @extend %courseName;
+                background: url(../images/homepage/study-3.jpg) #000 no-repeat;
+                background-size: cover;
+                
+            }
+
+            .course-4 {
+                @extend %courseName;
+                background: url(../images/homepage/study-4.jpg) #000 no-repeat;
+                background-size: cover;
+
+            }
+
+            .courseHighlighter {
+                border: 1px solid $white;
+                flex: 1;
+                padding: 3rem 3rem 2.31rem 3rem;
+                display: flex;
+                align-items: center;
+                justify-content: end;
+                flex-wrap: wrap;
+                flex-direction: column;
+
+
+                .courseName {
+                    color: $white;
+                    font-size: 1.62rem;
+                    font-weight: 700;
+                    line-height: 1.87rem;
+                    text-align: center;
+
+                }
+
+                .courseNavigate {
+                    margin-top: 1.25rem;
+                    transition: transform 0.7s ease-in-out;
+
+                    &:hover {
+
+                        transform: translateX(10px); // Add this line to move the text and button smoothly
+                    }
+
+                }
+            }
+
+            .home-StudyTsengCollegeCarousel {
+                position: relative;
+
+                @include breakMaxOnly(991px) {
+
+                    &.owl-theme .owl-dots .owl-dot.active span,
+                    &.owl-theme .owl-dots .owl-dot:hover span {
+                        background: $tseng-secondary;
+                    }
+                }
+
+                .owl-dots {
+                    display: none;
+
+                    @include breakMaxOnly(991px) {
+                        display: block;
+                    }
+                }
+
+                &.owl-theme .owl-nav {
+                    margin-top: 0;
+                }
+
+                &.owl-carousel .owl-nav button.owl-prev {
+                    position: absolute;
+                    left: -3rem;
+                    top: 35%;
+                    font-size: 4rem;
+                    color: $tseng-secondary;
+                    transition: all .25s ease;
+
+                    &:hover {
+                        color: $tseng-secondary-hover;
+                        background: transparent;
+
+                    }
+                }
+                &.owl-carousel .owl-nav button.owl-prev.disabled {
+                    color: $darkgrey-shade-1;
+                }
+
+               
+                &.owl-carousel .owl-nav button.owl-next {
+                    position: absolute;
+                    right: -3rem;
+                    top: 35%;
+                    font-size: 4rem;
+                    color: $tseng-secondary;
+                    transition: all .25s ease;
+
+                    &:hover {
+                        color: $tseng-secondary-hover;
+                        background: transparent;
+
+                    }
+                }
+                &.owl-carousel .owl-nav button.owl-next.disabled {
+                    color: $darkgrey-shade-1;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+%courseName{
+  height: 100%;
+  display: flex;
+  min-height:25.62rem;
+  padding:.75rem;
+  position: relative;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  &:hover::before {
+    transform: scale(1.1);
+  }
+ 
+  }

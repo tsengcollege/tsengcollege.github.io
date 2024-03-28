@@ -1,0 +1,218 @@
+.whyCsunContainer{
+    margin-bottom:4.37rem;
+    border-bottom:3px solid $tseng-secondary;
+
+    .whyCsunSectionFirst{
+        background: url(../images/homepage/whyCsun.png) #000 50% / cover no-repeat;
+        .whyCsunHeading{
+            color: $white;
+            font-size:10.18rem;
+            font-weight: 700;
+            line-height: 13.68rem; 
+            display:flex;
+            height:100%;
+            min-height: 33.15rem;
+            justify-content: end;
+            flex-direction: column;
+            
+          
+            @include breakMaxOnly(767px){
+                font-size:7.2rem;
+                line-height:8.6rem;
+                min-height:20rem;
+
+            }
+            @include breakMinMax(320px, 480px){
+                font-size:5.3rem;
+                line-height:5.3rem;
+                min-height: 15rem;
+            }
+            @include breakMinMax(768px, 991px){
+                min-height: auto;
+                
+            }
+            @include breakMinMax(992px, 1024px){
+                font-size:7.6rem;
+                line-height:9rem;
+                
+            }
+
+            span{
+                color:$tseng-secondary;
+                line-height: 7.8rem; 
+                display: block;
+
+                @include breakMaxOnly(767px){
+                    line-height: 5.3rem; 
+                }
+                @include breakMinMax(992px, 1024px){
+                    
+                    line-height:5.8rem;
+                    
+                }
+            }
+        }
+    }
+    .numberContainer{
+        background: $tseng-secondary;
+        padding:2rem 1.2rem;
+        margin-top:4.06rem;
+        margin-bottom:0.5rem;
+
+        @include breakMaxOnly(1280px){
+            margin-bottom:0.3rem;
+        }
+
+        &.animate{
+            .number{
+                animation: count 2s forwards;
+            }
+        }
+        @keyframes count {
+            0% {
+              counter-reset: 0;
+            }
+            100% {
+              counter-reset: var(--counter);
+            }
+          }
+        .numberInfo{
+            border-right:1px solid rgba($white, 0.4);
+            line-height: 1.8rem;
+            @include breakMaxOnly(767px){
+                border-bottom:1px solid rgba($white, 0.4);
+                padding-bottom:.5rem;
+                margin-bottom:.5rem;
+                border-right:0;
+            }
+           
+            .number{
+                color: $white;
+                font-family: $font-secondary;
+                font-size: 2rem;
+                font-weight: 700;
+               
+            }
+            .text{
+                color: $white;
+                font-size: 1rem;
+                font-weight: 500;
+                
+            }
+            &.borderRight0{
+                border-right:0;
+                @include breakMaxOnly(767px){
+                    border-bottom:0px solid rgba($white, 0.4);
+                    padding-bottom:0rem;
+                    margin-bottom:0rem;
+                    
+                }
+                
+            }
+        }
+    }
+    .descTextContainer{
+        .descBoxContainer{
+            background: $white;
+            padding:1.81rem 1.37rem;
+            min-height: 15.62rem;
+
+            @include breakMaxOnly(991px){
+                min-height: auto;
+            }
+
+            @include breakMaxOnly(991px){
+                &:first-child{
+                    margin-bottom:0.25rem;
+                }
+
+            }
+
+            .headingText{
+                color: $tseng-primary;
+                font-size: 1.25rem;
+                font-weight: 700;
+                margin-bottom: 1.18rem;
+
+                @include breakMaxOnly(1280px){
+                   font-size: 1.1rem;
+
+                }
+                span{
+                    color:$tseng-secondary;
+                }
+            }
+            .descText{
+                color: $darkgrey;
+                font-weight: 500;
+
+                @include breakMinMax(1024px, 1280px){
+                    font-size:0.9rem;
+                }
+            }
+        }
+    }
+    .buttonContainer{
+        text-align: end;
+        button{
+            background: $tseng-secondary;
+            color:$white;
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.12px;
+            padding: 0.56rem 0.75rem;
+            margin:1.75rem 0;
+            border:0;
+            transition: all .25s ease;
+
+            
+        }
+    }
+    .whyCsunSectionSecond{
+        padding:2rem 1.56rem; 
+
+    .colBorder{
+        border-right:1px solid $lightgrey;
+        
+        @include breakMaxOnly(991px){
+            border-bottom:1px solid $lightgrey;
+            border-right:0;
+            padding-bottom:1rem;
+            margin-bottom:1rem;
+        }
+
+    }
+    .aboutCsunInfoContainer{
+        display: flex;
+
+        .imageContainer{
+            margin-right:.81rem;
+        }
+        .aboutCsunInfo{
+            .numberYear{
+                color: $tseng-secondary;
+                font-family: $font-secondary;
+                font-size: 3.75rem;
+                font-weight: 700;
+                line-height: 2.8rem;
+
+                span{
+                    color: $tseng-secondary;
+                    font-family: $font-secondary;
+                    font-size: 1.37rem;
+                    font-weight: 400;
+                    line-height: 1.37rem;
+                    margin-left:0.31rem;
+                }
+              
+            }
+            .aboutDesc{
+                color: $darkgrey;
+                font-weight: 500;
+                line-height: 1.25rem;
+                margin-top:0.93rem;
+            }
+        }
+    }
+    }
+}

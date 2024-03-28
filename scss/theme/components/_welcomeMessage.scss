@@ -1,0 +1,31 @@
+.welcomeMsgArea{
+    margin-top:5.5rem;
+    margin-bottom: 5.6rem;
+    @include breakMinMax(991px, 1024px){
+        margin-top:9.5rem;
+    }
+    .welcomeMessage{
+        color:$tseng-primary;;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 2.8rem;
+
+        span{
+            color:$tseng-secondary;
+        }
+        @include breakMaxOnly(767px){
+            font-size: 1.5rem;
+            line-height: 2rem;
+            
+        }
+    }
+    .welcomeMessageDescription{
+        color: $darkgrey;
+        text-align: center;
+        font-size: 1.12rem;
+        font-weight: 500;
+        line-height: 1.8rem;
+        margin-top:1.3rem;
+    }
+}

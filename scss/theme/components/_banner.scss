@@ -1,0 +1,361 @@
+.bannerContainer {
+    .topOnlineEducationContainer {
+        position: absolute;
+        top: 18%;
+        width: 100%;
+        @include breakMaxOnly(767px){
+            top: 4%;
+        }
+        @include breakMinMax(768px, 1440px){
+            top: 7%;
+        }
+
+        h2{
+            color: #FFF;
+            text-align: center;
+            text-shadow: 0px 4px 32px #000;
+            margin-bottom:1.18rem;
+
+            @include breakMaxOnly(1536px){
+                font-size:1.75rem;
+                font-weight:400;
+            }
+
+          }
+
+        .educationLogo {
+            /*background: linear-gradient(90deg, rgba(0, 0, 0, 0.00) 0%, #000 18.5%, rgba(0, 0, 0, 0.00) 100%);*/
+            background:rgba(0,0,0,.3);
+            padding:1.5rem;
+        }
+    }
+    .carouselSlideCaptionContainer{
+        position: absolute;
+        top: 30%;
+        width: 100%;
+
+        @include breakMaxOnly(767px){
+            top: 12%;
+        }
+        @include breakMinMax(768px, 991px){
+            top:20%;
+        }
+
+        h2{
+            color: #FFF;
+            text-align: center;
+            text-shadow: 0px 4px 32px #000;
+            margin-bottom:1.18rem;
+            line-height: normal;
+
+            @include breakMinMax(320px, 374px){
+                font-size:2.5rem;
+                font-weight:400;
+            }
+
+            @include breakMinMax(374px, 767px){
+                font-size:2.75rem;
+                font-weight:400;
+            }
+
+            @include breakMinMax(768px, 991px){
+                font-size:2.75rem;
+                font-weight:400;
+            }
+            @include breakMinMax(992px, 1536px){
+                font-size:1.75rem;
+                font-weight:400;
+            }
+          }
+
+    }
+    .carousel-control-next,
+    .carousel-control-prev {
+        opacity: 1;
+    }
+
+    .carousel-control-prev-icon {
+        background: url(../images/icons/icon-carousel-left.svg) #fff no-repeat 0.56rem;
+        border-radius: 50%;
+        width: 2.93rem;
+        height: 2.93rem;
+        filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.50));
+
+    }
+
+    .carousel-control-next-icon {
+        background: url(../images/icons/icon-carousel-right.svg) #fff no-repeat 1rem;
+        border-radius: 50%;
+        width: 2.93rem;
+        height: 2.93rem;
+        filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.50));
+
+    }
+
+    @-webkit-keyframes zoomBannerEffect {
+        from {
+          -webkit-transform: scale(1, 1);
+        }
+        to {
+          -webkit-transform: scale(1.2, 1.2);
+        }
+      }
+      
+      @keyframes zoomBannerEffect {
+        from {
+          transform: scale(1, 1);
+        }
+        to {
+          transform: scale(1.2, 1.2);
+        }
+      }
+
+      .carousel-inner{
+        .carousel-item{
+            
+            img.sliderImage{
+                -webkit-animation: zoomBannerEffect 10s;
+                animation: zoomBannerEffect 10s;
+            }
+        }
+        .carouselHeightIpad{
+            @include breakMinMax(768px,991px){
+                height:600px;
+            }
+
+        }
+
+
+      }
+      .carousel{
+        background:$tseng-primary;
+      }
+      .carouselIndicatorWeb{
+        @include breakMaxOnly(992px){
+           display:none;
+        }
+      
+      }
+      .carouselIndicatorMobile{
+        margin-bottom:0;
+        bottom:-20px;
+
+        &.carousel-indicators [data-bs-target]{
+            width:10px;
+            height:10px;
+            border-radius:50%;
+            background:$tseng-secondary;
+            border:0;
+        }
+
+        @include breakMaxOnly(991px){
+            display:flex;
+         }
+         @include breakMinOnly(992px){
+            display:none;
+         }
+    }
+}
+
+.courseTriggerArea {
+    font-size: 1.12rem;
+    font-weight: 700;
+    display: flex;
+
+    @include breakMaxOnly(767px){
+        flex-direction:column;
+    }
+
+    a {
+        display: inline-block;
+        background: $tseng-secondary;
+        color: $white;
+        flex: 1;
+        padding: 1rem 0;
+        text-align: center;
+        text-decoration: none;
+        transition: all .25s ease;
+
+        @include breakMaxOnly(767px){
+            text-align: center;
+            padding: 1rem;
+            font-weight:700;
+            position:relative;
+            
+
+           /* &:after {
+                content: "";
+                position: absolute;
+                top: 1.81rem;
+                right: -1.62rem;
+                transform: translate(-50%, -50%);
+                width: 3.375rem;
+                height: 3.68rem;
+                background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='17' height='17' viewBox='0 0 17 17' fill='none'><path fill-rule='evenodd' clip-rule='evenodd' d='M17 8.50478C17 8.36294 16.9416 8.22747 16.8443 8.12547L11.5855 2.8135C11.3778 2.60366 11.0415 2.60419 10.8343 2.8135C10.6266 3.02281 10.6266 3.36281 10.8343 3.57213L15.1868 7.96822H0.53125C0.238 7.96822 0 8.20835 0 8.50478C0 8.80122 0.238 9.04134 0.53125 9.04134H15.1863L10.8343 13.4374C10.6266 13.6468 10.6271 13.9868 10.8343 14.1961C11.042 14.4054 11.3783 14.4054 11.5855 14.1961L16.8443 8.88409C16.9437 8.78369 16.9984 8.64556 17 8.50478Z' fill='white'/></svg>") center center no-repeat;
+                background-color: #ad001d;
+              }*/
+        }
+
+        &:hover {
+            background: $tseng-secondary-hover;
+        }
+    }
+
+    // Apply margin between adjacent elements
+    >*+* {
+        margin-left: 1rem;
+
+        @include breakMaxOnly(767px){
+            margin-left:0;
+            margin-top:0.56rem;
+        }
+    }
+}
+
+.findYourCourseArea {
+    position: absolute;
+    top: 68%;
+    width: 100%;
+    z-index:999;
+
+    @include breakMaxOnly(767px){
+        top: 47%;
+    }
+  
+    @include breakMinMax(768px, 991px){
+        top: 46%;
+    }
+    @include breakMinMax(992px, 1440px){
+        top: 55%;
+    }
+    @include breakMinMax(1441px, 1536px){
+        top: 59%;
+    }
+    .courseFindArea {
+        margin-top: 1.43rem;
+        background: $darkgrey;
+        padding: 2rem 2rem 2.5rem 2rem;
+
+        .courseHeading {
+            color: $white;
+            font-family: $font-secondary;
+            font-size: 1.6rem;
+            font-weight: 400;
+            margin-bottom: 1rem;
+        }
+
+        .courseClass {
+
+            .ddlMycourse {
+                border-radius: 0;
+                border: 0;
+                border-right: 1px solid $lightgery-shade-2;
+                background: $white;
+                padding: 15px 16px;
+
+                @include breakMaxOnly(1280px){
+                    padding: 1.16rem 1rem;
+                }
+                
+                @include breakMinMax(1281px, 1366px){
+                    padding: 1.02rem 1rem;
+                }
+                @include breakMinMax(1367px, 1536px){
+                    padding: 1.03rem 1rem;
+                }
+            
+                .dropdown {
+                    .btn {
+                        border-color: transparent;
+                        width:100%;
+                        text-align: left;
+                        color: $tseng-secondary;
+                        font-size: 1.18rem;
+                        font-weight: 600;
+                        padding:0;
+                        
+                        @include breakMinMax(1024px, 1280px){
+                            font-size: 1rem;
+                        }
+
+                    }
+                    .dropdown-toggle{
+                        &:after{
+                            float: right;
+                            border: 0;
+                            background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='%23D22030' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/></svg>");
+                            background-repeat: no-repeat;
+                            width: 16px;
+                            height: 16px;
+                            margin-top: 6px;
+                            margin-left:0;
+                        }
+                    }
+            
+                    .dropdown-menu {
+                        padding: 0rem .6rem .8rem .6rem;
+                        box-shadow: 0 0 20px 0 rgba(0, 0, 0, .12);
+                        border: 0;
+                        border-radius: 0;
+                        width:100%;
+            
+                        a {
+                            font-family: $font-secondary;
+                            font-size: 1.125rem;
+                            padding: 0.5rem 0;
+                            transition: all .25s ease;
+                            box-shadow: 0 0.1em $grey-shade-2;
+            
+                            &:hover,
+                            &:focus {
+                                color: $tseng-secondary;
+                                background-color: transparent;
+                                box-shadow: 0 0.25em $tseng-secondary;
+            
+                            }
+                        }
+                    }
+            
+                }
+            }
+        }
+
+        .courseSearch {
+
+            @include breakMaxOnly(1199px){
+                margin-top:0.25rem;
+            }
+
+            .courseName input {
+                border-radius: 0;
+                border: 0;
+                color: $tseng-secondary;
+                font-size: 1.18rem;
+                font-weight: 600;
+                padding: 1.01rem;
+            }
+
+            .searchTrigger {
+                border-radius: 0;
+                border: 0;
+                padding: 0;
+                background: $tseng-secondary;
+
+                a {
+                    padding: 0.83rem 0.75rem;
+                    transition: all .25s ease;
+
+                    &:hover {
+                        background: $tseng-secondary-hover;
+                    }
+                }
+            }
+
+        }
+
+    }
+
+
+ 
+
+}

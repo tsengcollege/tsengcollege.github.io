@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
+
+html,body{
+	font-family:$font-primary;
+	font-size:$font-base-size;
+	color:$tseng-primary;
+	margin:0px;
+	padding:0px;
+
+	@include breakMinMax(320px, 575px){
+		font-size:14px;
+	}
+	@include breakMinMax(570px, 991px){
+		font-size:14px;
+	}
+	@include breakMinMax(991px, 1566px){
+		font-size:15px;
+	}
+
+
+}
+
+
+
+.container{
+	@include breakMinOnly(992px){
+			max-width: 88vw;
+		}	
+
+		@include breakMaxOnly(991px){
+			max-width: 94vw;
+		}
+}
+.borderWhiteRight-2{
+	border-right:1px solid $white;
+}
+
+/*Headings*/
+h2{
+	color: $tseng-primary;
+	font-size: 2.12rem;
+	font-weight: 700;
+	line-height: 2.25rem;
+	margin-bottom: 2.56rem;
+}
+
+h5{
+	color: $tseng-primary;
+	font-size: 1.37rem;
+	line-height: 1.56rem;
+	margin-bottom: 1.1rem;
+}
+/*Headings*/
+
+/*Sticky Icon*/
+.quickStickyLinksContainer {
+	position: fixed;
+	right: 0;
+	top: 23vh;
+	z-index: 3;
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+	align-items: flex-end;
+
+	@include breakMaxOnly(991px){
+		display:none;
+	}
+  
+	a {
+	  display: flex;
+	  align-items: center;
+	  transition: width 0.2s ease;
+	  background: $tseng-secondary;
+	  margin-bottom: 0.37rem;
+	  width: 4rem;
+	  /*text-align: center;*/
+	  font-family: "Roboto Slab";
+	 font-weight: 500;
+	 color:$white;
+	 text-decoration: none;;
+  
+	  &:hover,
+	  &.active {
+		width: 11rem;
+		background: $white;
+		color:$tseng-secondary;
+		
+  
+		.quickStickyLinkText {
+		  opacity: 1;
+		  transform: translateX(0);
+		}
+		
+		.quickStickyLinkIconHover{
+			opacity: 1;
+			/*transition: all 0.3s ease;*/
+			padding: .8rem;
+		}
+		.quickStickyLinkIcon {
+			opacity: 0;
+			padding: 0;
+			width:0
+
+		}
+	  }
+  
+	  .quickStickyLinkText {
+		opacity: 0;
+		transform: translateX(100%);
+		transition: all 0.3s ease;
+	  }
+  
+	  .quickStickyLinkIcon {
+		opacity: 1;
+		/*transition: all 0.3s ease;*/
+		padding: .8rem;
+	  }
+	}
+  }/*Sticky Icon*/
+

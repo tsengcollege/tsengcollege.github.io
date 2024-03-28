@@ -1,0 +1,101 @@
+.paceContainer{
+    margin-bottom:4.37rem;
+    
+    .paceBgSection{
+        background: url(../images/homepage/pace.jpg) #000 no-repeat;
+        background-size: 100%;
+        display:flex;
+        height:100%;
+        min-height: 43rem;
+        justify-content: end;
+        flex-direction: column;
+        background-position: top center;
+
+        @include breakMaxOnly(767px){
+            background-size: contain;
+            min-height: 38rem;
+            background-position: top;
+        }
+
+        @include breakMinMax(768px, 991px){
+            background-size: 100%;
+            min-height: 38rem;
+            background-position: top;
+        }
+
+        .paceHeading{
+            color: $tseng-secondary;
+            text-align: center;
+            font-family: $font-secondary;
+            font-size: 10.93rem;
+            font-weight: 500;
+            mix-blend-mode: hard-light;
+            line-height: 10.31rem;
+
+            @include breakMaxOnly(767px){
+                font-size: 7rem;
+            }
+        }
+        .paceSubHeading{
+            color: $white;
+            text-align: center;
+            font-size: 2.81rem;
+            font-weight: 700;
+            line-height: 4.37rem;
+
+            @include breakMaxOnly(767px){
+                font-size: 1.5rem;
+                line-height: 2.3rem;
+            }
+
+            @include breakMinMax(768px, 991px){
+                font-size: 1.9rem;
+                line-height: 3rem;
+            }
+        }
+        .paceDesc{
+            color: $white;
+            text-align: center;
+            font-size: 1.25rem;
+            font-weight: 500;
+            line-height: 2rem;
+            margin: 0 14%;
+
+            @include breakMaxOnly(767px){
+                font-size: 1rem;
+                line-height: 1.5rem;
+                
+            }
+
+        }
+        .paceButtonContainer{
+            margin-top:3rem;
+            text-align: center;
+            margin-bottom: 4.56rem;
+
+            @include breakMinMax(320px, 480px){
+                margin-bottom: 3rem;
+            }
+            a{
+                color:$white;
+                font-size: 1.12rem;
+                font-weight: 700;
+                padding: 1.12rem 4rem;
+                background: $tseng-secondary;
+                text-decoration: none;;
+                transition: all .25s ease;
+
+                @include breakMinMax(320px, 480px){
+                    display:block;
+                    padding:1rem;
+                    margin-right:1.5rem;
+                    margin-left:1.5rem;
+                }
+
+                &:hover{
+                    background: $tseng-secondary-hover;
+                }
+            }
+        }
+    }
+}

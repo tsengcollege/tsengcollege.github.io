@@ -1,0 +1,60 @@
+.carl-login-left-section{
+	//background: $black url('../Assets/Images/login-bg.jpg') center center no-repeat;
+	background-size:cover;
+	a{
+		//color:white;
+	}
+}
+.carl-login-left-section-overlay{
+	//background: linear-gradient(180deg, #175177 13.64%, rgba(23, 81, 119, 0.88) 61.15%, rgba(20, 122, 136, 0.86) 109.84%);
+}
+
+.carl-login-quicklinks-list{
+	li{
+		margin-bottom:15px;
+	}
+	a{
+		text-decoration:underline;
+	}
+}
+
+.carl-login-container{
+	background:white;
+	border-radius:3px;  
+	max-width:500px;
+	margin:auto;
+	margin-top: 40px;
+	padding-top:20px;
+}
+.carl-okta-genericuserprofile{
+	max-width:115px;
+	width:100%;
+	height:auto;
+}
+.carl-okta-genericuserprofile-container{
+	//background: white url('../Assets/Images/gray-spacer.png') left center repeat-x;
+	margin-top:8px;
+}
+.carl-okta-logintitle{
+	font-weight:600;
+	font-size:1.1rem;
+	margin-top:15px;
+}
+.carl-login-faq-icon{
+	display: block;
+	text-align: center;
+	margin-bottom: 10px;
+	img{
+	width:60px;
+	}
+}
+.carl-prelogin-rightsection-icon-wrapper{
+	background-color: white;
+	border:1px solid gray;
+	padding:20px;
+}
+
+.carl-login-page-bg {
+	background: white url("../assets/images/BG-oktaLoginCarb.jpg") left center no-repeat;
+	background-size: cover;
+  }

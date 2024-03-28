@@ -1,0 +1,139 @@
+.whatsNextContainer {
+    margin-bottom: 4.37rem;
+    background: url(../images/homepage/whatsNextBg.jpg) right bottom no-repeat;
+    background-size: 100% 100%;
+    min-height: 40rem;
+    border-bottom: 3px solid $tseng-secondary;
+    padding-top:2.38rem;
+
+    @include breakMaxOnly(1199px){
+        background-size: 250%;
+        background-position: center bottom;
+    }
+
+    .whatNextInformation {
+        text-align: center;
+
+        .smallHeading {
+            color: $tseng-primary;
+            font-size: 1.87rem;
+            font-weight: 700;
+            line-height: 4.87rem;
+
+            @include breakMinMax(320px, 480px){
+                line-height: 2.5rem;
+                margin-bottom:2rem;
+               
+            }
+           
+        }
+
+        .largeHeading {
+            color: #000;
+            font-size: 3.87rem;
+            font-weight: 700;
+            line-height: 2rem;
+
+            @include breakMinMax(481px, 1024px){
+                line-height: 4rem;
+            }
+            @include breakMinMax(320px, 480px){
+                font-size: 2.5rem;
+                line-height: 3rem;
+            }
+
+            span {
+                color: $tseng-secondary;
+            }
+        }
+
+        .description {
+            color: $darkgrey-shade-1;
+            font-size: 1.37rem;
+            font-style: normal;
+            font-weight: 500;
+            margin-top: 3.2rem;
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+            @include breakMaxOnly(1024px){
+                width: 85%;
+            }
+        }
+
+        .dateYear {
+            color: #000;
+            font-size: 1.81rem;
+            font-weight: 700;
+            margin-top: 4rem;
+        }
+
+        .infoButtonContainer {
+            font-size: 1.12rem;
+            font-weight: 700;
+            display: flex;
+            width: 66%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 3.2rem;
+
+            @include breakMaxOnly(767px){
+                flex-direction:column;
+                width: 90%;
+                margin-bottom: 3.2rem;
+            }
+            @include breakMinMax(768px,1024px){
+                width: 90%;
+                margin-bottom: 3.2rem;
+               
+            }
+
+            a {
+                display: inline-block;
+                background: $tseng-secondary;
+                color: $white;
+                flex: 1;
+                padding: 1rem 0;
+                text-align: center;
+                text-decoration: none;
+                transition: all .25s ease;
+
+                @include breakMaxOnly(767px){
+                    text-align: center;
+                    padding: 1rem;
+                    font-weight:700;
+                    position:relative;
+        
+                   /* &:after {
+                        content: "";
+                        position: absolute;
+                        top: 1.87rem;
+                        right: -1.62rem;
+                        transform: translate(-50%, -50%);
+                        width: 3.375rem;
+                        height: 3.68rem;
+                        background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='17' height='17' viewBox='0 0 17 17' fill='none'><path fill-rule='evenodd' clip-rule='evenodd' d='M17 8.50478C17 8.36294 16.9416 8.22747 16.8443 8.12547L11.5855 2.8135C11.3778 2.60366 11.0415 2.60419 10.8343 2.8135C10.6266 3.02281 10.6266 3.36281 10.8343 3.57213L15.1868 7.96822H0.53125C0.238 7.96822 0 8.20835 0 8.50478C0 8.80122 0.238 9.04134 0.53125 9.04134H15.1863L10.8343 13.4374C10.6266 13.6468 10.6271 13.9868 10.8343 14.1961C11.042 14.4054 11.3783 14.4054 11.5855 14.1961L16.8443 8.88409C16.9437 8.78369 16.9984 8.64556 17 8.50478Z' fill='white'/></svg>") center center no-repeat;
+                        background-color: #ad001d;
+                      }*/
+                }
+
+                &:hover {
+                    background: $tseng-secondary-hover;
+                }
+            }
+
+            // Apply margin between adjacent elements
+            >*+* {
+                margin-left: 1rem;
+
+                @include breakMaxOnly(767px){
+                    margin-left:0;
+                    margin-top:0.56rem;
+                }
+            }
+
+        }
+
+
+    }
+}

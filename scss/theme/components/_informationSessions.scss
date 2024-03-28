@@ -1,0 +1,133 @@
+.informationSessionsContainer {
+    margin-bottom: 4.37rem;
+    position: relative;
+
+    .infoSessionHeader {
+        /*display: flex;*/
+        position: relative;
+
+        @include breakMaxOnly(991px){
+            position:initial;
+        }
+
+        h2{
+            text-align: center;
+            span {
+                color:$tseng-secondary;
+            }
+            @include breakMaxOnly(991px){
+                margin-bottom:1.5rem;
+            }
+        }
+
+        .moreSessions {
+            position: absolute;
+            right:0;
+            top:0;
+
+            @include breakMaxOnly(767px){
+                bottom: -32px;
+                top: auto;
+                right: 30%;
+            }
+
+            @include breakMinMax(768px,991px){
+                bottom: -32px;
+                top: auto;
+                right: 41%;
+            }
+           
+            a {
+                border: 1px solid $tseng-secondary;
+                padding: 0.56rem 1.3rem 0.56rem 0.87rem;
+                text-decoration: none;
+                color: $tseng-primary;
+                font-size: 0.75rem;
+                font-weight: 600;
+                letter-spacing: 0.12px;
+                transition: all .25s ease;
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    top: 14px;
+                    right: 8px;
+                    transform: translate(-50%, -50%);
+                    width: 5px;
+                    height: 10px;
+                    background: url("data:image/svg+xml,<svg  xmlns='http://www.w3.org/2000/svg' width='5' height='10' viewBox='0 0 5 10' fill='none'><path d='M5 5L0.384615 9.33013L0.384615 0.669873L5 5Z' fill='%23D22030'/></svg>") center center no-repeat;
+
+                    @include breakMaxOnly(991px){
+                        top: 11px;
+                    }
+                  
+                }
+
+                &:hover {
+                    background: $tseng-secondary;
+                    color: $white;
+
+                    &:after {
+                        background: url("data:image/svg+xml,<svg  xmlns='http://www.w3.org/2000/svg' width='5' height='10' viewBox='0 0 5 10' fill='none'><path d='M5 5L0.384615 9.33013L0.384615 0.669873L5 5Z' fill='%23ffffff'/></svg>") center center no-repeat;
+                    }
+                }
+            }
+        }
+    }
+
+    .infoSessionRepeaterContainer {
+        .infoSessionRepeat {
+            border: 14px solid $tseng-secondary;
+            padding: 1.81rem 2rem;
+            min-height: 16.12rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: all .25s ease;
+
+            @include breakMinMax(320px, 480px){
+                min-height: 23.5rem;
+            } 
+            @include breakMinMax(1024px, 1439px){
+                min-height: 23.5rem;
+            } 
+
+            .infoDateTitle {
+                .date {
+                    color: $tseng-secondary;
+                    font-weight: 500;
+                }
+
+                .title {
+                    color: $tseng-primary;
+                    font-family: $font-secondary;
+                    font-size: 1.37rem;
+                    font-weight: 400;
+                }
+            }
+
+            .infoTimeLocation {
+                color: $tseng-primary;
+                font-size: 0.87rem;
+                font-weight: 500;
+                line-height: 1.37rem;
+            }
+
+            &:hover {
+                background: $tseng-secondary;
+
+                .infoDateTitle .date,
+                .infoDateTitle .title,
+                .infoTimeLocation {
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .home-InformationSessionsCarousel{
+        &.owl-theme .owl-dots .owl-dot.active span,  &.owl-theme .owl-dots .owl-dot:hover span{
+            background: $tseng-secondary;
+        }
+    }
+}

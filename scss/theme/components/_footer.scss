@@ -1,0 +1,204 @@
+.footerSectionContainer{
+    background: url(../images/footer/footerBg.png) #000 no-repeat;
+    /*min-height:37rem;*/
+    background-size: 100% 100%;
+    position: relative;
+
+    .footerOuter{
+        padding-top:5.31rem;
+    }
+    .footerLogo{
+        margin-bottom:4.37rem;
+    }
+    .quickLinksContainer {
+        margin-bottom:1.56rem;
+        h5{
+            color: $white;
+            font-family: $font-secondary;
+            font-weight: 500;
+        }
+        
+        ul{
+            margin:0;
+            padding:0;
+            list-style-type: none;
+        }
+        li{
+            padding: 0.2rem 0;
+            a{
+    			
+				transition: all .25s ease;
+                color: $white;
+                text-decoration: none;
+
+
+				&:hover,&:focus{
+					color: $white;
+					background-color:transparent;
+					box-shadow: 0 0.25em $tseng-secondary;
+					
+				}
+			}
+                
+        }
+
+     
+    }
+
+    .informationContainer{
+        margin-bottom:1.56rem;
+        h5{
+            color: $white;
+            font-family: $font-secondary;
+            font-weight: 500;
+        }
+        
+        ul{
+            margin:0;
+            padding:0;
+            list-style-type: none;
+        }
+        li{
+            padding: 0.2rem 0;
+            a{
+    			
+				transition: all .25s ease;
+                color: $white;
+                text-decoration: none;
+
+				&:hover,&:focus{
+					color: $white;
+					background-color:transparent;
+					box-shadow: 0 0.25em $tseng-secondary;
+					
+				}
+			}
+                
+        }
+
+    }
+.locationContainer{
+    display:flex;
+    margin-bottom:1.56rem;
+    align-items: center;
+
+    .iconMap{
+        margin-right:.5rem;
+    }
+    .address{
+        color: $white;
+        font-size: 1.12rem;
+        font-weight: 500;
+    }
+    
+}
+.socialMediaContainer{
+    display: block;
+    @include breakMaxOnly(767px){
+        text-align: center; 
+    }
+    a{
+        display: inline-block;
+        margin-right:16px;
+    }
+}
+.csunLogoContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-top:6rem;
+
+    @include breakMaxOnly(1023px){
+        align-items: center;
+        margin-top:4rem;
+    }
+    .csunLogoNorthridge{
+        display: inline-block;
+        max-width: 299px;
+        text-align: center;
+        margin-right: 34px;
+        @include breakMaxOnly(1023px){
+            margin-right:0;
+        }
+    }
+
+    .subText{
+        color: $white-shade1;
+        font-family: $font-secondary;
+        font-size: 1.87rem;
+        line-height:1.87rem;
+        text-align: center;
+        margin-top:1rem;
+    }
+}
+.footerBarLinks{
+        background: rgba($tseng-secondary, 0.9);
+        padding:1rem 0;
+        margin-top:5.43rem;
+
+        .linksContainer{
+            font-size: 0.75rem;
+            font-weight: 600;
+
+            a{
+                color:$white;
+                text-decoration: none;
+                margin-right:1.81rem;
+                transition: all .25s ease;
+
+                @include breakMaxOnly(767px){
+                    margin-right:.5rem;
+                    padding-right:.5rem;
+                    border-right:1px solid $lightgrey-shade-1;
+                }
+            }
+        }
+}
+.websitePolicyContainer{
+    background: $white;
+    padding:1rem 0;
+
+    .websitePolicylinksContainer{
+        font-size: 0.75rem;
+        font-weight: 600;
+        color:$darkgrey-shade-1;
+
+      
+
+        a{
+            color:$darkgrey-shade-1;
+            text-decoration: none;
+            margin-left:1.81rem;
+            transition: all .25s ease;
+
+            @include breakMaxOnly(767px){
+                margin-left:.5rem;
+                padding-right:.5rem;
+                border-right:1px solid $darkgrey-shade-1;
+                
+            }
+
+            &:hover,&:focus{
+                background-color:transparent;
+                box-shadow: 0 0.25em $tseng-secondary;
+                
+            }
+        }
+    }
+}
+.studentSectionOverlay{
+    position:absolute;
+    right:0;
+    bottom:0;
+
+    @include breakMaxOnly(1024px){
+        display:none;
+    }
+    @include breakMaxOnly(1439px){
+        img{
+            width:400px;
+        }
+    }
+}
+    
+}

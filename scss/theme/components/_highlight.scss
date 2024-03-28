@@ -1,0 +1,213 @@
+.highlightSectionContainer {
+    margin-bottom: 4.37rem;
+    position: relative;
+
+    .highlightsHeader {
+        /*display: flex;*/
+        position: relative;
+
+        @include breakMaxOnly(991px){
+            position:initial;
+        }
+
+        h2 {
+            text-align: center;
+
+            span {
+                color: $tseng-secondary;
+            }
+
+            @include breakMaxOnly(991px){
+                margin-bottom:1.5rem;
+            }
+        }
+
+        .moreNews {
+            position: absolute;
+            right: 0;
+            top: 0rem;
+
+            @include breakMaxOnly(767px){
+                bottom: -39px;
+                top: auto;
+                right: 38%;
+            }
+
+            @include breakMinMax(768px,991px){
+                bottom: -39px;
+                top: auto;
+                right: 41%;
+            }
+
+           /* @include breakMaxOnly(991px){
+                position: relative;
+                text-align: end;
+                margin-bottom: 1.5rem;
+            }*/
+
+            a {
+                border: 1px solid $tseng-secondary;
+                padding: 0.56rem 1.3rem 0.56rem 0.87rem;
+                text-decoration: none;
+                color: $tseng-primary;
+                font-size: 0.75rem;
+                font-weight: 600;
+                letter-spacing: 0.12px;
+                transition: all .25s ease;
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    top: 14px;
+                    right: 8px;
+                    transform: translate(-50%, -50%);
+                    width: 5px;
+                    height: 10px;
+                    background: url("data:image/svg+xml,<svg  xmlns='http://www.w3.org/2000/svg' width='5' height='10' viewBox='0 0 5 10' fill='none'><path d='M5 5L0.384615 9.33013L0.384615 0.669873L5 5Z' fill='%23D22030'/></svg>") center center no-repeat;
+
+                    @include breakMaxOnly(991px){
+                        top: 11px;
+                    }
+                }
+
+                &:hover {
+                    background: $tseng-secondary;
+                    color: $white;
+
+                    &:after {
+                        background: url("data:image/svg+xml,<svg  xmlns='http://www.w3.org/2000/svg' width='5' height='10' viewBox='0 0 5 10' fill='none'><path d='M5 5L0.384615 9.33013L0.384615 0.669873L5 5Z' fill='%23ffffff'/></svg>") center center no-repeat;
+                    }
+                }
+            }
+        }
+    }
+
+    .highlightsRepeaterContainer {
+
+        .highlightsBoxRepeat {
+            background: $white;
+            box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.09);
+            min-height: 33rem;
+            margin-bottom: 1.3rem;
+            cursor: pointer;
+
+            @include breakMaxOnly(1024px){
+                min-height: 29rem;
+            }
+            @include breakMinMax(1025px, 1536px){
+                min-height: 28rem;
+            }
+
+            .highlightImageSection {
+                position: relative;
+                overflow: hidden;
+
+                img {
+                    transition: 0.3s;
+
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+
+                .highlightSectionName {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    padding: 0.37rem 1rem;
+                    background: $tseng-secondary;
+                    color: $white;
+                    text-align: center;
+                    font-family: $font-secondary;
+                    font-weight: 400;
+                }
+            }
+        }
+
+        .home-HighlightsCarousel {
+            position: relative;
+
+            .owl-dots {
+                display: none;
+
+                @include breakMaxOnly(991px) {
+                    display: block;
+                }
+            }
+
+            &.owl-theme .owl-nav {
+                margin-top: 0;
+            }
+
+            &.owl-carousel .owl-nav button.owl-prev {
+                position: absolute;
+                left: -3rem;
+                top: 35%;
+                font-size: 4rem;
+                color: $tseng-secondary;
+                transition: all .25s ease;
+
+                &:hover {
+                    color: $tseng-secondary-hover;
+                    background: transparent;
+
+                }
+            }
+            &.owl-carousel .owl-nav button.owl-prev.disabled {
+                color: $darkgrey-shade-1;
+            }
+
+            &.owl-carousel .owl-nav button.owl-next {
+                position: absolute;
+                right: -3rem;
+                top: 35%;
+                font-size: 4rem;
+                color: $tseng-secondary;
+                transition: all .25s ease;
+
+                &:hover {
+                    color: $tseng-secondary-hover;
+                    background: transparent;
+
+                }
+                
+            }
+            &.owl-carousel .owl-nav button.owl-next.disabled {
+                color: $darkgrey-shade-1;
+            }
+        }
+
+        .highlightDescriptionSection {
+            padding: 1.31rem;
+
+            .highlightsDate {
+                color: $tseng-secondary;
+                font-family: $font-secondary;
+                margin-bottom: 0.62rem;
+            }
+
+            .highlightsHeader {
+                color: $tseng-primary;
+                font-size: 1.25rem;
+                font-weight: 700;
+                line-height: 1.62rem;
+                margin-bottom: 0.62rem;
+            }
+
+            .highlightsText {
+                color: $darkgrey-shade-1;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 1.37rem;
+            }
+        }
+    }
+
+    .home-HighlightsCarousel {
+
+        &.owl-theme .owl-dots .owl-dot.active span,
+        &.owl-theme .owl-dots .owl-dot:hover span {
+            background: $tseng-secondary;
+        }
+    }
+}

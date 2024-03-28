@@ -1,0 +1,30 @@
+.carl-trainingSite{
+	.carl-login-left-section-overlay{
+		background: linear-gradient(0deg, #505050 0%, #505050 100%);
+	}
+}
+
+
+.carl-header-support-trainingSiteContent{
+	display:none;
+}
+
+.carl-trainingSite{
+	.carl-header-support-trainingSiteContent{
+		background:#FCD3D3;
+		color:#FF0707;
+		font-size:1.8rem;
+		line-height:1;
+		padding:5px 25px;
+		border-radius:0 0 20px 20px;
+		margin-top:-10px;
+		display:inline-block;
+		//animation: blinker 1s step-start infinite;  //Add linear instead of step-start for fade effect
+	}
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}

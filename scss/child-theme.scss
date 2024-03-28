@@ -1,0 +1,29 @@
+ 
+//Variable Files
+@import "theme/abstracts/variables";
+
+//Mixins(Functions)
+@import "theme/abstracts/mixins";
+
+//Extend/Inheritance
+@import "theme/abstracts/inheritance";
+
+//Base/Common CSSs
+@import "theme/child_theme";
+
+
+//Import Components
+@import "theme/components/header";
+@import "theme/components/banner";
+@import "theme/components/megaMenu.scss";
+@import "theme/components/welcomeMessage";
+@import "theme/components/studyTsengCollage";
+@import "theme/components/whyCSUN";
+@import "theme/components/pace";
+@import "theme/components/informationSessions";
+@import "theme/components/studentTestimonials";
+@import "theme/components/teachersStaffTestimonials";
+@import "theme/components/whatsNext";
+@import "theme/components/highlight";
+@import "theme/components/studentSection";
+@import "theme/components/footer";
