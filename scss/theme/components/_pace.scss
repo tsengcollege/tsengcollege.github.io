@@ -2,23 +2,27 @@
     margin-bottom:4.37rem;
     
     .paceBgSection{
-        background: url(../images/homepage/pace.jpg) #000 no-repeat;
-        background-size: 100%;
+        background: url(../images/homepage/pace.jpg);
+        background-repeat: no-repeat !important;
+        background-color: $tseng-primary !important;
+        background-size: 100% !important;
+        background-position: top center !important;
         display:flex;
         height:100%;
         min-height: 43rem;
         justify-content: end;
         flex-direction: column;
-        background-position: top center;
+        
 
         @include breakMaxOnly(767px){
-            background-size: contain;
+            background-size: contain !important;
+            background-position: top !important;
             min-height: 38rem;
-            background-position: top;
+            
         }
 
         @include breakMinMax(768px, 991px){
-            background-size: 100%;
+            background-size: 100% !important;
             min-height: 38rem;
             background-position: top;
         }

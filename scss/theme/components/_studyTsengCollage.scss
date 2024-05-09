@@ -15,29 +15,39 @@
             /*margin-top:1.87rem;*/
             .course-1 {
                 @extend %courseName;
-                background: url(../images/homepage/study-1.jpg) #000 no-repeat;
-                background-size: cover;
+                background: url(../images/homepage/study-1.jpg);
+                background-size: cover !important;
+                background-repeat: no-repeat !important;
+                background-color: $tseng-primary !important;
+      
+      
                
             }
 
             .course-2 {
                 @extend %courseName;
-                background: url(../images/homepage/study-2.jpg) #000 no-repeat;
-                background-size: cover;
+                background: url(../images/homepage/study-2.jpg);
+                background-size: cover !important;
+                background-repeat: no-repeat !important;
+                background-color: $tseng-primary !important;
                 
             }
 
             .course-3 {
                 @extend %courseName;
-                background: url(../images/homepage/study-3.jpg) #000 no-repeat;
-                background-size: cover;
+                background: url(../images/homepage/study-3.jpg);
+                background-size: cover !important;
+                background-repeat: no-repeat !important;
+                background-color: $tseng-primary !important;
                 
             }
 
             .course-4 {
                 @extend %courseName;
-                background: url(../images/homepage/study-4.jpg) #000 no-repeat;
-                background-size: cover;
+                background: url(../images/homepage/study-4.jpg);
+                background-size: cover !important;
+                background-repeat: no-repeat !important;
+                background-color: $tseng-primary !important;
 
             }
 
@@ -50,6 +60,7 @@
                 justify-content: end;
                 flex-wrap: wrap;
                 flex-direction: column;
+                
 
 
                 .courseName {
@@ -58,6 +69,7 @@
                     font-weight: 700;
                     line-height: 1.87rem;
                     text-align: center;
+                    text-decoration: none;
 
                 }
 

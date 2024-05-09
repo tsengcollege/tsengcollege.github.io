@@ -1,0 +1,115 @@
+.programFacultiesContainer{
+    border:1px solid $lightgery-shade-2;
+    margin-bottom:40px;
+    padding:35px;
+    position: relative;
+
+    @include breakMaxOnly(767px){
+      padding-bottom:50px;
+        
+    }
+    @include breakMinMax(992px, 1024px){
+        padding-bottom:50px;
+    }
+
+
+    .programFacultiesHeader{
+        
+        h4{
+            span{
+                color:$tseng-secondary;
+            }
+        }
+        .moreFaculties{
+            position: absolute;
+            right:36px;
+            top:36px;
+
+            @include breakMaxOnly(767px){
+                bottom:18px;
+                top:auto;
+                right:30%;
+                
+            }
+            @include breakMinMax(992px, 1024px){
+                bottom:18px;
+                top:auto;
+                right:35%;
+            }
+               
+            a {
+                border: 1px solid $tseng-secondary;
+                padding: 0.56rem 1.3rem 0.56rem 0.87rem;
+                text-decoration: none;
+                color: $tseng-primary;
+                font-size: 0.75rem;
+                font-weight: 600;
+                letter-spacing: 0.12px;
+                transition: all .25s ease;
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    top: 13px;
+                    right: 8px;
+                    transform: translate(-50%, -50%);
+                    width: 5px;
+                    height: 10px;
+                    background: url("data:image/svg+xml,<svg  xmlns='http://www.w3.org/2000/svg' width='5' height='10' viewBox='0 0 5 10' fill='none'><path d='M5 5L0.384615 9.33013L0.384615 0.669873L5 5Z' fill='%23D22030'/></svg>") center center no-repeat;
+
+                    @include breakMaxOnly(991px){
+                        top: 11px;
+                    }
+                  
+                }
+
+                &:hover {
+                    background: $tseng-secondary;
+                    color: $white;
+
+                    &:after {
+                        background: url("data:image/svg+xml,<svg  xmlns='http://www.w3.org/2000/svg' width='5' height='10' viewBox='0 0 5 10' fill='none'><path d='M5 5L0.384615 9.33013L0.384615 0.669873L5 5Z' fill='%23ffffff'/></svg>") center center no-repeat;
+                    }
+                }
+            }
+        }
+    }
+
+    .programFacultiesRepeat{
+        display:flex;
+        margin-top:30px;
+        margin-bottom:10px;
+
+        .facultiesPictureHolder{
+            margin-right:20px;
+            img{
+               width:70px;
+               height:70px;
+               overflow: hidden;
+                border-radius: 50%;
+            }
+
+        }
+
+        .facultiesBio{
+            .name{
+                color: $tseng-secondary;
+                font-weight: 700;
+                   
+            }
+            .degree{
+                color:$tseng-primary;
+                font-weight: 700;
+                line-height: 15px;
+                font-size: 0.87rem;
+                 
+            }
+            .department{
+                margin-top:5px;
+                font-size: 0.87rem;
+            }
+        }
+    }
+
+   
+}

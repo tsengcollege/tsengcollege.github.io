@@ -1,0 +1,251 @@
+.programSideBarContainer {
+  @include breakMaxOnly(991px) {
+    margin-bottom: 40px;
+  }
+
+  .programCourseSchedule {
+    border: 1px solid $lightgery-shade-2;
+    box-shadow: 0px 0px 12px 0px rgba($tseng-primary, 0.1);
+    margin-bottom: 17px;
+  }
+  .heading {
+    background: $tseng-primary;
+    color: $white;
+    font-size: 1.12rem;
+    font-weight: 700;
+    padding: 8px 17px;
+  }
+  .programTabArea {
+    padding: 18px;
+
+    .nav-tabs {
+      border-bottom: 5px solid $tseng-secondary;
+    }
+    .nav-tabs .nav-link.active {
+      background: $tseng-secondary-hover;
+      color: $white;
+      font-size: 0.75rem;
+      font-weight: 600;
+      line-height: 15px;
+      border-radius: 0;
+      border: 0;
+      padding: 9px 13px;
+      width: 50%;
+      text-align: left;
+    }
+    .nav-tabs .nav-link {
+      background: $lightgrey;
+      color: $tseng-primary;
+      font-size: 0.75rem;
+      font-weight: 600;
+      line-height: 15px;
+      border-radius: 0;
+      border: 0;
+      padding: 9px 13px;
+      width: 50%;
+      text-align: left;
+    }
+    .tab-content {
+      border: 1px solid #cfcfcf;
+      border-top: 0;
+      padding: 10px 10px 10px 0;
+
+      ul {
+        margin: 0;
+        li {
+          color: $tseng-primary;
+          font-size: 0.75rem;
+          line-height: 20px;
+          /*border-bottom:1px solid $tseng-secondary;*/
+          width: fit-content;
+          margin-bottom: 5px;
+
+          &::marker {
+            color: $tseng-secondary;
+          }
+          a {
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+  .tagline {
+    color: $tseng-primary;
+    font-size: 0.87rem;
+    line-height: 17px;
+    margin-bottom: 12px;
+  }
+
+  .professionalAccrSection {
+    position: relative;
+
+    .professionalAccrLogoSection {
+      padding-top: 20px;
+      padding-bottom: 20px;
+
+      img {
+        margin-left: auto;
+        margin-right: auto;
+        border: 4px solid #d7d7d7;
+        width: 150px;
+        padding: 10px 20px;
+
+        @include breakMinMax(991.98px, 1199.98px) {
+          width: 120px;
+          padding: 10px;
+        }
+      }
+    }
+
+    @include breakMaxOnly(991px) {
+      .owl-theme .owl-dots .owl-dot.active span,
+      .owl-theme .owl-dots .owl-dot:hover span {
+        background: $tseng-secondary;
+      }
+      .owl-nav {
+        display: none;
+      }
+    }
+
+    .owl-dots {
+      display: none;
+
+      @include breakMaxOnly(991px) {
+        display: block;
+      }
+    }
+
+    .owl-theme .owl-nav {
+      margin-top: 0;
+    }
+
+    .owl-carousel .owl-nav button.owl-prev {
+      position: absolute;
+      left: 10px;
+      top: 15%;
+      font-size: 4rem;
+      color: $tseng-secondary;
+      transition: all 0.25s ease;
+
+      &:hover {
+        color: $tseng-secondary-hover;
+        background: transparent;
+      }
+      &:focus-visible {
+        outline: 0;
+      }
+    }
+    .owl-carousel .owl-nav button.owl-prev.disabled {
+      color: $grey-shade-2;
+    }
+
+    .owl-carousel .owl-nav button.owl-next {
+      position: absolute;
+      right: 10px;
+      top: 15%;
+      font-size: 4rem;
+      color: $tseng-secondary;
+      transition: all 0.25s ease;
+
+      &:hover {
+        color: $tseng-secondary-hover;
+        background: transparent;
+      }
+      &:focus-visible {
+        outline: 0;
+      }
+    }
+    .owl-carousel .owl-nav button.owl-next.disabled {
+      color: $grey-shade-2;
+    }
+  }
+  .programSideRequestinfo {
+    background: $tseng-secondary;
+    padding: 20px;
+
+    .smallHeading {
+      line-height: 36px;
+
+      color: $white;
+      font-weight: 500;
+    }
+
+    .largeHeading {
+      font-size: 1.75rem;
+      font-weight: 700;
+      line-height: 36px;
+      margin-bottom: 15px;
+      color: $white;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+      color: $tseng-primary;
+      font-size: 0.87rem;
+      font-weight: 500;
+      border-radius: 0;
+      padding: 12px 16px;
+
+      &::placeholder {
+        color: $tseng-primary;
+      }
+    }
+    input[type="checkbox"] {
+      padding: 5px;
+    }
+    input[type="submit"] {
+      border: 3px solid $white;
+      color: $white;
+      font-size: 1.12rem;
+      font-weight: 700;
+      letter-spacing: 0.18px;
+      background: transparent;
+      padding: 18px 0px;
+      width: 100%;
+    }
+    .form-check-label {
+      color: $white;
+      font-size: 0.75rem;
+      font-weight: 500;
+      line-height: 17px;
+    }
+    .capchaPlaceholder {
+      margin: 20px 0;
+    }
+  }
+  .programDownloadBrochure {
+    padding: 15px;
+    display: flex;
+
+    .brochureImage {
+      margin-right: 20px;
+    }
+
+    .brochureContent {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .name {
+        color: $tseng-primary;
+        font-size: 0.87rem;
+        font-weight: 500;
+        line-height: 16px;
+        margin-bottom: 20px;
+      }
+      .downloadLink {
+        a {
+          font-size: 0.75rem;
+        }
+        span {
+          img {
+            width: 21px;
+          }
+        }
+      }
+    }
+  }
+}

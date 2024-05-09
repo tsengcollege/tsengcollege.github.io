@@ -1,0 +1,1970 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page - Tseng Collage</title>
+    <!--Bootstrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--Custom css-->
+    <link href="style/child-theme.css" rel="stylesheet">
+
+
+    <!--owl.carousel css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!--AOS Animation css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+        integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--Scripts-->
+    <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</head>
+
+<body>
+    <div class="tseng-mainContainer">
+        <!--Header start from here-->
+        <header class="headerContainer sticky-top">
+            <div class="headerTopBar">
+
+                <div class="headerTopBarLeft">
+                    <div class="d-flex tseng-dropDown">
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="dropDownTitle">My<span class="">CSUN</span></span>
+                            </button>
+                            <ul class="dropdown-menu  dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                <li>
+                                    <a href="https://portal.csun.edu/login" target="_blank" class="dropdown-item">CSUN
+                                        Portal</a>
+                                </li>
+                                <li>
+                                    <a href="https://mail.google.com/a/my.csun.edu" target="_blank"
+                                        class="dropdown-item">Gmail</a>
+                                </li>
+                                <li>
+                                    <a href="https://login.microsoftonline.com/login.srf?wa=wsignin1.0&amp;whr=csun.edu&amp;wreply=https%3A//office.com/"
+                                        target="_blank" class="dropdown-item">Microsoft Office 365</a>
+                                </li>
+                                <li>
+                                    <a href="https://canvas.csun.edu/" target="_blank" class="dropdown-item">Canvas</a>
+                                </li>
+                                <li>
+                                    <a href="https://mycsun.account.box.com/login" target="_blank"
+                                        class="dropdown-item">Box</a>
+                                </li>
+                                <li>
+                                    <a href="https://csun.zoom.us/" target="_blank" class="dropdown-item">Zoom</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="headerTopBarMiddle">
+                    <ul>
+                        <li><a href="#">Current Students</a></li>
+                        <li><a href="#">Faculty & Staff</a></li>
+                        <li><a href="#">Alumni</a></li>
+                        <li><a href="#">Local Community</a></li>
+                        <li><a href="#">Información en español</a></li>
+                    </ul>
+
+                </div>
+                <div class="headerTopBarRight">
+                    <ul>
+                        <li>
+                            <a href="#">Request Info</a>
+                        </li>
+                        <li>
+                            <a href="#">Visit</a>
+                        </li>
+                        <li>
+                            <a href="https://www.calstate.edu/apply/Pages/default.aspx" target="_blank">Apply</a>
+                        </li>
+                        <li>
+                            <a href="https://www.csun.edu/covid-19">Covid-19</a>
+                        </li>
+                        <li>
+                            <a href="https://engage.csun.edu/" target="_blank">Give</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="headerNavContainer">
+                <!-- Start Mega Menu HTML -->
+                <nav class="navbar navbar-expand-xl navbar-light shadow headerNavBar">
+                    <div class="container-fluid">
+                        <a class="navbar-brand d-none d-lg-block" href="#"><img src="images/csunLogo.svg"
+                                alt="CSUN Logo" class="img-fluid"></a>
+                        <div class="smallDeviceLogo">
+                            <div><img src="images/csunLogo.svg" alt="CSUN Logo"></div>
+                        </div>
+                        <div class="searchContainerMobile" id="searchContainerMobile">
+                            <div class="overlay" onclick="toggleSearch('searchContainerMobile')"></div>
+                            <img src="images/icons/iconSearchBlack.svg" alt="Search Icon" class="search-icon"
+                                onclick="toggleSearch('searchContainerMobile')">
+                            <img src="images/icons/iconCloseBlack.svg" alt="Close Icon" class="close-icon"
+                                onclick="toggleSearch('searchContainerMobile')" />
+
+                            <div class="searchFormBox" id="searchInputContainerMobile">
+                                <div class="searchFormDisplay">
+                                    <input type="search" id="searchInput" class="searchInputBox" placeholder="Search..."
+                                        aria-label="Search">
+
+                                    <a href="#" class="searchButton"><img src="images/icons/iconSearch.svg"
+                                            title="Search Icon"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbar-content" aria-label="Toggle navigation">
+                            <div class="hamburger-toggle">
+                                <div class="hamburger">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </button>
+                        <div class="collapse navbar-collapse navbarCollapseMobile" id="navbar-content">
+                            <!--Mobile, tablet Device Specific Header Drop Down-->
+                            <div class="headerTopBarDropDownMobile">
+                                <div class="headerTopBarLeft">
+                                    <div class="tseng-dropDown">
+                                        <div class="dropdown">
+                                            <button class="btn dropdown-toggle" type="button"
+                                                id="dropdownMenuButtonMobile" data-bs-toggle="dropdown"
+                                                aria-expanded="false">
+                                                <span class="dropDownTitle">My<span class="">CSUN</span></span>
+                                            </button>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonMobile">
+                                                <li>
+                                                    <a href="https://portal.csun.edu/login" target="_blank"
+                                                        class="dropdown-item">CSUN
+                                                        Portal</a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://mail.google.com/a/my.csun.edu" target="_blank"
+                                                        class="dropdown-item">Gmail</a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://login.microsoftonline.com/login.srf?wa=wsignin1.0&amp;whr=csun.edu&amp;wreply=https%3A//office.com/"
+                                                        target="_blank" class="dropdown-item">Microsoft Office 365</a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://canvas.csun.edu/" target="_blank"
+                                                        class="dropdown-item">Canvas</a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://mycsun.account.box.com/login" target="_blank"
+                                                        class="dropdown-item">Box</a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://csun.zoom.us/" target="_blank"
+                                                        class="dropdown-item">Zoom</a>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <!--Mobile, tablet Device Specific Header links-->
+
+                            <ul class="navbar-nav ms-auto">
+                                <!--Academic Programs-->
+                                <li class="nav-item dropdown dropdown-mega position-static">
+                                    <a class="nav-link megaMenuNavLink dropdown-toggle" href="#"
+                                        data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false"
+                                        id="dropdownMenuCourse1">Academic Programs </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuCourse1">
+                                        <div class="mega-content">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-12 col-xl-3">
+                                                        <div class="megaMenuContent">
+                                                            <div class="contentHeader"><span>Academic</span> Programs
+                                                            </div>
+                                                            <div class="megaMenuDesc">
+                                                                Life outside of the classroom is an important part of
+                                                                the college experience. It's where you make new friends,
+                                                                have some fun and can even make a difference on campus.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-xl-6">
+                                                        <div class="row">
+                                                            <div class="col-12 col-md-6">
+                                                                <div class="megaMenuTriggerContainer">
+                                                                    <ul>
+                                                                        <li><a href="#">Why CSUN?</a></li>
+                                                                        <li><a href="#">View All Programs</a></li>
+                                                                        <li><a href="#">Programs By Field</a></li>
+                                                                        <li><a href="#">Online Programs</a></li>
+                                                                        <li><a href="#">International Programs &
+                                                                                Partnerships</a></li>
+                                                                        <li><a href="#">University Access</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 col-md-6">
+                                                                <div class="megaMenuTriggerContainer">
+                                                                    <ul>
+                                                                        <li><a href="#">CSUN ASAP</a></li>
+                                                                        <li><a href="#">Fall Open University</a></li>
+                                                                        <li><a href="#">Spring Open University</a></li>
+                                                                        <li><a href="#">Winter Term</a></li>
+                                                                        <li><a href="#">Summer Session</a></li>
+                                                                        <li><a href="#">Contracted Program</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-xl-3">
+                                                        <img src="images/homepage/megaMenuAcadProg.jpg"
+                                                            alt="Academic Programs"
+                                                            class="img-fluid w-100 d-none d-xl-block">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!--About Us-->
+                                <li class="nav-item dropdown dropdown-mega position-static">
+                                    <a class="nav-link megaMenuNavLink dropdown-toggle" href="#"
+                                        data-bs-toggle="dropdown" data-bs-auto-close="outside">About Us </a>
+                                    <div class="dropdown-menu">
+                                        <div class="mega-content">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-12 col-xl-3">
+                                                        <div class="megaMenuContent">
+                                                            <div class="contentHeader"><span>About</span> Us</div>
+                                                            <div class="megaMenuDesc">
+                                                                Life outside of the classroom is an important part of
+                                                                the college experience. It's where you make new friends,
+                                                                have some fun and can even make a difference on campus.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-xl-6">
+                                                        <div class="row">
+                                                            <div class="col-12 col-md-6">
+                                                                <div class="megaMenuTriggerContainer">
+                                                                    <ul>
+                                                                        <li><a href="#">Why CSUN?</a></li>
+                                                                        <li><a href="#">View All Programs</a></li>
+                                                                        <li><a href="#">Programs By Field</a></li>
+                                                                        <li><a href="#">Online Programs</a></li>
+                                                                        <li><a href="#">International Programs &
+                                                                                Partnerships</a></li>
+                                                                        <li><a href="#">University Access</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 col-md-6">
+                                                                <div class="megaMenuTriggerContainer">
+                                                                    <ul>
+                                                                        <li><a href="#">CSUN ASAP</a></li>
+                                                                        <li><a href="#">Fall Open University</a></li>
+                                                                        <li><a href="#">Spring Open University</a></li>
+                                                                        <li><a href="#">Winter Term</a></li>
+                                                                        <li><a href="#">Summer Session</a></li>
+                                                                        <li><a href="#">Contracted Program</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-xl-3">
+                                                        <img src="images/homepage/megaMenuAcadProg.jpg"
+                                                            alt="Academic Programs"
+                                                            class="img-fluid w-100 d-none d-xl-block">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <!--Student Information-->
+                                <li class="nav-item dropdown dropdown-mega position-static">
+                                    <a class="nav-link megaMenuNavLink dropdown-toggle" href="#"
+                                        data-bs-toggle="dropdown" data-bs-auto-close="outside">Student Information</a>
+                                    <div class="dropdown-menu">
+                                        <div class="mega-content">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-12 col-xl-3 ">
+                                                        <div class="megaMenuContent">
+                                                            <div class="contentHeader"><span>Student</span> Information
+                                                            </div>
+                                                            <div class="megaMenuDesc">
+                                                                Life outside of the classroom is an important part of
+                                                                the college experience. It's where you make new friends,
+                                                                have some fun and can even make a difference on campus.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-xl-6">
+                                                        <div class="row">
+                                                            <div class="col-12 col-md-6">
+                                                                <div class="megaMenuTriggerContainer">
+                                                                    <ul>
+                                                                        <li><a href="#">Why CSUN?</a></li>
+                                                                        <li><a href="#">View All Programs</a></li>
+                                                                        <li><a href="#">Programs By Field</a></li>
+                                                                        <li><a href="#">Online Programs</a></li>
+                                                                        <li><a href="#">International Programs &
+                                                                                Partnerships</a></li>
+                                                                        <li><a href="#">University Access</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 col-md-6">
+                                                                <div class="megaMenuTriggerContainer">
+                                                                    <ul>
+                                                                        <li><a href="#">CSUN ASAP</a></li>
+                                                                        <li><a href="#">Fall Open University</a></li>
+                                                                        <li><a href="#">Spring Open University</a></li>
+                                                                        <li><a href="#">Winter Term</a></li>
+                                                                        <li><a href="#">Summer Session</a></li>
+                                                                        <li><a href="#">Contracted Program</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-xl-3">
+                                                        <img src="images/homepage/megaMenuAcadProg.jpg"
+                                                            alt="Academic Programs"
+                                                            class="img-fluid w-100 d-none d-xl-block">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!--News & Events-->
+                                <li class="nav-item dropdown dropdown-mega position-static">
+                                    <a class="nav-link megaMenuNavLink dropdown-toggle" href="#"
+                                        data-bs-toggle="dropdown" data-bs-auto-close="outside"> News & Events </a>
+                                    <div class="dropdown-menu">
+                                        <div class="mega-content">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-12 col-xl-3 ">
+                                                        <div class="megaMenuContent">
+                                                            <div class="contentHeader"><span>News</span> & Events</div>
+                                                            <div class="megaMenuDesc">
+                                                                Life outside of the classroom is an important part of
+                                                                the college experience. It's where you make new friends,
+                                                                have some fun and can even make a difference on campus.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-xl-6">
+                                                        <div class="row">
+                                                            <div class="col-12 col-md-6">
+                                                                <div class="megaMenuTriggerContainer">
+                                                                    <ul>
+                                                                        <li><a href="#">Why CSUN?</a></li>
+                                                                        <li><a href="#">View All Programs</a></li>
+                                                                        <li><a href="#">Programs By Field</a></li>
+                                                                        <li><a href="#">Online Programs</a></li>
+                                                                        <li><a href="#">International Programs &
+                                                                                Partnerships</a></li>
+                                                                        <li><a href="#">University Access</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 col-md-6">
+                                                                <div class="megaMenuTriggerContainer">
+                                                                    <ul>
+                                                                        <li><a href="#">CSUN ASAP</a></li>
+                                                                        <li><a href="#">Fall Open University</a></li>
+                                                                        <li><a href="#">Spring Open University</a></li>
+                                                                        <li><a href="#">Winter Term</a></li>
+                                                                        <li><a href="#">Summer Session</a></li>
+                                                                        <li><a href="#">Contracted Program</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-xl-3">
+                                                        <img src="images/homepage/megaMenuAcadProg.jpg"
+                                                            alt="Academic Programs"
+                                                            class="img-fluid w-100 d-none d-xl-block">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!--Request Info-->
+                                <li class="nav-item dropdown dropdown-mega position-static">
+                                    <a class="nav-link megaMenuNavLink dropdown-toggle" href="#"
+                                        data-bs-toggle="dropdown" data-bs-auto-close="outside">Request Info </a>
+                                    <div class="dropdown-menu">
+                                        <div class="mega-content">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-12 col-xl-3 ">
+                                                        <div class="megaMenuContent">
+                                                            <div class="contentHeader"><span>Request </span>Info</div>
+                                                            <div class="megaMenuDesc">
+                                                                Life outside of the classroom is an important part of
+                                                                the college experience. It's where you make new friends,
+                                                                have some fun and can even make a difference on campus.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-xl-6 ">
+                                                        <div class="row">
+                                                            <div class="col-12 col-md-6">
+                                                                <div class="megaMenuTriggerContainer">
+                                                                    <ul>
+                                                                        <li><a href="#">Why CSUN?</a></li>
+                                                                        <li><a href="#">View All Programs</a></li>
+                                                                        <li><a href="#">Programs By Field</a></li>
+                                                                        <li><a href="#">Online Programs</a></li>
+                                                                        <li><a href="#">International Programs &
+                                                                                Partnerships</a></li>
+                                                                        <li><a href="#">University Access</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 col-md-6">
+                                                                <div class="megaMenuTriggerContainer">
+                                                                    <ul>
+                                                                        <li><a href="#">CSUN ASAP</a></li>
+                                                                        <li><a href="#">Fall Open University</a></li>
+                                                                        <li><a href="#">Spring Open University</a></li>
+                                                                        <li><a href="#">Winter Term</a></li>
+                                                                        <li><a href="#">Summer Session</a></li>
+                                                                        <li><a href="#">Contracted Program</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-xl-3">
+                                                        <img src="images/homepage/megaMenuAcadProg.jpg"
+                                                            alt="Academic Programs"
+                                                            class="img-fluid w-100 d-none d-xl-block">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                            </ul>
+                            <div class="searchContainer d-none d-xl-block" id="searchContainer">
+                                <div class="overlay" onclick="toggleSearch('searchContainer')"></div>
+                                <img src="images/icons/iconSearchRedBg.svg" alt="Search Icon" class="search-icon"
+                                    onclick="toggleSearch('searchContainer')">
+                                <img src="images/icons/iconClose.svg" alt="Close Icon" class="close-icon"
+                                    onclick="toggleSearch('searchContainer')" />
+
+                                <div class="searchFormBox">
+                                    <div class="searchFormDisplay">
+                                        <input type="search" id="searchInput" class="searchInputBox"
+                                            placeholder="Search..." aria-label="Search">
+
+                                        <button type="submit" class="searchButton"><img
+                                                src="images/icons/iconSearch.svg" title="Search Icon"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Mobile, tablet Device Specific Header links-->
+                            <div class="headerTopBarMiddleLinksMobile">
+
+                                <div class="headerTopBarMiddle">
+                                    <ul>
+                                        <li><a href="#">Current Students</a></li>
+                                        <li><a href="#">Faculty & Staff</a></li>
+                                        <li><a href="#">Alumni</a></li>
+                                        <li><a href="#">Local Community</a></li>
+                                        <li><a href="#">Información en español</a></li>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+                            <!--Mobile, tablet Device Specific Header Drop Down-->
+
+                            <!--Mobile, tablet Device Specific Header Action right side links-->
+                            <div class="headerTopBarRightActionLinksMobile">
+                                <div class="headerTopBarRight">
+                                    <ul>
+                                        <li>
+                                            <a href="#">Request Info</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Visit</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.calstate.edu/apply/Pages/default.aspx"
+                                                target="_blank">Apply</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.csun.edu/covid-19">Covid-19</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://engage.csun.edu/" target="_blank">Give</a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+
+                            <!--Mobile, tablet Device Specific Header Action right side links-->
+                        </div>
+                    </div>
+                </nav>
+                <!-- END Mega Menu HTML -->
+
+            </div>
+
+        </header>
+
+        <!--Header ends here-->
+
+        <!--Banner Area Starts from here-->
+        <section class="bannerContainer position-relative">
+            <div id="home-BannerCarousel" class="carousel slide" data-bs-ride="carousel">
+
+                <div class="carousel-inner">
+                    <div class="carousel-item carouselHeightIpad active">
+                        <img src="images/homepage/banners/bannerSlide-1.jpg"
+                            class="sliderImage d-none d-lg-block w-100 img-fluid" alt="First slide">
+                        <img src="images/homepage/banners/bannerSlide-1Mobile.jpg" class="sliderImage d-lg-none"
+                            alt="First slide">
+                        <div class="topOnlineEducationContainer">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-12 col-lg-7">
+                                        <h2>Best online education for professionals</h2>
+                                        <div class="educationLogo">
+                                            <div class="row">
+                                                <div class="col-4 col-md-2">
+                                                    <img src="images/homepage/banners/onlineEducationLogo-1.png"
+                                                        alt="Online Education Logo-1" class="img-fluid">
+                                                </div>
+                                                <div class="col-4 col-md-2">
+                                                    <img src="images/homepage/banners/onlineEducationLogo-2.png"
+                                                        alt="Online Education Logo-2" class="img-fluid">
+                                                </div>
+                                                <div class="col-4 col-md-2">
+                                                    <img src="images/homepage/banners/onlineEducationLogo-3.png"
+                                                        alt="Online Education Logo-3" class="img-fluid">
+                                                </div>
+                                                <div class="col-4 col-md-2">
+                                                    <img src="images/homepage/banners/onlineEducationLogo-4.png"
+                                                        alt="Online Education Logo-4" class="img-fluid">
+                                                </div>
+                                                <div class="col-4 col-md-2">
+                                                    <img src="images/homepage/banners/onlineEducationLogo-5.png"
+                                                        alt="Online Education Logo-5" class="img-fluid">
+                                                </div>
+
+                                                <div class="col-4 col-md-2">
+                                                    <img src="images/homepage/banners/onlineEducationLogo-6.png"
+                                                        alt="Online Education Logo-6" class="img-fluid">
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item carouselHeightIpad">
+                        <img src="images/homepage/banners/bannerSlide-2.jpg"
+                            class="sliderImage d-none d-lg-block w-100 img-fluid" alt="Second slide">
+                        <img src="images/homepage/banners/bannerSlide-1Mobile.jpg" class="sliderImage d-lg-none"
+                            alt="Second slide">
+                        <div class="carouselSlideCaptionContainer">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-12 col-xxl-7">
+                                        <h2>Start your journey at Tseng and achieve your academic goals.</h2>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="carouselIndicatorWeb">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#home-BannerCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#home-BannerCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <div class="carouselIndicatorMobile carousel-indicators">
+                    <button type="button" data-bs-target="#home-BannerCarousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#home-BannerCarousel" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+
+                </div>
+            </div>
+            <!--form area -->
+            <div class="findYourCourseArea">
+                <div class="container courseFormArea">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-xl-8" data-aos="fade-down" data-aos-duration="1500">
+                            <div class="courseTriggerArea">
+                                <a href="">Apply Now</a>
+                                <a href="">Programs</a>
+                                <a href="">Explore</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-xl-8" data-aos="fade-right" data-aos-duration="1500">
+                            <div class="courseFindArea">
+                                <div class="courseHeading">Find your course</div>
+                                <div class="row g-0">
+                                    <div class="col-12 col-xl-3">
+                                        <div class="courseClass">
+                                            <!-- <select class="form-select ddlMycourse" aria-label="Course Classes">
+                                                <option selected>Graduate</option>
+                                                <option value="1">Masters</option>
+                                                <option value="2">Non-Graduate</option>
+                                            </select>-->
+                                            <div class="ddlMycourse">
+                                                <div class="dropdown">
+                                                    <button class="btn dropdown-toggle course" type="button"
+                                                        data-bs-toggle="dropdown" aria-expanded="false"
+                                                        id="dropdownMenuCourse">
+                                                        <span>Graduate</span>
+                                                    </button>
+                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuCourse">
+                                                        <li class="courseDdlItems"><a class="dropdown-item"
+                                                                href="javascript:void(0)">Graduate</a></li>
+                                                        <li class="courseDdlItems"><a class="dropdown-item"
+                                                                href="javascript:void(0)">Masters</a></li>
+                                                        <li class="courseDdlItems"><a class="dropdown-item"
+                                                                href="javascript:void(0)">Non-Graduate</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            <input type='hidden' id='vote' value='' />
+                                            <script>
+                                                document.querySelectorAll('.courseDdlItems').forEach(function (el) {
+
+                                                    el.addEventListener('click', function () {
+                                                        document.querySelector('.course').innerText = el.textContent;
+                                                        document.querySelector('#vote').value = el.textContent;
+                                                    });
+                                                });
+                                            </script>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="col-12 col-xl-9">
+                                        <div class="courseSearch">
+                                            <div class="input-group courseName">
+                                                <input type="search" class="form-control"
+                                                    placeholder="Course name, Keyword" aria-label="Course name, Keyword"
+                                                    aria-describedby="search">
+                                                <span class="input-group-text searchTrigger" id="search"><button
+                                                        type="submit"><img src="images/icons/iconSearch.svg"
+                                                            title="Search Icon"></button></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <!--form area -->
+        </section>
+        <!--Banner Area ends here-->
+
+        <!--Sticky Quick Link right side starts from here-->
+        <div class="quickStickyLinksContainer">
+            <a href="#" title="Request  Info" class="quickStickyLink">
+                <span class="quickStickyLinkIcon">
+                    <img src="images/icons/iconRequestInfo.svg" alt="Request Info">
+                </span>
+                <span class="quickStickyLinkIconHover">
+                    <img src="images/icons/iconRequestInfoHover.svg" alt="Request  Info">
+                </span>
+                <span class="quickStickyLinkText">Request Info</span>
+            </a>
+            <a href="#" title="Contact us" class="quickStickyLink">
+
+                <span class="quickStickyLinkIcon">
+                    <img src="images/icons/iconContactUs.svg" alt="Contact us">
+                </span>
+                <span class="quickStickyLinkIconHover">
+                    <img src="images/icons/iconContactUsHover.svg" alt="Contact us">
+                </span>
+                <span class="quickStickyLinkText">Contact us</span>
+            </a>
+            <a href="#" title="View Campus" class="quickStickyLink">
+                <span class="quickStickyLinkIcon">
+                    <img src="images/icons/iconViewCampus.svg" alt="View Campus">
+                </span>
+                <span class="quickStickyLinkIconHover">
+                    <img src="images/icons/iconViewCampusHover.svg" alt="View Campus">
+                </span>
+                <span class="quickStickyLinkText">View Campus</span>
+            </a>
+        </div>
+
+        <!--Sticky Quick Link right side ends here-->
+
+        <!--Welcome Message Area starts here-->
+        <section class="welcomeMsgArea">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-9" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="welcomeMessage">
+                            Welcome to <span>Tseng College</span>, your gateway to a world of possibilities and success.
+                            We're excited to have you on this journey, where education meets innovation.
+                        </div>
+                        <div class="welcomeMessageDescription">
+                            Our commitment to affordable, flexible learning, backed by our #2 ranking in California by
+                            The
+                            Wall Street Journal, ensures you're on the right path to personal and professional growth.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Welcome Message Area ends here-->
+
+        <!--Study at Tseng College starts here-->
+
+        <section class="studyCenterContainer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="studyTsengCollegeSection">
+                            <h2>Study at <span>Tseng College</span></h2>
+                            <div class="studyCoursesScroller">
+                                <!--Carousel Section-->
+
+                                <div class="owl-carousel owl-theme home-StudyTsengCollegeCarousel">
+                                    <div class="item" data-aos="zoom-in">
+                                        <div class="course-1">
+                                            <div class="overlay"></div>
+                                            <div class="courseHighlighter" data-aos="zoom-in">
+                                                <a href="#" class="courseName">Graduate<br> Programs</a>
+                                                <div class="courseNavigate">
+                                                    <a href="#" title="Graduate Programs"><img
+                                                            src="images/icons/iconNext.svg"
+                                                            alt="Click on Graduate Programs"></a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item" data-aos="zoom-in" data-aos-delay="300">
+                                        <div class="course-2">
+                                            <div class="overlay"></div>
+                                            <div class="courseHighlighter" data-aos="zoom-in">
+                                                <a href="#" class="courseName">Programs by <br>Field</a>
+                                                <div class="courseNavigate">
+                                                    <a href="#" title="Programs by Field"><img
+                                                            src="images/icons/iconNext.svg"
+                                                            alt="Click on Programs by Field"></a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item" data-aos="zoom-in" data-aos-delay="400">
+                                        <div class="course-3">
+                                            <div class="overlay"></div>
+                                            <div class="courseHighlighter" data-aos="zoom-in">
+                                                <a href="#" class="courseName">International<br> Students</a>
+                                                <div class="courseNavigate">
+                                                    <a href="#" title="International Students"><img
+                                                            src="images/icons/iconNext.svg"
+                                                            alt="Click on International Students"></a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item" data-aos="zoom-in" data-aos-delay="500">
+                                        <div class="course-4">
+                                            <div class="overlay"></div>
+                                            <div class="courseHighlighter" data-aos="zoom-in">
+                                                <a href="#" class="courseName">Online<br> Programs</a>
+                                                <div class="courseNavigate">
+                                                    <a href="#" title="Online Programs"><img
+                                                            src="images/icons/iconNext.svg"
+                                                            alt="Click on Online Programs"></a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item" data-aos="zoom-in" data-aos-delay="600">
+                                        <div class="course-4">
+                                            <div class="overlay"></div>
+                                            <div class="courseHighlighter" data-aos="zoom-in">
+                                                <a href="#" class="courseName">Online <br>Programs</a>
+                                                <div class="courseNavigate">
+                                                    <a href="#" title="Online Programs"><img
+                                                            src="images/icons/iconNext.svg"
+                                                            alt="Click on Online Programs"></a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--Carousel Section ends-->
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!--Study at Tseng College ends here-->
+
+        <!--why CSUN starts from here-->
+
+        <section class="whyCsunContainer">
+            <div class="whyCsunSectionFirst">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <div class="whyCsunHeading">
+                                Why <span>CSUN?</span>
+                            </div>
+
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="numberContainer" data-aos="fade-up" data-aos-duration="1500">
+                                <div class="row" id="counter">
+                                    <div class="col-12 col-md-4">
+                                        <div class="numberInfo">
+                                            <div class="number"><span class="counter-value" data-count="36000">0</span>
+                                            </div>
+                                            <div class="text">Registration per year</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <div class="numberInfo">
+                                            <div class="number"><span class="counter-value" data-count="100">0</span>
+                                            </div>
+                                            <div class="text">Professional Courses</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <div class="numberInfo borderRight0">
+                                            <div class="number"><span class="counter-value" data-count="30">0</span>
+                                            </div>
+                                            <div class="text">Degrees and Certificates</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="descTextContainer">
+                                <div class="row g-lg-2">
+                                    <div class="col-12 col-lg-5">
+                                        <div class="descBoxContainer" data-aos="fade-up" data-aos-easing="linear"
+                                            data-aos-duration="1500">
+                                            <div class="headingText">Experience <span>CSUN</span> anywhere.</div>
+                                            <div class="descText">No matter where you are, our online programs can help
+                                                you
+                                                build the skills and confidence to move ahead.</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-7">
+                                        <div class="descBoxContainer" data-aos="fade-down" data-aos-easing="linear"
+                                            data-aos-duration="1500">
+                                            <div class="headingText">You're <span>ready</span> to stand apart. Let us
+                                                help
+                                                you do it.</div>
+                                            <div class="descText">Where you're balancing a family, working full time, or
+                                                commuting from a far, our professional courses and programs can
+                                                accelerate
+                                                your success in any market.</div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="buttonContainer">
+                                <a href="#">
+                                    Read more
+                                    <img src="images/icons/iconArrowRight.svg" alt="Arrow icon">
+                                </a>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="whyCsunSectionSecond">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-4 colBorder">
+                            <div class="aboutCsunInfoContainer" data-aos="fade-up" data-aos-duration="1500">
+                                <div class="imageContainer"><img src="images/icons/iconDocument.png" alt="Document">
+                                </div>
+                                <div class="aboutCsunInfo">
+                                    <div class="numberYear">34<span>years</span></div>
+                                    <div class="aboutDesc">CSUN leads the world's <br>largest conference</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4 colBorder">
+                            <div class="aboutCsunInfoContainer" data-aos="fade-up" data-aos-duration="1500">
+                                <div class="imageContainer"><img src="images/icons/iconBag.png" alt="Bag"></div>
+                                <div class="aboutCsunInfo">
+                                    <div class="numberYear">08<span>years</span></div>
+                                    <div class="aboutDesc">College of Business and Economics has been Recognized as a
+                                        "Best
+                                        Business School" by Princeton Review</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="aboutCsunInfoContainer" data-aos="fade-up" data-aos-duration="1500">
+                                <div class="imageContainer"><img src="images/icons/iconDegree.png" alt="Document"></div>
+                                <div class="aboutCsunInfo">
+                                    <div class="numberYear">10</div>
+                                    <div class="aboutDesc">Top 10 College of Engineering and Computer Science Recognized
+                                        by
+                                        White House for Success in Graduating Women and Minorities in Stem Fields</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!--why CSUN ends here-->
+
+        <!--PACE Section starts from here-->
+
+        <section class="paceContainer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="paceBgSection" data-aos="fade-down" data-aos-duration="1500">
+                            <div class="paceHeading">PaCE</div>
+                            <div class="paceSubHeading">Professional and Continuing Education</div>
+                            <div class="paceDesc">Innovative Courses, Certifications & Workshops. Supporting educators,
+                                individuals, businesses, for profit and non-profit organizations.</div>
+                            <div class="paceButtonContainer">
+                                <a href="#" title="Explore Pace with Tseng">Explore PaCE with Tseng</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!--PACE Section ends here-->
+
+        <!--Information Sessions Section starts from here-->
+        <section class="informationSessionsContainer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="infoSessionHeader">
+                            <h2>Information <span> Sessions</span></h2>
+                            <div class="moreSessions">
+                                <a href="#" title="View more Info Sessions">View more Info Sessions</a>
+                            </div>
+                        </div>
+                        <!--Carousel Section-->
+                        <div class="infoSessionRepeaterContainer" data-aos="fade-up" data-aos-duration="1500">
+                            <div class="owl-carousel owl-theme home-InformationSessionsCarousel">
+                                <div class="item">
+                                    <div class="infoSessionRepeat">
+                                        <div class="infoDateTitle">
+                                            <div class="date">October 19</div>
+                                            <a href="#" class="title text-decoration-none">Discover CSUN - International
+                                                Students</a>
+                                        </div>
+                                        <div class="infoTimeLocation">
+                                            <div class="time">Time: 3:00 pm - 4:00 pm</div>
+                                            <div class="location">Location: Online</div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="infoSessionRepeat">
+                                        <div class="infoDateTitle">
+                                            <div class="date">October 19</div>
+                                            <a href="#" class="title text-decoration-none">Beyond Bachelors Part II:
+                                                What Should I Know About the
+                                                Application Process?</a>
+                                        </div>
+                                        <div class="infoTimeLocation">
+                                            <div class="time">Time: 2:00 pm - 3:30 pm</div>
+                                            <div class="location">Location: Charles H. Noski Auditorium</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="infoSessionRepeat">
+                                        <div class="infoDateTitle">
+                                            <div class="date">October 19</div>
+                                            <a href="#" class="title text-decoration-none">Internship Week</a>
+                                        </div>
+                                        <div class="infoTimeLocation">
+                                            <div class="time">Time: 11:00 am - 2:00 pm</div>
+                                            <div class="location">Location: Online</div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="infoSessionRepeat">
+                                        <div class="infoDateTitle">
+                                            <div class="date">October 19</div>
+                                            <a href="#" class="title text-decoration-none">Internship Week</a>
+                                        </div>
+                                        <div class="infoTimeLocation">
+                                            <div class="time">Time: 11:00 am - 2:00 pm</div>
+                                            <div class="location">Location: Online</div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!--Carousel Section ends-->
+
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Information Sessions Section ends here-->
+
+        <!--Student Testimonials Section starts from here-->
+        <section class="studentTestimonialsContainer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="studentTestimonialsHeader">
+                            <h2>Student <span> Testimonials</span></h2>
+                            <div class="moreTestimonials">
+                                <a href="#" title="View more Info Sessions">View more Testimonials</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-lg-0">
+                    <div class="col-12">
+                        <div class="studyCoursesScroller">
+                            <!--Carousel Section-->
+
+                            <div class="owl-carousel owl-theme home-StudentTestimonialsVideo">
+                                <div class="item">
+                                    <div class="StudentTestimonialsVideo borderWhiteRight-2" data-aos="zoom-in-up"
+                                        data-aos-duration="1500">
+
+                                        <div class="video-container">
+                                            <img src="images/homepage/studentTestimonial-img1.jpg"
+                                                alt="Student Testimonials1" class="imageBlock" />
+
+                                            <!-- <video class="video" loop muted preload="auto">
+                                                <source src="video/sample.mp4" type="video/mp4">
+                                                Your browser does not support the video tag.
+                                            </video> -->
+                                            <div class="videoPlayIcon" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal">
+                                                <a href="#" title="Play Video for Student Testimonials 1"><img
+                                                        src="images/icons/iconPlayVideo.svg"
+                                                        alt="Play Video for Student Testimonials 1"></a>
+                                            </div>
+                                            <div class="videoMessage">
+                                                Nicholas is stepping out of his comfort zone and inspiring others to do
+                                                the
+                                                same.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="StudentTestimonialsVideo borderWhiteRight-2 position-relative"
+                                        data-aos="zoom-in-up" data-aos-duration="1500">
+                                        <div class="video-container">
+                                            <img src="images/homepage/studentTestimonial-img2.jpg"
+                                                alt="Student Testimonials2" class="imageBlock" />
+                                            <!-- <video class="video" loop muted preload="auto">
+                                                <source src="video/sample2.mp4" type="video/mp4">
+                                                Your browser does not support the video tag.
+                                            </video> -->
+
+
+                                            <div class="videoPlayIcon" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal">
+                                                <a href="#" title="Play Video for Student Testimonials 2"><img
+                                                        src="images/icons/iconPlayVideo.svg"
+                                                        alt="Play Video for Student Testimonials 2"></a>
+                                            </div>
+                                            <div class="videoMessage">
+                                                Nicholas is stepping out of his comfort zone and inspiring others to do
+                                                the
+                                                same.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="StudentTestimonialsVideo borderWhiteRight-2 position-relative"
+                                        data-aos="zoom-in-up" data-aos-duration="1500">
+                                        <div class="video-container">
+                                            <img src="images/homepage/studentTestimonial-img3.jpg"
+                                                alt="Student Testimonials3" class="imageBlock" />
+                                            <!-- <video class="video" loop muted preload="auto">
+                                                <source src="video/sample.mp4" type="video/mp4">
+                                                Your browser does not support the video tag.
+                                            </video> -->
+
+                                            <div class="videoPlayIcon" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal">
+                                                <a href="#" title="Play Video for Student Testimonials 3"><img
+                                                        src="images/icons/iconPlayVideo.svg"
+                                                        alt="Play Video for Student Testimonials 3"></a>
+                                            </div>
+                                            <div class="videoMessage">
+                                                Nicholas is stepping out of his comfort zone and inspiring others to do
+                                                the
+                                                same.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!--Carousel Section ends-->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!--Student Testimonials Section ends here-->
+
+        <!--Teachers/Staff Testimonials Section starts from here-->
+        <section class="teachersStaffTestimonialsContainer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="teachersStaffTestimonialsHeader">
+                            <h2>Teachers/Staff <span> Testimonials</span></h2>
+                            <div class="moreTestimonials">
+                                <a href="#" title="View more Info Sessions">View more Testimonials</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="testimonialVideoContainer">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="testimonialVideoScroller">
+                                        <!--Carousel Section-->
+
+                                        <div class="owl-carousel owl-theme home-teacherTestimonialsVideo">
+                                            <div class="item">
+                                                <div class="teacherTestimonialsVideo" data-aos="zoom-out-right"
+                                                    data-aos-duration="1500">
+                                                    <div class="teacherTestimonialsVideocontainer">
+                                                        <img src="images/homepage/staff1.jpg" alt="Teacher Staff1"
+                                                            class="imageBlock">
+                                                        <!-- <video class="video" loop muted preload="auto">
+                                                            <source src="video/sample.mp4" type="video/mp4">
+                                                            Your browser does not support the video tag.
+                                                        </video> -->
+                                                        <div class="videoPlayIcon" data-bs-toggle="modal"
+                                                            data-bs-target="#exampleModal">
+                                                            <a href="#"
+                                                                title="Play Video for Student Testimonials 3"><img
+                                                                    src="images/icons/iconPlayVideo.svg"
+                                                                    alt="Play Video for Student Testimonials 3"></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="staffInfo">
+                                                        <div class="name">Joyce Feucht-Haviar</div>
+                                                        <div class="designation">Dean</div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="teacherTestimonialsVideo" data-aos="zoom-out-right"
+                                                    data-aos-duration="1500">
+                                                    <div class="teacherTestimonialsVideocontainer">
+                                                        <img src="images/homepage/staff2.jpg" alt="Teacher Staff2"
+                                                            class="imageBlock">
+                                                        <!-- <video class="video" loop muted preload="auto">
+                                                            <source src="video/sample.mp4" type="video/mp4">
+                                                            Your browser does not support the video tag.
+                                                        </video> -->
+                                                        <div class="videoPlayIcon" data-bs-toggle="modal"
+                                                            data-bs-target="#exampleModal">
+                                                            <a href="#"
+                                                                title="Play Video for Student Testimonials 3"><img
+                                                                    src="images/icons/iconPlayVideo.svg"
+                                                                    alt="Play Video for Student Testimonials 3"></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="staffInfo">
+                                                        <div class="name">Silvia Argueta</div>
+                                                        <div class="designation">Additional Pay Specialist</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="teacherTestimonialsVideo" data-aos="zoom-out-right"
+                                                    data-aos-duration="1500">
+                                                    <div class="teacherTestimonialsVideocontainer">
+                                                        <img src="images/homepage/staff3.jpg" alt="Teacher Staff3"
+                                                            class="imageBlock">
+                                                        <!-- <video class="video" loop muted preload="auto">
+                                                            <source src="video/sample.mp4" type="video/mp4">
+                                                            Your browser does not support the video tag.
+                                                        </video> -->
+                                                        <div class="videoPlayIcon" data-bs-toggle="modal"
+                                                            data-bs-target="#exampleModal">
+                                                            <a href="#"
+                                                                title="Play Video for Student Testimonials 3"><img
+                                                                    src="images/icons/iconPlayVideo.svg"
+                                                                    alt="Play Video for Student Testimonials 3"></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="staffInfo">
+                                                        <div class="name">Mario Arriaga</div>
+                                                        <div class="designation">Program Coordinator</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <!--Carousel Section ends-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!--Teachers/Staff Testimonials Section ends here-->
+
+        <!--What’s Next Section starts from here-->
+        <section class="whatsNextContainer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="whatNextInformation">
+                            <div class="smallHeading">Ready for What's Next?</div>
+                            <div class="largeHeading">Experience <span>Spring</span> at CSUN</div>
+                            <div class="description">Advancing Student Achievement Program (ASAP) for previously
+                                admitted CSUN students and Open University for visiting students and community members
+                            </div>
+                            <div class="dateYear">January 22 - May 10</div>
+                            <div class="infoButtonContainer" data-aos="fade-down" data-aos-duration="1500">
+                                <a href="#">Knowledge Center</a>
+                                <a href="#">Apply Now</a>
+                                <a href="#">Search Classes</a>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--What’s Next Section ends here-->
+
+        <!--Highlight from Tseng College Section starts from here-->
+        <section class="highlightSectionContainer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="highlightsHeader">
+                            <h2>Highlight from <span> Tseng College</span></h2>
+                            <div class="moreNews">
+                                <a href="#" title="View more News">View more News</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Carousel Section-->
+                <div class="highlightsRepeaterContainer">
+                    <div class="owl-carousel owl-theme home-HighlightsCarousel">
+                        <div class="item highlightHeight">
+                            <div class="highlightsBoxRepeat">
+                                <div class="highlightImageSection">
+                                    <a href="#"><img src="images/homepage/highlight-img1.jpg" class="img-fluid"
+                                            alt="News"></a>
+                                    <div class="highlightSectionName">News</div>
+                                </div>
+                                <div class="highlightDescriptionSection">
+                                    <div class="highlightsDate">6 February</div>
+                                    <div class="highlightsHeader">
+                                      <a href="#">  CSUN tops the Billboard charts (again)</a>
+                                    </div>
+                                    <div class="highlightsText">
+                                        For the second straight year, CSUN landed on Billboard's list of the nation's
+                                        best music business schools....
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="item highlightHeight">
+                            <div class="highlightsBoxRepeat">
+                                <div class="highlightImageSection">
+                                   <a href="#"> <img src="images/homepage/highlight-img2.jpg" class="img-fluid" alt="News"></a>
+                                    <div class="highlightSectionName">Events</div>
+                                </div>
+                                <div class="highlightDescriptionSection">
+                                    <div class="highlightsDate">6 February</div>
+                                    <div class="highlightsHeader">
+                                        <a href="#"> Wall Street Journal Names CSUN No. 2 Public University</a>
+                                    </div>
+                                    <div class="highlightsText">
+                                        California State University, Northridge is the No. 2 public university in
+                                        California and the No. 12 public...
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="item highlightHeight">
+                            <div class="highlightsBoxRepeat">
+                                <div class="highlightImageSection">
+                                    <a href="#"><img src="images/homepage/highlight-img3.jpg" class="img-fluid" alt="News"></a>
+                                    <div class="highlightSectionName">News</div>
+                                </div>
+                                <div class="highlightDescriptionSection">
+                                    <div class="highlightsDate">6 February</div>
+                                    <div class="highlightsHeader">
+                                       <a href="#"> Top Five Reasons to Enter a Graduate Program</a>
+                                    </div>
+                                    <div class="highlightsText">
+                                        Are you wondering if a master's degree is a worthwhile pursuit? Undoubtedly,
+                                        getting a master's degree has...
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="item highlightHeight">
+                            <div class="highlightsBoxRepeat">
+                                <div class="highlightImageSection">
+                                   <a href="#"> <img src="images/homepage/highlight-img3.jpg" class="img-fluid" alt="News"></a>
+                                    <div class="highlightSectionName">News</div>
+                                </div>
+                                <div class="highlightDescriptionSection">
+                                    <div class="highlightsDate">6 February</div>
+                                    <div class="highlightsHeader">
+                                      <a href="#">  Top Five Reasons to Enter a Graduate Program</a>
+                                    </div>
+                                    <div class="highlightsText">
+                                        Are you wondering if a master's degree is a worthwhile pursuit? Undoubtedly,
+                                        getting a master's degree has...
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--Carousel Section ends-->
+                </div>
+            </div>
+        </section>
+        <!--Highlight from Tseng College Section ends here-->
+
+        <!--Students corner Section starts from here-->
+        <section class="studentSectionContainer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-12">
+                        <div class="studentTagLine">We are real people helping <br>real students achieve their dreams
+                        </div>
+                        <div class="studentInfoButtonContainer" data-aos="zoom-in-up" data-aos-duration="1500">
+                            <a href="#">Financial Aid</a>
+                            <a href="#">Admissions</a>
+                            <a href="#">Support Service</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!--Students corner Section ends here-->
+
+
+        <!--Footer Section starts from here-->
+        <footer class="footerSectionContainer">
+            <div class="container footerOuter">
+                <div class="row">
+                    <div class="col-12 col-md-8">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="footerLogo">
+                                    <img src="images/footer/logoCsun-tseng-footer.png" alt="CSUN Tseng Collage"
+                                        class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="quickLinksContainer">
+                                    <h5>Quick links</h5>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Programs by Field of Study</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Programs by Degree</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Online Programs</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Information Session</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Frequently Asked Questions</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-8">
+                                <div class="informationContainer">
+                                    <h5>Information about</h5>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Office of the Dean</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Brochures and Publications</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Online Learning Resources</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Give</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Webmail</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Request Info</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-12 col-xl-4">
+                                <div class="locationContainer">
+                                    <div class="iconMap">
+                                        <img src="images/footer/iconLocation.png" alt="location">
+                                    </div>
+                                    <div class="address">18111 Nordhoff Street Northridge, CA 91330</div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-xl-8">
+                                <div class="socialMediaContainer">
+                                    <a href="#" title="Facebook"><img src="images/footer/iconFacebook.png"
+                                            alt="Facebook"></a>
+                                    <a href="#" title="Instagram"><img src="images/footer/iconInstagram.png"
+                                            alt="Instagram"></a>
+                                    <a href="#" title="X"><img src="images/footer/iconX.png" alt="X"></a>
+                                    <a href="#" title="Youtube"><img src="images/footer/iconYoutube.png"
+                                            alt="Youtube"></a>
+                                    <a href="#" title="Linkedin"><img src="images/footer/iconLinkedIn.png"
+                                            alt="Linkedin"></a>
+
+
+                                </div>
+
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="col-12 col-md-4 csunLogoContainer">
+                        <div class="csunLogoNorthridge">
+                            <img src="images/footer/logoCsun-Northridge.png" alt="CSUN Logo" class="Img-fluid">
+                            <div class="subText">BUILD THE FUTURE <br>YOU ENVISION</div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="footerBarLinks">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="linksContainer">
+                                <a href="#" title="Accessibility">Accessibility</a>
+                                <a href="#" title="Annual Security Report (CLERY)">Annual Security Report (CLERY)</a>
+                                <a href="#" title="Document Reader">Document Reader</a>
+                                <a href="#" title="CSU System">CSU System</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="websitePolicyContainer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="websitePolicylinksContainer">
+                                &copy; 2024 California State University Northridge
+                                <a href="#" title="Document Reader">Terms & Conditions</a>
+                                <a href="#" title="CSU System">Privacy Policy</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="studentSectionOverlay"><img src="images/footer/footerStudentImg.png" alt="Student With Laptops"
+                    class="img-fluid"></div>
+        </footer>
+        <!--Footer Section starts ends here-->
+
+        <!-- video popup starts -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered  modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header border-0 pb-0">
+                        <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <video style="width:100%;" height="400" controls>
+                            <source src="https://www.youtube.com/embed/RVW9qSbg8f8" type="video/mp4">
+                            <source src="https://www.youtube.com/embed/RVW9qSbg8f8" type="video/ogg">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- video popup ends -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+            integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+
+            $(document).ready(function () {
+                if ($('.home-StudyTsengCollegeCarousel').length > 0) {
+                    $('.home-StudyTsengCollegeCarousel').owlCarousel({
+                        loop: true,
+                        //animateOut: 'slideOutDown',
+                        //animateIn: 'flipInX',
+                        margin: 30,
+                        nav: true,
+                        responsiveClass: true,
+                        responsive: {
+                            0: {
+                                items: 1,
+                                nav: false,
+                                loop: false
+                            },
+                            600: {
+                                items: 2,
+                                nav: false,
+                                loop: false
+                            },
+                            1000: {
+                                items: 3,
+                                nav: true,
+                                loop: false
+                            },
+
+                            1600: {
+                                items: 4,
+                                nav: true,
+                                loop: false
+                            }
+                        }
+                    });
+                }
+
+                if ($('.home-InformationSessionsCarousel').length > 0) {
+                    $('.home-InformationSessionsCarousel').owlCarousel({
+                        loop: true,
+                        //animateOut: 'slideOutDown',
+                        //animateIn: 'flipInX',
+                        margin: 25,
+                        nav: false,
+                        responsiveClass: true,
+                        responsive: {
+                            0: {
+                                items: 1,
+                                nav: false,
+                                loop: true
+                            },
+                            600: {
+                                items: 2,
+                                nav: false,
+                                loop: true
+                            },
+                            1000: {
+                                items: 3,
+                                nav: false,
+                                loop: true
+                            },
+                            1600: {
+                                items: 3,
+                                nav: false,
+                                loop: true
+                            }
+                        }
+                    });
+                }
+                if ($('.home-HighlightsCarousel').length > 0) {
+                    $('.home-HighlightsCarousel').owlCarousel({
+                        loop: true,
+                        //animateOut: 'slideOutDown',
+                        //animateIn: 'flipInX',
+                        margin: 25,
+                        nav: true,
+                        responsiveClass: true,
+                        responsive: {
+                            0: {
+                                items: 1,
+                                nav: false,
+                                loop: false
+                            },
+                            600: {
+                                items: 2,
+                                nav: false,
+                                loop: false
+                            },
+                            1000: {
+                                items: 3,
+                                nav: true,
+                                loop: false
+                            },
+                            1600: {
+                                items: 3,
+                                nav: true,
+                                loop: false
+                            }
+                        },
+
+                        onInitialized: setEqualHeight
+                    });
+
+                    function setEqualHeight() {
+                        var viewportWidth = $(window).width();
+                        var maxHeight = 0;
+
+                        if (viewportWidth >= 1537) {
+                            // Logic for large screens
+                            $('.owl-carousel.home-HighlightsCarousel .owl-item').each(function () {
+                                var itemHeight = $(this).height();
+                                maxHeight = (itemHeight > maxHeight) ? itemHeight : maxHeight;
+                            });
+                            maxHeight += 15;
+                            $('.owl-carousel.home-HighlightsCarousel .owl-item').css('min-height', maxHeight + 'px');
+                            $('.owl-carousel.home-HighlightsCarousel .owl-item .item').css('min-height', maxHeight + 'px');
+                        } else if (viewportWidth >= 1025 && viewportWidth < 1536) {
+                            // Logic for medium screens
+                            $('.owl-carousel.home-HighlightsCarousel .owl-item').each(function () {
+                                var itemHeight = $(this).height();
+                                maxHeight = (itemHeight > maxHeight) ? itemHeight : maxHeight;
+                            });
+                            maxHeight += 8;
+                            $('.owl-carousel.home-HighlightsCarousel .owl-item').css('min-height', maxHeight + 'px');
+                            $('.owl-carousel.home-HighlightsCarousel .owl-item .item').css('min-height', maxHeight + 'px');
+                        } else {
+                            // Logic for small screens
+                            $('.owl-carousel.home-HighlightsCarousel .owl-item').each(function () {
+                                var itemHeight = $(this).height();
+                                maxHeight = (itemHeight > maxHeight) ? itemHeight : maxHeight;
+                            });
+                            maxHeight += 8;
+                            $('.owl-carousel.home-HighlightsCarousel .owl-item').css('min-height', maxHeight + 'px');
+                            $('.owl-carousel.home-HighlightsCarousel .owl-item .item').css('min-height', maxHeight + 'px');
+                        }
+                    }
+
+                    // Call the function on window load and resize
+                    $(window).on('load resize', function () {
+                        setEqualHeight();
+                    });
+
+                }
+
+                if ($('.home-StudentTestimonialsVideo').length > 0) {
+                    $('.home-StudentTestimonialsVideo').owlCarousel({
+                        loop: true,
+                        //animateOut: 'slideOutDown',
+                        //animateIn: 'flipInX',
+                        margin: 1,
+                        nav: true,
+                        responsiveClass: true,
+                        responsive: {
+                            0: {
+                                items: 1,
+                                nav: false,
+                                loop: false
+                            },
+                            600: {
+                                items: 2,
+                                nav: false,
+                                loop: false
+                            },
+                            1000: {
+                                items: 3,
+                                nav: true,
+                                loop: false
+                            },
+                            1600: {
+                                items: 3,
+                                nav: true,
+                                loop: false
+                            }
+                        }
+                    });
+                }
+
+                if ($('.home-teacherTestimonialsVideo').length > 0) {
+                    $('.home-teacherTestimonialsVideo').owlCarousel({
+                        loop: true,
+                        //animateOut: 'slideOutDown',
+                        //animateIn: 'flipInX',
+                        margin: 50,
+                        nav: true,
+                        responsiveClass: true,
+                        responsive: {
+                            0: {
+                                items: 1,
+                                nav: false,
+                                loop: false
+                            },
+                            600: {
+                                items: 2,
+                                nav: false,
+                                loop: false
+                            },
+                            1000: {
+                                items: 3,
+                                nav: true,
+                                loop: false
+                            },
+                            1600: {
+                                items: 3,
+                                nav: true,
+                                loop: false
+                            }
+                        }
+                    });
+                }
+
+            });
+        </script>
+        <script>
+            AOS.init();
+        </script>
+        <!--Script for Animated Counters-->
+        <script>
+
+
+            var counta = 0;
+            $(window).scroll(function () {
+
+                var oTop = $('#counter').offset().top - window.innerHeight;
+                if (counta == 0 && $(window).scrollTop() > oTop) {
+                    $('.counter-value').each(function () {
+                        var $this = $(this),
+                            countTo = $this.attr('data-count');
+                        $({
+                            countNum: $this.text()
+                        }).animate({
+                            countNum: countTo
+                        },
+
+                            {
+
+                                duration: 5000,
+                                easing: 'swing',
+                                step: function () {
+                                    $this.text(Math.floor(this.countNum));
+                                },
+                                complete: function () {
+                                    $this.text(this.countNum + "+");
+                                }
+
+                            });
+                    });
+                    counta = 1;
+                }
+
+            });
+        </script>
+        <!--Script for Animated Counters-->
+
+        <!--Script for Mega Menu-->
+        <script>
+
+            document.addEventListener('click', function (e) {
+                // Hamburger menu
+                if (e.target.classList.contains('hamburger-toggle')) {
+                    e.target.children[0].classList.toggle('active');
+                }
+            })
+
+        </script>
+        <!--Script for Mega Menu-->
+
+        <!--Script for Student Testimonials Video-->
+        <script>
+            // $(document).ready(function () {
+            //     // Play the first video by default when scrolling into view
+            //     var firstVideo = $(".video-container:first").find(".video")[0];
+            //      $(firstVideo).show();
+            //      $(firstVideo).get(0).play();
+
+            //     $(".video-container").hover(
+            //         function () {
+            //             var video = $(this).find(".video")[0];
+            //             $(video).show();
+            //             $(this).find(".imageBlock").hide();
+            //             video.play();
+            //         },
+            //         function () {
+            //             var video = $(this).find(".video")[0];
+            //             $(video).hide();
+            //             $(this).find(".imageBlock").show();
+            //             video.pause();
+            //             video.currentTime = 0;
+            //         }
+            //     );
+            // });
+        </script>
+        <!--Script for Student Testimonials Video-->
+
+        <!--Script for Teachers/Staff Testimonials Video-->
+        <script>
+            // $(document).ready(function () {
+            //     // Play the first video by default when scrolling into view
+            //     // var firstVideo = $(".video-container:first").find(".video")[0];
+            //     // $(firstVideo).show();
+            //     // $(firstVideo).get(0).play();
+
+            //     $(".teacherTestimonialsVideocontainer").hover(
+            //         function () {
+            //             var video = $(this).find(".video")[0];
+            //             $(video).show();
+            //             $(this).find(".imageBlock").hide();
+            //             video.play();
+            //         },
+            //         function () {
+            //             var video = $(this).find(".video")[0];
+            //             $(video).hide();
+            //             $(this).find(".imageBlock").show();
+            //             video.pause();
+            //             video.currentTime = 0;
+            //         }
+            //     );
+            // });
+        </script>
+        <!--Script for Teachers/Staff Testimonials Video-->
+
+        <!--Script for Search-->
+
+        <script>
+            function toggleSearch(containerId) {
+                var searchIcon = document.querySelector('#' + containerId + ' .search-icon');
+                var closeIcon = document.querySelector('#' + containerId + ' .close-icon');
+                var searchContainer = document.getElementById(containerId);
+
+                searchIcon.classList.toggle('active');
+                closeIcon.classList.toggle('active');
+                searchContainer.classList.toggle('active');
+            }
+        </script>
+        <!--Script for Search-->
+
+    </div>
+</body>
+
+</html>

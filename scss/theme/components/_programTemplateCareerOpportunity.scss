@@ -1,0 +1,39 @@
+.programCareerContainer{
+    background: $lightgrey;
+    margin-bottom:40px;
+    padding:35px;
+    border:1px solid #C5C5C5;
+
+    h4{
+        line-height: 50px;
+
+        @include breakMaxOnly(767px){
+            line-height: 25px;
+            
+        }
+        span{
+            color:$tseng-secondary;
+        }
+    }
+    .programCareerDescription{
+        color: $tseng-primary;
+        line-height: 26px; 
+
+        @include breakMaxOnly(767px){
+            margin-bottom:25px;
+            
+        }
+    }
+
+    .imagePlaceHolder{
+        text-align: end;
+        
+         
+        img{
+            max-width:100%;
+            width: 100%;
+            height: 257px;
+            object-fit: cover;
+        }
+    }
+}

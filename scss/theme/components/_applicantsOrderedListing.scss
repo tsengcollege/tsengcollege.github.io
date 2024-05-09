@@ -1,0 +1,58 @@
+.applicantsOrderedListingContainer{
+    border:1px solid $grey-shade-3;
+    padding:40px 30px 30px 30px;
+    margin-bottom:45px;
+
+    ol{
+         
+          li{
+             margin-bottom:18px;
+             color: $tseng-primary;
+
+             &:last-child{
+                
+                @include breakMinOnly(1199px){
+                    margin-bottom:0;
+                }
+             }
+          
+             
+         }
+     }
+     ul{
+
+
+          li{
+             margin-bottom:18px;
+             color: $tseng-primary;
+            
+
+             &:last-child{
+                
+                 @include breakMinOnly(1199px){
+                     margin-bottom:0;
+                 }
+             
+             }
+
+             strong{
+                font-weight: 600;
+             }
+
+         }
+     }
+
+     
+
+     .keyPointsSection{
+
+        border-top:1px solid $grey-shade-3;
+        margin-top:44px;
+        padding-top:28px;
+
+        h6{
+            font-size: 1.12rem;
+            font-weight: 500;
+        }
+     }
+}

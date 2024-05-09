@@ -1,0 +1,32 @@
+.programCourseInformationContainer{
+    margin-bottom:40px;
+    h4{
+        span{
+            color:$tseng-secondary;
+        }
+    }
+
+    .programCourseBg{
+        background: url(../images/programTemplate/courseProgramBg.jpg) #000 no-repeat;
+        background-size: cover;
+        padding:50px 36px;
+    }
+
+    .aboutCourseDescription{
+        color:$white;
+        font-weight: 500;
+        line-height: 23px;
+    }
+    .videoPlaceHolder{
+        text-align: end;
+        
+        @include breakMaxOnly(991px){
+            margin-bottom:20px;
+            text-align: left;
+        }
+
+        .imgPlaceHolder{
+            max-width:100%;
+        }
+    }
+}

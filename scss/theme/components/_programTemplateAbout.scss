@@ -1,0 +1,42 @@
+.aboutThisContainer{
+    margin-bottom:40px;
+
+    h2 {
+        margin-bottom:22px;
+        span {
+            color: $tseng-secondary;
+        }
+    }
+    .aboutDescription{
+        color: $tseng-primary;
+        line-height: 26px;
+    }
+    .showMoreTrigger{
+       
+        a{
+            color: $tseng-secondary;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 36px;
+            text-decoration: none;
+            position: relative;
+
+            &:after {
+                content: "";
+                position: absolute;
+                top: 7px;
+                right: -14px;
+                width:11px;
+                height: 11px;
+                background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11' height='11' viewBox='0 0 11 11' fill='none'%3E%3Cpath d='M9.80469 1.43481C8.12374 3.20915 5.50034 5.97829 5.50034 5.97829C5.50034 5.97829 3.02269 3.20915 1.43512 1.43481' stroke='%23D22030'/%3E%3C/svg%3E") center center no-repeat;
+
+  
+              
+            }
+        }
+    }
+    #moreText {
+        display:none;
+        transition: all .25s ease;
+    }
+}

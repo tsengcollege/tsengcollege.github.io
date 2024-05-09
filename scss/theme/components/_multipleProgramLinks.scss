@@ -1,0 +1,43 @@
+.multipleProgramLinksContainer{
+    margin-bottom:66px;
+    @include breakMaxOnly(1024px){
+        margin-bottom:36px;
+    }
+ 
+    .multiprogramRepeater{
+        background: $white;
+        box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.12);
+
+        @include breakMaxOnly(1024px){
+            margin-bottom:30px;
+
+            }
+
+        .multiprogramContent{
+            padding:38px 34px;
+
+            ul{
+                margin:0;
+                padding:0;
+                list-style-type: none;
+
+                li{
+                    margin-bottom:15px;
+                }
+ 
+            }
+           
+        }
+        .imagePlaceHolder{
+            text-align: end;
+
+            @include breakMaxOnly(767px){
+                text-align: center;
+            }
+        }
+    
+    }
+
+
+    
+}

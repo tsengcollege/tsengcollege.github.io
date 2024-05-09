@@ -1,0 +1,182 @@
+.programSummaryContainer{
+    margin-bottom:75px;
+    .programSummaryBorder{
+        border:8px solid $tseng-secondary;
+        box-shadow: 0px 0px 32px 0px rgba($tseng-primary, 0.1);
+    }
+
+    .boxFastFact{
+        padding:16px 29px 29px 29px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .heading{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .programInformation{
+            margin-top:8px;
+            ul{
+      
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+            }
+            li{
+                color: $tseng-primary;
+                font-size: 0.87rem;
+                font-weight: 500;
+                line-height: 20px; 
+                border-bottom:1px solid rgba($tseng-primary, 0.2);
+                padding-top: 10px;
+                padding-bottom: 10px;
+
+                &:last-child{
+                    border-bottom:0;
+                }
+     
+                a{
+                    border-bottom:1px solid $tseng-secondary;
+                    padding-bottom:3px;
+                    text-decoration: none;
+                    color:inherit;
+
+                }
+            }
+        }
+
+        .boxFastFactLower{
+            margin-top:25px;
+            a{
+                padding-bottom: 7px;
+                display: inline-block;
+            }
+        }
+
+        &.col{
+        @include breakMaxOnly(767px){
+            flex-basis:100%;
+        }
+    }
+    }
+
+    .priorityDeadlineSeprator{
+        background:$lightgrey;
+        border-left:1px solid $lightgrey-shade-1;
+        border-right:1px solid $lightgrey-shade-1;
+
+        @include breakMaxOnly(767px){
+            border-top:1px solid $lightgrey-shade-1;
+            border-bottom:1px solid $lightgrey-shade-1;
+            border-left:0;
+            border-right:0;
+        }
+
+    }
+    .priorityDeadline{
+        padding:16px 29px 29px 29px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .heading{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .priorityDeadlineInformation{
+
+            .date{
+                color: $tseng-primary;
+                font-size: 1.12rem;
+                font-weight: 600;
+                line-height: 50px;
+                margin-bottom:10px;
+            }
+            .deadLineInfo{
+                color: $tseng-primary;
+                font-size: 0.93rem;
+                font-weight: 500;
+                line-height: 25px;
+                margin-bottom:20px;
+
+                span{
+                    color:$tseng-secondary;
+                }
+            }
+            .applicationCloseInfo{
+                color: $tseng-primary;
+                font-size: 0.93rem;
+                font-weight: 500;
+                line-height: 25px;
+                
+                span{
+                    margin-right:5px;
+                }
+            }
+        }
+
+        .priorityDeadlineLower{
+            margin-top:25px;
+            a{
+                padding-bottom: 7px;
+                display: inline-block;
+            }
+        }
+        &.col{
+            @include breakMaxOnly(767px){
+                flex-basis:100%;
+            }
+        }
+    }
+
+    .infoSession{
+        padding:16px 29px 29px 29px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .heading{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .infoSessionInformation{
+
+            .date{
+                color: $tseng-primary;
+                font-size: 1.12rem;
+                font-weight: 600;
+                line-height: 50px;
+                margin-bottom:10px;
+            }
+            .timeLocation{
+                color: $tseng-primary;
+                font-size: 0.93rem;
+                font-weight: 500;
+                line-height: 25px;
+                margin-bottom:20px;
+
+                span{
+                    color:$tseng-secondary;
+                }
+            }
+   
+        }
+        .infoSessionLower{
+            margin-top:25px;
+            a{
+                padding-bottom: 7px;
+                display: inline-block;
+            }
+        }
+    }
+    &.col{
+        @include breakMaxOnly(767px){
+            flex-basis:100%;
+        }
+    }
+
+}

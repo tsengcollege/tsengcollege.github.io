@@ -1,0 +1,63 @@
+.lifeCsunCampusContainer{
+    margin-bottom:70px;
+    .lifeCsunBgOuter{
+        background: url(../images/campusLife/lifeCsunRedBg.jpg) ;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        background-position: center !important;
+        padding:80px 0;
+        position: relative;
+       
+
+        .imageshadow{
+            filter: drop-shadow(0px 0px 114px rgba(0, 0, 0, 0.80));
+           /* width:100%;*/
+           
+        }
+        .iconContainer{
+            position:absolute;
+            left:50%;
+            top:60%;
+
+            @include breakMaxOnly(767px){
+                left:42%;
+                top:42%;
+            }
+
+        }
+        
+    }
+    .campusImageContainer{
+        
+        ul{
+            margin:0;
+            padding: 0;
+            list-style-type: none;
+            display: flex;
+
+            li{
+                flex:1;
+                border-right:1px solid $white;
+                
+                &:last-child{
+                    border-right:0;
+                }
+
+
+
+                img{
+                    width: 100%;;
+                }
+            }
+        }
+    }
+
+    .aboutCampusSection{
+        margin-top:70px;
+        p{
+            line-height:26px;
+        }
+    }
+
+  
+}

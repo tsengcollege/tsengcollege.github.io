@@ -1,0 +1,86 @@
+.multipleProgramContainer{
+    margin-bottom:66px;
+    margin-top:66px;
+
+    .programBgSection{
+        background:  url(../images/prospectiveStudents/studentsPogramsBg.jpg);
+        background-repeat: no-repeat !important;
+        background-color: $tseng-primary !important;
+        background-size: cover !important;
+        background-position: center !important;
+        min-height: 400px;
+        padding:62px 50px 62px 70px;
+    
+        @include breakMaxOnly(767px){
+            padding:30px 25px;
+            
+        }
+    
+        @include breakMinMax(768px,1199px){
+            
+            padding-left:50px;
+     
+        }
+
+        .programTagLine{
+            color: $white;
+            font-size: 2.31rem;
+            font-weight: 600;
+            line-height: 42px;
+
+            @include breakMaxOnly(767px){
+                font-size: 1.5rem;
+                line-height: 30px;
+                margin-bottom: 30px;
+                
+            }
+            @include breakMinMax(768px,1199px){
+                margin-bottom: 40px;
+            }
+
+        }
+    }
+    .programDetailBoxRepeat{
+        margin-bottom:35px;
+        background: $tseng-secondary;
+        box-shadow: 0 0 0 1px transparent;
+        cursor: pointer;
+        transition: width 0.2s ease;
+
+        &:last-child{
+            margin-bottom: 0px;
+        }
+
+        &:hover{
+            box-shadow: 0 0 0 1px $white;
+            
+        }
+
+        .programName{
+            padding-right:15px;
+            
+            @include breakMaxOnly(767px){
+                padding-top: 0.93rem;
+                text-align: center;
+                padding-right:0;
+            }
+            h6{
+                color: $white;
+                font-weight: 600;
+                margin-bottom: 0;
+
+                @include breakMaxOnly(767px){
+                    margin-bottom:0.93rem;
+                }
+            }
+            
+
+        }
+    }
+
+    @include breakMaxOnly(1024px){
+        .mobileimg{
+            width:100%;
+        }
+    }
+}

@@ -1,0 +1,53 @@
+.programsHighlightsContainer {
+    margin-bottom: 17px;
+
+    h4 {
+        span {
+            color: $tseng-secondary;
+        }
+    }
+
+    .programsHighlightsOuter {
+        display:flex;
+        flex-wrap: wrap;
+
+        .programHighlightsBoxRepter {
+            border: 1px solid $tseng-secondary;
+            padding: 25px;
+            flex-basis:31%;
+            margin-right: 23px;
+            margin-bottom: 23px;
+            flex-grow: 1;
+            min-height:220px;
+
+            @include breakMinOnly(1200px){
+               
+            &:nth-child(3n+3){
+                margin-right: 0px;
+            }
+            }
+            
+            @include breakMaxOnly(767px){
+                flex-basis:100%;
+                margin-right:0;
+            }
+ 
+            h6 {
+                font-weight: 700;
+                color: $tseng-secondary;
+            }
+
+            .programHighlightsDescription {
+                color: $tseng-primary;
+                font-size: 0.87rem;
+                line-height: 20px;
+
+                strong {
+                    font-weight: 700;
+                }
+            }
+
+        }
+    }
+
+}

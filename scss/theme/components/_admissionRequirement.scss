@@ -1,0 +1,46 @@
+.admissionRequiremnetContainer{
+
+    h2{
+        margin-bottom:2rem;
+    }
+
+    .admissionListBox{
+        border-top:2px solid $tseng-secondary;
+        background:$lightgery-shade-3;
+        padding:40px 30px 30px 30px;
+        margin-bottom:45px;
+
+        ul{
+           list-style-type:none;    
+           margin:0;  
+           padding:0; 
+
+             li{
+                margin-bottom:18px;
+                color: $tseng-primary;
+                background: url(../images/icons/iconBullet.svg)  no-repeat;
+                padding-left:40px;
+                min-height:24px;
+
+                &:last-child{
+                   
+                    @include breakMinOnly(1199px){
+                        margin-bottom:0;
+                    }
+                
+                }
+             
+                ul{
+                    list-style-type: disc;
+                    li{
+                        background:none;
+                        margin-bottom:0;
+                        margin-left:40px;
+                        margin-top:15px;
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+}

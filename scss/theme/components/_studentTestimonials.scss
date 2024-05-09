@@ -1,47 +1,50 @@
 .studentTestimonialsContainer {
-    margin-bottom: 4.37rem;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.03) 10%, rgba(255, 255, 255, 0.9) 90%);
+  margin-bottom: 4.37rem;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.03) 10%,
+    rgba(255, 255, 255, 0.9) 90%
+  );
+  position: relative;
+
+  .studentTestimonialsHeader {
+    /*display: flex;*/
+    padding-top: 4rem;
     position: relative;
 
-    .studentTestimonialsHeader {
-        /*display: flex;*/
-        padding-top: 4rem;
-        position: relative;
+    @include breakMaxOnly(991px) {
+      position: initial;
+    }
 
-        @include breakMaxOnly(991px){
-            position:initial;
-        }
+    h2 {
+      text-align: center;
 
-        h2 {
-            text-align: center;
+      span {
+        color: $tseng-secondary;
+      }
 
-            span {
-                color: $tseng-secondary;
-            }
+      @include breakMaxOnly(991px) {
+        margin-bottom: 1.5rem;
+      }
+    }
 
-            @include breakMaxOnly(991px) {
-                margin-bottom: 1.5rem;
-            }
+    .moreTestimonials {
+      position: absolute;
+      right: 0;
+      top: 4rem;
+      @include breakMaxOnly(767px) {
+        bottom: -32px;
+        top: auto;
+        right: 30%;
+      }
 
-        }
+      @include breakMinMax(768px, 991px) {
+        bottom: -32px;
+        top: auto;
+        right: 41%;
+      }
 
-        .moreTestimonials {
-            position: absolute;
-            right: 0;
-            top: 4rem;
-            @include breakMaxOnly(767px){
-                bottom: -32px;
-                top: auto;
-                right: 30%;
-            }
-
-            @include breakMinMax(768px,991px){
-                bottom: -32px;
-                top: auto;
-                right: 41%;
-            }
-
-           /* @include breakMaxOnly(991px) {
+      /* @include breakMaxOnly(991px) {
                 position: relative;
                 text-align: end;
                 margin-bottom: 1.5rem;
@@ -49,104 +52,100 @@
 
             }*/
 
-            a {
-                border: 1px solid $tseng-secondary;
-                padding: 0.56rem 1.3rem 0.56rem 0.87rem;
-                text-decoration: none;
-                color: $tseng-primary;
-                font-size: 0.75rem;
-                font-weight: 600;
-                letter-spacing: 0.12px;
-                transition: all .25s ease;
+      a {
+        border: 1px solid $tseng-secondary;
+        padding: 0.56rem 1.3rem 0.56rem 0.87rem;
+        text-decoration: none;
+        color: $tseng-primary;
+        font-size: 0.75rem;
+        font-weight: 600;
+        letter-spacing: 0.12px;
+        transition: all 0.25s ease;
 
-                &:after {
-                    content: "";
-                    position: absolute;
-                    top: 14px;
-                    right: 8px;
-                    transform: translate(-50%, -50%);
-                    width: 5px;
-                    height: 10px;
-                    background: url("data:image/svg+xml,<svg  xmlns='http://www.w3.org/2000/svg' width='5' height='10' viewBox='0 0 5 10' fill='none'><path d='M5 5L0.384615 9.33013L0.384615 0.669873L5 5Z' fill='%23D22030'/></svg>") center center no-repeat;
-                    
-                    @include breakMaxOnly(991px){
-                        top: 11px;
-                    }
-                }
+        &:after {
+          content: "";
+          position: absolute;
+          top: 14px;
+          right: 8px;
+          transform: translate(-50%, -50%);
+          width: 5px;
+          height: 10px;
+          background: url("data:image/svg+xml,<svg  xmlns='http://www.w3.org/2000/svg' width='5' height='10' viewBox='0 0 5 10' fill='none'><path d='M5 5L0.384615 9.33013L0.384615 0.669873L5 5Z' fill='%23D22030'/></svg>")
+            center center no-repeat;
 
-                &:hover {
-                    background: $tseng-secondary;
-                    color: $white;
-
-                    &:after {
-                        background: url("data:image/svg+xml,<svg  xmlns='http://www.w3.org/2000/svg' width='5' height='10' viewBox='0 0 5 10' fill='none'><path d='M5 5L0.384615 9.33013L0.384615 0.669873L5 5Z' fill='%23ffffff'/></svg>") center center no-repeat;
-                    }
-                }
-            }
+          @include breakMaxOnly(991px) {
+            top: 11px;
+          }
         }
+
+        &:hover {
+          background: $tseng-secondary;
+          color: $white;
+
+          &:after {
+            background: url("data:image/svg+xml,<svg  xmlns='http://www.w3.org/2000/svg' width='5' height='10' viewBox='0 0 5 10' fill='none'><path d='M5 5L0.384615 9.33013L0.384615 0.669873L5 5Z' fill='%23ffffff'/></svg>")
+              center center no-repeat;
+          }
+        }
+      }
     }
+  }
 
-
-
-    .home-StudentTestimonialsVideo {
-
-        &.owl-theme .owl-dots .owl-dot.active span,
-        &.owl-theme .owl-dots .owl-dot:hover span {
-            background: $tseng-secondary;
-        }
+  .home-StudentTestimonialsVideo {
+    &.owl-theme .owl-dots .owl-dot.active span,
+    &.owl-theme .owl-dots .owl-dot:hover span {
+      background: $tseng-secondary;
     }
+  }
 
-    .StudentTestimonialsVideo {
-        
-        .video-container {
-            position: relative;
-            width: 100%; /* Set your desired width */
-            height: 36.5rem ;/* Set your desired height */
-            display: block;
-            overflow: hidden;
-            
-            video {
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                top: 0;
-                left: 0;
-                object-fit: cover;
-                object-position: top left; 
-                display: none;
-                
-            }
+  .StudentTestimonialsVideo {
+    .video-container {
+      // position: relative;
+      // width: 100%; /* Set your desired width */
+      // height: 36.5rem ;/* Set your desired height */
+      // display: block;
+      // overflow: hidden;
 
-            img {
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                top: 0;
-                left: 0;
-                object-fit: cover;
-                object-position: top left; 
-                
-            }
-            .imageBlock{
-                display: block;
-            }
-        }
-        .videoMessage {
-            position: absolute;
-            bottom: 0px;
-            padding: 2.75rem 2.43rem;
-            color: $white;
-            font-family: $font-secondary;
-            font-size: 1.43rem;
-        }
-        .videoPlayIcon {
-            position: absolute;
-            top: 2.18rem;
-            right:2.18rem;
-            width: 57px;
-            height:57px;
-            
-        }
+      // video {
+      //     width: 100%;
+      //     height: 100%;
+      //     position: absolute;
+      //     top: 0;
+      //     left: 0;
+      //     object-fit: cover;
+      //     object-position: top left;
+      //     display: none;
+
+      // }
+
+      // img {
+      //     width: 100%;
+      //     height: 100%;
+      //     position: absolute;
+      //     top: 0;
+      //     left: 0;
+      //     object-fit: cover;
+      //     object-position: top left;
+
+      // }
+      // .imageBlock{
+      //     display: block;
+      // }
     }
-    
+    .videoMessage {
+      position: absolute;
+      bottom: 0px;
+      padding: 2.75rem 2.43rem;
+      color: $white;
+      font-family: $font-secondary;
+      font-size: 1.43rem;
+    }
+    .videoPlayIcon {
+      position: absolute;
+      top: 2.18rem;
+      right: 2.18rem;
+      width: 57px;
+      height: 57px;
+    }
+  }
 }

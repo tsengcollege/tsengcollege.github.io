@@ -1,0 +1,209 @@
+.programLinksBreadCrumbsContainer {
+
+
+    @include breakMinMax(1199px, 1536px) {
+        top: 125px;
+        position: sticky;
+        z-index: 99;
+    }
+
+    @include breakMinOnly(1537px) {
+        position: sticky;
+        top: 130px;
+        z-index: 99;
+    }
+
+    .bannerBreadCrumbs {
+        padding: 17px 0;
+        background: $tseng-primary;
+        /*display: flex;*/
+
+        .breadCrumbsList {
+            font-size: 0.87rem;
+            color: $white;
+
+            ul {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+
+                *+* {
+                    margin-left: 10px;
+                    margin-right: 10px;
+
+                    @include breakMaxOnly(767px) {
+                        margin-left: 5px;
+                        margin-right: 5px;
+                    }
+                }
+
+                @include breakMaxOnly(767px) {
+                    display: inline-block;
+                }
+            }
+
+            li {
+                @include breakMaxOnly(767px) {
+                    display: inline-block;
+                }
+            }
+
+            a {
+                color: $white;
+                font-weight: 600;
+            }
+
+        }
+
+    }
+
+    .programLinksContainer {
+        background: $lightgery-shade-3;
+        border-bottom: 1px solid $lightgrey-shade-1;
+        padding-top: 25px;
+        margin-bottom: 49px;
+
+
+
+        .programLinkList {
+            @include breakMinOnly(1200px) {
+
+                .btn {
+                    display: none;
+                }
+
+                ul {
+                    display: flex;
+                    flex-direction: row;
+                    width: 100%;
+                    margin: 0;
+                    padding: 0;
+                    list-style-type: none;
+                    position: relative;
+                    border: 0;
+                    background: transparent;
+
+                    *+* {
+                        margin-left: 60px;
+
+                        @include breakMinMax(1280px, 1690px) {
+                            margin-left: 17px;
+                        }
+                    }
+
+                    li {
+                        color: $darkgrey-shade-1;
+                        font-weight: 600;
+
+                        &.active {
+                            border-bottom: 5px solid $tseng-secondary;
+                            color: $tseng-secondary;
+                            padding-bottom: 16px;
+                        }
+                    }
+
+                    a {
+                        display: block;
+                        text-decoration: none;
+                        border-bottom: 5px solid transparent;
+                        transition: all .25s ease;
+                        color: $darkgrey-shade-1;
+                        padding-bottom: 16px;
+                        font-weight: 600;
+
+                        &:hover {
+                            border-bottom: 5px solid $tseng-secondary;
+                        }
+                        &:active{
+                            background: transparent;
+                        }
+
+                    }
+                }
+            }
+
+            @include breakMaxOnly(1199px) {
+                li {
+                    color: $darkgrey-shade-1;
+                    font-weight: 600;
+
+                    &.active {
+                        border-bottom: 5px solid $tseng-secondary;
+                        color: $tseng-secondary;
+                        padding-bottom: 5px;
+                    }
+                }
+
+                .dropdown {
+                    background: $white;
+                    border: 1px solid $lightgrey-shade-1;
+                    margin-bottom: 25px;
+
+                    .btn {
+                        border-color: transparent;
+                        padding: 15px;
+                        width: 100%;
+                        text-align: left;
+                        color: $tseng-primary;
+                        box-shadow: 0 0.25em $tseng-secondary;
+                        font-size: 1.25rem;
+                        font-weight: 600;
+
+                    }
+
+                    .dropdown-toggle {
+                        &:after {
+                            float: right;
+                            border: 0;
+                            background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='%23D22030' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/></svg>");
+                            background-repeat: no-repeat;
+                            width: 16px;
+                            height: 16px;
+                            margin-top: 6px;
+                            margin-left: 0;
+                        }
+                    }
+
+                    .dropdown-menu {
+                        padding: 1.5rem 2rem 2rem;
+                        box-shadow: 0 0 20px 0 rgba(0, 0, 0, .12);
+                        border: 0;
+                        border-radius: 0;
+
+                        &.show {
+                            width: 100%;
+                        }
+
+                        a {
+                            font-family: $font-secondary;
+                            font-size: 1.125rem;
+                            padding: 0.5rem 0;
+                            transition: all .25s ease;
+                            box-shadow: 0 0.1em $grey-shade-2;
+
+                            &:hover,
+                            &:focus {
+                                color: $tseng-secondary;
+                                background-color: transparent;
+                                box-shadow: 0 0.25em $tseng-secondary;
+
+                            }
+                        }
+                    }
+                 
+
+                }
+
+            }
+
+
+
+        }
+    }
+
+
+
+}

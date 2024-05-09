@@ -1,0 +1,46 @@
+.universityBannerContainer{
+    background: url(../images/admission/csunBg.jpg) no-repeat;
+    background-size: cover;
+    min-height:250px;
+    display:flex;
+    margin-bottom:45px;
+
+    @include breakMaxOnly(1024px){
+       flex-direction: column;
+       
+    }
+
+
+    .welcomeBox{
+        flex:1 0 33%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgba($tseng-secondary,0.85);
+
+        @include breakMaxOnly(1024px){
+            padding:40px 0;
+         }
+
+        .smallText{
+            color: $white;
+            text-align: center;
+            font-size: 1.75rem;
+            font-weight: 500;
+            line-height: 32px;
+            margin-bottom:12px;
+        }
+    }
+
+    .aboutBanner{
+        flex:1 0 67%;
+        background: rgba($tseng-primary,0.85);
+        padding:34px 45px;
+        color: $white;
+     
+        a{
+            font-weight:600;
+        }
+    }
+}

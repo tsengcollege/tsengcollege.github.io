@@ -1,0 +1,113 @@
+.campusRequestinfoContainer {
+    margin-bottom: 60px;
+    
+    .sectionbg{
+        background: $tseng-secondary;
+    }
+    
+    .requestInfoBg{
+        @include breakMinMax(992px, 1024px){
+            flex:1;
+        }
+        @include breakMinMax(1280px, 1919px){
+            background:$tseng-primary;
+        }
+
+        img{
+            @include breakMinMax(992px, 1024px){
+                width:100%;
+            } 
+        }
+       
+    }
+
+    
+    .requestInfoContainer {
+        position: absolute;
+        bottom: 45px;
+        color: $white;
+        left:45px;
+
+       
+        .smallHeading {
+            line-height: 36px;
+            margin-bottom: 8px;
+        }
+
+        .largeHeading {
+            font-size: 2.25rem;
+            font-weight: 700;
+            line-height: 36px;
+            margin-bottom: 30px;
+
+            @include breakMinMax(1280px, 1535px){
+                font-size: 1.5rem;
+                line-height: 26px;
+            }
+        }
+
+        .quickCallBox {
+
+            .smallText {
+            font-size: 0.87rem;
+            font-weight: 600;
+            line-height: 17px;
+            margin-bottom: 14px;
+            }
+
+            .number {
+                font-size: 1.87rem;
+                font-weight: 700;
+                line-height: 17px; 
+            }
+        }
+    }
+    .requestFormSection{
+        margin:52px 52px 43px 22px;
+
+        @include breakMaxOnly(991px){
+            margin:30px;
+        }
+
+        input[type="text"], input[type="email"], input[type="tel"], textarea {
+            color: $tseng-primary;
+            font-size: 0.87rem;
+            font-weight: 500;
+            border-radius: 0;
+            padding: 12px 16px;
+            
+            &::placeholder{
+                color:$tseng-primary;
+            }
+        }
+        input[type="checkbox"]{
+            padding: 5px;
+        }
+        input[type="submit"]{
+            border: 3px solid $white;
+            color: $white;;
+             font-size: 1.12rem;
+            font-weight: 700;
+            letter-spacing: 0.18px;
+            background: transparent;
+            padding:18px 107px;
+
+            @include breakMaxOnly(991px){
+                width:100%;
+                padding-left:0;
+                padding-right:0;
+            }
+
+        }
+        .form-check-label{
+            color: $white;
+            font-size:0.75rem;
+            font-weight: 500;
+            line-height: 17px;
+        }
+        .capchaPlaceholder{
+            margin:20px 0;
+        }
+       
+    }
+}

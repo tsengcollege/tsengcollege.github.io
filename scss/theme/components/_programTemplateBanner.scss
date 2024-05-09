@@ -1,0 +1,136 @@
+.programTemplateBannerContainer {
+  background: url(../images/programTemplate/banner/bannerImage.jpg);
+  background-repeat: no-repeat !important;
+  background-color: $tseng-primary !important;
+  background-size: 100% !important;
+  background-position: center !important;
+  min-height: 400px;
+  /*display: flex;
+    flex-direction: column;
+    justify-content: space-between;*/
+  @include breakMinMax(991.98px, 1199.98px) {
+    background-size: cover !important;
+  }
+  @include breakMaxOnly(767px) {
+    background-size: cover !important;
+    padding-bottom: 30px;
+    min-height: auto;
+  }
+
+  @include breakMinMax(768px, 991px) {
+    background-size: cover !important;
+    padding-bottom: 30px;
+    min-height: auto;
+  }
+
+  .programTemplateBannerContent {
+    /*padding-top:80px;*/
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include breakMaxOnly(767px) {
+      margin-bottom: 20px;
+      padding-top: 40px;
+      min-height: auto;
+    }
+    @include breakMinMax(768px, 991px) {
+      padding-top: 40px;
+      padding-bottom: 20px;
+      min-height: auto;
+    }
+
+    .pageTitle {
+      background: rgba($tseng-primary, 0.6);
+      border-left: 4px solid $tseng-secondary;
+      padding: 6px 10px;
+      font-size: 0.87rem;
+      font-weight: 600;
+      color: $white;
+      display: inline-block;
+      margin-bottom: 10px;
+      width: fit-content;
+    }
+    h1 {
+      color: $white;
+    }
+    .downloadBrochure {
+      border-radius: 50px;
+      border: 0.5px solid rgba($white, 0.8);
+      background: rgba($white, 0.1);
+      display: inline-flex;
+      width: fit-content;
+
+      a {
+        padding: 11px 9px 9px 20px;
+        color: $white;
+        font-weight: 500;
+        text-decoration: none;
+        transition: all 0.25s ease;
+
+        img {
+          margin-left: 9px;
+        }
+      }
+
+      &:hover {
+        border: 0.5px solid rgba($tseng-secondary-hover, 0.8);
+        background: $white;
+
+        a {
+          color: $tseng-secondary;
+        }
+      }
+    }
+  }
+  .bannerTriggerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-bottom: 70px;
+
+    @include breakMaxOnly(991px) {
+      padding-bottom: 0;
+    }
+
+    .applyTrigger {
+      margin-bottom: 16px;
+      display: flex;
+
+      a {
+        background: $tseng-secondary;
+        color: $white;
+        padding: 19px 0px;
+        flex: 1;
+        text-align: center;
+        text-decoration: none;
+        transition: all 0.25s ease;
+        font-size: 1.125rem;
+        font-weight: 700;
+
+        &:hover {
+          background: $tseng-secondary-hover;
+        }
+      }
+    }
+    .requestInfoTrigger {
+      display: flex;
+      a {
+        color: $white;
+        padding: 19px 0px;
+        text-align: center;
+        flex: 1;
+        text-decoration: none;
+        transition: all 0.25s ease;
+        font-size: 1.125rem;
+        font-weight: 700;
+        border: 1px solid $white;
+
+        &:hover {
+          background: $tseng-primary;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,123 @@
+.programFieldTabContainer {
+  margin-top: -80px;
+  z-index: 1;
+  position: relative;
+  .nav-tabs {
+    border: 0;
+    display: flex;
+    justify-content: space-between;
+    .nav-link {
+      color: #fff;
+      background-color: $tseng-secondary-hover;
+      //   margin: 0 10px;
+      font-size: 1.25rem;
+      width: 24.5%;
+      border-radius: 0;
+      &.active {
+        color: $tseng-secondary;
+        background-color: #fff;
+        font-weight: 600;
+        border: 0;
+      }
+    }
+  }
+
+  .tab-content {
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.09);
+    padding: 40px;
+    background-color: $white;
+    @include breakMaxOnly(767.98px) {
+      padding: 25px;
+    }
+  }
+
+  #nav-public {
+    .heading {
+      font-size: 2.125rem;
+      font-weight: bold;
+    }
+  }
+
+  .ourAlumni {
+    .subHeading {
+      color: $tseng-secondary;
+      font-weight: 500;
+      font-size: 1.125rem;
+    }
+    li {
+      font-size: 0.875rem;
+      line-height: 24px;
+      &::marker {
+        color: $tseng-secondary;
+      }
+    }
+  }
+  .companiesHiringContainer {
+    background-color: $lightgery-shade-3;
+    padding: 20px;
+  }
+  .companiesHiring {
+    position: relative;
+
+    .owl-dots {
+      display: none;
+
+      @include breakMaxOnly(991px) {
+        display: block;
+      }
+    }
+
+    &.owl-theme .owl-nav {
+      margin-top: 0;
+    }
+
+    &.owl-carousel .owl-nav button.owl-prev {
+      position: absolute;
+      //   left: -3rem;
+      //   top: 35%;
+      //   font-size: 4rem;
+      //   color: $tseng-secondary;
+      //   transition: all 0.25s ease;
+      //
+      position: absolute;
+      left: -10px;
+      /* top: 0; */
+      font-size: 4rem;
+      color: $tseng-secondary;
+      transition: all 0.25s ease;
+      /* transform: translateY(50%); */
+      top: 0;
+      bottom: 0;
+      margin: auto 0;
+
+      &:hover {
+        color: $tseng-secondary-hover;
+        background: transparent;
+      }
+    }
+    &.owl-carousel .owl-nav button.owl-prev.disabled {
+      color: $darkgrey-shade-1;
+    }
+
+    &.owl-carousel .owl-nav button.owl-next {
+      position: absolute;
+      right: -10px;
+      /* top: 0; */
+      font-size: 4rem;
+      color: $tseng-secondary;
+      transition: all 0.25s ease;
+      /* transform: translateY(50%); */
+      top: 0;
+      bottom: 0;
+      margin: auto 0;
+
+      &:hover {
+        color: $tseng-secondary-hover;
+        background: transparent;
+      }
+    }
+    &.owl-carousel .owl-nav button.owl-next.disabled {
+      color: $darkgrey-shade-1;
+    }
+  }
+}

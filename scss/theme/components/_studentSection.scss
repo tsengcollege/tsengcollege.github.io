@@ -2,18 +2,24 @@
     background-image:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), 
           url(../images/homepage/studentsCorner.jpg);
-    background-size: 100%;
+          
+    background-size: 100% !important;
+    background-color:#000!important;
     min-height: 34.37rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-attachment: fixed;
-    background-position: center bottom;
-    background-repeat: no-repeat;
+   
+    background-position: center bottom !important;
+    background-repeat: no-repeat !important;
+
+    @include breakMinOnly(1025px){
+        background-attachment: fixed !important;
+    }
 
     @include breakMaxOnly(991px){
-        background-position: center;
-        background-size: cover;
+        background-position: center !important;
+        background-size: cover !important;
     }
 
     .studentTagLine{
@@ -29,6 +35,16 @@
             font-weight: 600;
             line-height: 2.75rem;
 		}
+    }
+    .studentSubTagLine{
+        color: $white;
+        text-align: center;
+        font-size: 2rem;
+        line-height: 60px;
+
+        @include breakMaxOnly(767px){
+            line-height:normal
+        }
     }
     .studentInfoButtonContainer {
         font-size: 1.12rem;

@@ -1,0 +1,37 @@
+.pathCareerContainer {
+  background-color: $tseng-secondary;
+
+  .pathCareer {
+    text-align: center;
+    padding: 50px 80px 100px;
+    @include breakMaxOnly(991.98px) {
+      padding: 50px 0px 100px;
+    }
+  }
+  div {
+    color: $white;
+  }
+  .heading {
+    font-size: 4.313rem;
+    font-weight: bold;
+    @include breakMaxOnly(767.98px) {
+      font-size: 2.313rem;
+    }
+  }
+  .subHeading {
+    font-size: 2.063rem;
+    margin-bottom: 20px;
+    border-bottom: 0.5px solid rgba($tseng-secondary-hover, 0.4);
+    padding-bottom: 20px;
+    @include breakMaxOnly(767.98px) {
+        font-size: 1.313rem;
+      }
+  }
+  .para {
+    font-size: 1.125rem;
+    padding: 0 100px 40px;
+    @include breakMaxOnly(991.98px) {
+      padding: 0 0 40px;
+    }
+  }
+}

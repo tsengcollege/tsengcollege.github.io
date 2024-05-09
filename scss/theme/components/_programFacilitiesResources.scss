@@ -1,0 +1,151 @@
+.programFacilitiesResourcesContainer {
+    margin-bottom: 40px;
+
+    h4 {
+        line-height: 50px;
+        margin-bottom: .8rem;
+
+        @include breakMaxOnly(767px) {
+            line-height: 25px;
+
+        }
+
+    }
+
+    .programFacilitiesResourcesOuter {
+        background: url(../images/programTemplate/facilitiesResource-Bg.png) $tseng-primary no-repeat;
+        background-size: cover;
+        padding: 35px;
+    }
+
+    .programFacilitiesResourcesRepeatBox {
+        position: relative;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            transition: filter 0.5s, transform 0.5s;
+            /* Add transitions for a smooth effect */
+        }
+
+        &:hover img {
+            transform: scale(1.05);
+            /* Zoom in by 1% on hover */
+        }
+
+        .programFacilitiesResourcesText {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            z-index: 1;
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            bottom: 0px;
+            left: 0px;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 9.89%, rgba(0, 0, 0, 0.79) 100%);
+            /* Black background with opacity */
+            color: $white;
+            padding: 20px;
+            transition:0.9s;
+            /* Add transition for a smooth effect */
+
+           
+
+            .textHeading{
+                display:block;
+                color:$white;
+                font-size: 1.25rem;
+                font-weight: 700;
+                
+            }
+            .textDescription{
+                color: $white;
+                line-height: 22px;
+                display:none;;
+                margin-top:12px;
+            }
+        }
+        &:hover {
+
+            .programFacilitiesResourcesText{
+                height: 100%;
+                /* Adjust the height on hover */
+                padding-bottom: 40px;
+                background: linear-gradient(180deg, rgba(0, 0, 0, .75) 9.89%, rgba(0, 0, 0, 1) 100%);
+                justify-content: flex-start;
+
+            .textDescription{
+                display: block;
+            }
+        }
+    }
+
+    }
+    .programTmp-facilitieResources {
+        position: relative;
+
+        @include breakMaxOnly(991px) {
+
+            &.owl-theme .owl-dots .owl-dot.active span,
+            &.owl-theme .owl-dots .owl-dot:hover span {
+                background: $white;
+            }
+        }
+
+        .owl-dots {
+            display: none;
+
+            @include breakMaxOnly(991px) {
+                display: block;
+            }
+        }
+
+        &.owl-theme .owl-nav {
+            margin-top: 0;
+        }
+
+        &.owl-carousel .owl-nav button.owl-prev {
+            position: absolute;
+            left: -2.1rem;
+            top: 35%;
+            font-size: 4rem;
+            color: $white;
+            transition: all .25s ease;
+
+            &:hover {
+                color: $white-shade1;
+                background: transparent;
+
+            }
+            &:focus-visible {
+                outline:0;
+            }
+        }
+        &.owl-carousel .owl-nav button.owl-prev.disabled {
+            color: $lightgrey;
+        }
+
+       
+        &.owl-carousel .owl-nav button.owl-next {
+            position: absolute;
+            right: -2.1rem;
+            top: 35%;
+            font-size: 4rem;
+            color: $white;
+            transition: all .25s ease;
+
+            &:hover {
+                color: $white-shade1;
+                background: transparent;
+
+            }
+            &:focus-visible {
+                outline:0;
+            }
+        }
+        &.owl-carousel .owl-nav button.owl-next.disabled {
+            color:$lightgrey;
+        }
+    }
+}

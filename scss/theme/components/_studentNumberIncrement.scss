@@ -1,0 +1,58 @@
+.studentNumberIncrementContainer{
+    margin-bottom:70px;
+    .numberContainer{
+        @include breakMaxOnly(1280px){
+            margin-bottom:0.3rem;
+        }
+
+        &.animate{
+            .number{
+                animation: count 2s forwards;
+            }
+        }
+        @keyframes count {
+            0% {
+              counter-reset: 0;
+            }
+            100% {
+              counter-reset: var(--counter);
+            }
+          }
+        .numberInfo{
+            border-right:1px solid rgba($tseng-primary, 0.19);
+            line-height: 36px;
+            text-align: center;
+
+            @include breakMaxOnly(767px){
+                border-bottom:1px solid rgba($tseng-primary, 0.19);
+                padding-bottom:19px;
+                margin-bottom:19px;
+                border-right:0;
+            }
+           
+            .number{
+                color: $tseng-secondary;
+                font-size: 3.37rem;
+                font-weight: 700;
+               
+            }
+            .text{
+                color: $tseng-primary;
+                font-size: 1.37rem;
+                font-weight: 500;
+                margin-top:19px;
+                
+            }
+            &.borderRight0{
+                border-right:0;
+                @include breakMaxOnly(767px){
+                    border-bottom:0px solid rgba($tseng-primary, 0.19);
+                    padding-bottom:0rem;
+                    margin-bottom:0rem;
+                    
+                }
+                
+            }
+        }
+    }
+}

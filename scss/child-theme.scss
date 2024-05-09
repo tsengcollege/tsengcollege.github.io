@@ -1,4 +1,3 @@
- 
 //Variable Files
 @import "theme/abstracts/variables";
 
@@ -11,8 +10,10 @@
 //Base/Common CSSs
 @import "theme/child_theme";
 
-
 //Import Components
+
+//Home Page Componemts Starts
+
 @import "theme/components/header";
 @import "theme/components/banner";
 @import "theme/components/megaMenu.scss";
@@ -27,3 +28,63 @@
 @import "theme/components/highlight";
 @import "theme/components/studentSection";
 @import "theme/components/footer";
+
+//Home Page Componemts Ends
+
+//Program Template Componemts Starts
+
+@import "theme/components/programTemplateBanner";
+@import "theme/components/programTemplateLinks";
+@import "theme/components/programTemplateSummary";
+@import "theme/components/programTemplateAbout";
+@import "theme/components/programTemplateTestimonials";
+@import "theme/components/programsTemplateHighlights";
+@import "theme/components/programCourseInformation";
+@import "theme/components/programWhatDo";
+@import "theme/components/programTemplateFaculties";
+@import "theme/components/programTemplateCareerOpportunity";
+@import "theme/components/programStudentResources";
+@import "theme/components/programFacilitiesResources";
+@import "theme/components/programTemplateStudentSucessStory";
+@import "theme/components/programTemplateMasterDegree";
+@import "theme/components/programTemplateRequestinfo";
+@import "theme/components/programTemplateSideBar";
+@import "theme/components/jobOutlook";
+
+//Program Template Componemts Ends
+
+//Admission Template Componemts Starts
+
+@import "theme/components/admissionRequirement";
+@import "theme/components/admissionApplicants";
+@import "theme/components/applicantsOrderedListing";
+@import "theme/components/admissionUniversityBanner";
+@import "theme/components/admissionCourseRequirement";
+
+//Admission Template Componemts Ends
+
+//Prospective Students Template Componemts Starts
+
+@import "theme/components/multipleProgram";
+@import "theme/components/multipleProgramLinks";
+@import "theme/components/videoTour";
+
+//Prospective Students Template Componemts Ends
+
+//Campus Life Template Componemts Starts
+
+@import "theme/components/studentNumberIncrement";
+@import "theme/components/lifeCsunCampus";
+@import "theme/components/campusMultiService";
+@import "theme/components/singleBannerContent";
+@import "theme/components/campusRequestinfo";
+
+//Campus Life Template Componemts Ends
+
+// Portfolio Home Starts
+@import "theme/components/pathCareerContainer";
+@import "theme/components/programFieldTabContainer";
+@import "theme/components/portfolioAccordion";
+// Portfolio Home Ends
+
+

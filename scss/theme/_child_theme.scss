@@ -36,28 +36,70 @@ html,body{
 }
 
 /*Headings*/
+h1{
+	color: $tseng-primary;
+	font-size: 2.87rem; /*46px*/
+	font-weight: 700;
+	line-height: 3.37rem;
+	margin-bottom: 2.5rem;
+}
+
+
 h2{
 	color: $tseng-primary;
-	font-size: 2.12rem;
+	font-size: 2.12rem; /*34px*/
 	font-weight: 700;
 	line-height: 2.25rem;
 	margin-bottom: 2.56rem;
 }
 
+h4{
+	color:  $tseng-primary;
+	font-size: 1.5rem; /*24px*/
+	font-weight: 700;
+	line-height: 2rem; 
+	margin-bottom:1.3rem;
+
+}
+
 h5{
 	color: $tseng-primary;
-	font-size: 1.37rem;
+	font-size: 1.37rem;/*22px*/
 	line-height: 1.56rem;
 	margin-bottom: 1.1rem;
 }
+h6{
+	color: $tseng-primary;
+	font-size: 1.25rem;/*20px*/
+	line-height: 1.56rem;
+	margin-bottom: 0.93rem;
+}
+
 /*Headings*/
+
+/*paragraph*/
+
+p{
+	color:$tseng-primary;
+	font-weight: 400;
+	line-height: 24px;
+	margin-bottom:14px;
+	font-size: 16px;
+
+	strong{
+		font-weight:600;	
+	}
+}
+
+/*paragraph*/
+
 
 /*Sticky Icon*/
 .quickStickyLinksContainer {
 	position: fixed;
 	right: 0;
 	top: 23vh;
-	z-index: 3;
+	z-index: 99999;
 	display: flex;
 	flex-direction: column;
 	justify-content: end;
@@ -73,12 +115,13 @@ h5{
 	  transition: width 0.2s ease;
 	  background: $tseng-secondary;
 	  margin-bottom: 0.37rem;
-	  width: 4rem;
+	  width: 3rem;
 	  /*text-align: center;*/
 	  font-family: "Roboto Slab";
 	 font-weight: 500;
 	 color:$white;
-	 text-decoration: none;;
+	 text-decoration: none;
+	 box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   
 	  &:hover,
 	  &.active {
@@ -119,3 +162,122 @@ h5{
 	}
   }/*Sticky Icon*/
 
+/*Anchor*/
+.linkunderline-1{
+	text-decoration: none;
+	border-bottom:1px solid $tseng-secondary;
+	color: $tseng-primary;
+	font-weight:500;
+	padding-bottom: 2px;
+	transition: all .25s ease;
+
+	&:hover{
+		border-bottom:1px solid $tseng-primary;
+		color:$tseng-secondary-hover ;
+	
+	}
+}
+
+
+.linkunderline-2{
+	text-decoration: none;
+	border-bottom:2px solid $tseng-secondary;
+	color: $tseng-primary;
+	font-weight:600;
+	transition: all .25s ease;
+
+	&:hover{
+		border-bottom:2px solid $tseng-primary;
+		color:$tseng-secondary-hover ;
+	
+	}
+}
+
+.linkWhiteunderline-1{
+	text-decoration: none;
+	border-bottom:1px solid $white;
+	color: $white;
+	padding-bottom: 2px;
+	transition: all .25s ease;
+
+	&:hover{
+	border-bottom:2px solid $white;
+	
+	}
+}
+
+
+
+
+
+/*Anchor*/
+
+/*Section Heading*/
+
+.sectionHeading {
+	background: $tseng-primary;
+	padding: 20px 23px;
+	color: $white;
+	font-size: 1.12rem;
+	font-weight: 600;
+}
+/*Section Heading*/
+
+/*table black Header*/
+    .tabularDataBox{
+  
+        .table{
+            th{
+                color: $white;
+                background:$tseng-primary;
+                font-weight: 600;
+                padding:15px 21px;
+                border-color: rgba(222, 226, 230, .4);
+                
+            }
+            td{
+                color: $tseng-primary;
+                padding:15px 21px;
+                font-size:0.875rem;
+                line-height: 22px;
+
+                a{
+                    font-weight:600;
+                }
+                
+            }
+        }
+    }
+
+	//*table black Header* //
+
+
+
+	
+/*table Red Header*/
+.tabularDataBox-Red{
+  
+	.table{
+		th{
+			color: $white;
+			background:$tseng-secondary;
+			font-weight: 600;
+			padding:15px 21px;
+			border-color: rgba(222, 226, 230, .4);
+			
+		}
+		td{
+			color: $tseng-primary;
+			padding:15px 21px;
+			font-size:0.875rem;
+			line-height: 22px;
+
+			a{
+				font-weight:600;
+			}
+			
+		}
+	}
+}
+
+//*table black Header* //

@@ -1,0 +1,54 @@
+.programStudentResourcesContainer{
+    background: $lightgrey;
+    margin-bottom:40px;
+    padding:35px;
+    border:1px solid #C5C5C5;
+
+    h4{
+        line-height: 50px;
+        margin-bottom: .8rem;
+
+        @include breakMaxOnly(767px){
+            line-height: 25px;
+            
+        }
+        span{
+            color:$tseng-secondary;
+        }
+    }
+    .studentResourcesLinks{
+        color:$tseng-primary;
+        font-weight: 500;
+       
+        ul{
+            margin:0;
+            padding:0;
+            list-style-type: none;
+
+            li{
+                a{
+                    display: inline-block;
+                    margin-bottom:12px;
+                }
+            }
+        }
+
+
+        @include breakMaxOnly(767px){
+            margin-bottom:25px;
+            
+        }
+    }
+
+    .imagePlaceHolder{
+      
+        
+         
+        img{
+            max-width:100%;
+            width: 100%;
+            height: 257px;
+            object-fit: cover;
+        }
+    }
+}

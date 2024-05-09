@@ -1,0 +1,51 @@
+.newPathContainer {
+  background-color: $lightgery-shade-3;
+  .accordion-item {
+    border-radius: 0 !important;
+    border: 0;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.09);
+  }
+  .accordion-button {
+    &::after {
+      background-image: url("../images/portfolio_home/btn1.svg");
+    }
+    &:not(.collapsed) {
+      background-color: $tseng-secondary;
+      border-radius: 0 !important;
+      color: #fff;
+      box-shadow: none;
+      padding-bottom: 0;
+      font-size: 1.25rem;
+      font-weight: 500;
+      margin-bottom: -1px;
+      &::after {
+        background-image: url("../images/portfolio_home/btn.svg");
+        transform: rotate(0);
+      }
+    }
+    &.collapsed {
+      border-radius: 0 !important;
+      font-weight: 600;
+      font-size: 1.25rem;
+    }
+  }
+  .accordion-collapse {
+    background-color: $tseng-secondary;
+    color: $white;
+    border-radius: 0 !important;
+  }
+  .accordion-body {
+    .card {
+      img {
+        height: 100%;
+        object-fit: cover;
+        // object-position: center;
+      }
+      .heading {
+        border-bottom: 2px solid $tseng-secondary;
+        font-weight: bold;
+        display: inline-block;
+      }
+    }
+  }
+}

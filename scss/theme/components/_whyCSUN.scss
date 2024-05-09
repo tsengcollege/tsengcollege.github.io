@@ -3,7 +3,12 @@
     border-bottom:3px solid $tseng-secondary;
 
     .whyCsunSectionFirst{
-        background: url(../images/homepage/whyCsun.png) #000 50% / cover no-repeat;
+        background: url(../images/homepage/whyCsun.jpg) ;
+        background-repeat: no-repeat !important;
+        background-color: $tseng-primary !important;
+        background-size: cover !important;
+        background-position: center !important;
+
         .whyCsunHeading{
             color: $white;
             font-size:10.18rem;
@@ -154,7 +159,7 @@
     }
     .buttonContainer{
         text-align: end;
-        button{
+        a{
             background: $tseng-secondary;
             color:$white;
             font-size: 0.75rem;
@@ -164,6 +169,8 @@
             margin:1.75rem 0;
             border:0;
             transition: all .25s ease;
+            display: inline-block;
+            text-decoration: none;
 
             
         }

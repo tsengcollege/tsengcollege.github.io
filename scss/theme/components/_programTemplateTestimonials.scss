@@ -1,0 +1,49 @@
+.testimonialsContainer{
+    background:$lightgrey;
+    border-top:1px solid #C4C6C9;
+    position:relative;
+    padding: 60px 75px;
+    margin-bottom:40px;
+
+    @include breakMaxOnly(767px){
+        padding-left:40px;
+        padding-right:40px;
+        
+    }
+
+
+    &:before {
+        content: "";
+        position: absolute;
+        background-image: url(../images/icons/iconQuotationMark.svg);
+        background-repeat: no-repeat;
+        top:-22px;
+        width:48px;
+        height:48px;
+        left:50%;
+   
+    }
+
+    .testimonialsRepeater{
+
+        .testimonialsTxt{
+            color: #474747;
+            text-align: center;
+            font-family: Georgia;
+            font-size: 1.12rem;
+            font-style: italic;
+            font-weight: 400;
+            line-height: 26px;
+            letter-spacing: 0.18px;
+        }
+        .authorName{
+            color: $tseng-primary;
+            font-family: "Roboto Slab";
+            font-weight: 700;
+            line-height: 28px;
+            letter-spacing: 0.16px;
+            text-align: center;
+            margin-top:20px;
+        }
+    }
+}

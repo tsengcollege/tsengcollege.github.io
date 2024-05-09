@@ -1,0 +1,41 @@
+.jobOutlookContainer {
+  .card {
+    border: 1px solid $tseng-secondary;
+    .card-title{
+        span{
+            color:$tseng-secondary;
+        }
+    }
+    .JobOutlookBtn {
+     
+        margin-top: 20px;
+      
+      a{
+        display: inline-block;
+        background: $tseng-secondary;
+        border: 1px solid $tseng-secondary;
+        color: $white;
+        /* flex: 1; */
+        padding: 1rem 2rem;
+        text-align: center;
+        transition: all 0.25s ease;
+        font-weight: 600;
+        font-size: 1.125rem;
+        text-decoration:none;
+        &:hover{
+          background: $tseng-secondary-hover;
+        }
+        @include breakMaxOnly(1024px) {
+          display:block;
+        }
+
+      }
+    }
+   
+    .sideImg {
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}
