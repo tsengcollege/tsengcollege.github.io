@@ -88,12 +88,15 @@
         margin-left: auto;
         margin-right: auto;
         border: 4px solid #d7d7d7;
-        width: 150px;
+        max-width: 75%;
         padding: 10px 20px;
 
+        @include breakMinMax(768px, 991px) {
+          max-width: 40%;
+        }
+
         @include breakMinMax(991.98px, 1199.98px) {
-          width: 120px;
-          padding: 10px;
+          max-width: 80%;
         }
       }
     }
@@ -123,10 +126,20 @@
     .owl-carousel .owl-nav button.owl-prev {
       position: absolute;
       left: 10px;
-      top: 15%;
+      transform: translateY(-50%);
+      top:46%;
       font-size: 4rem;
       color: $tseng-secondary;
       transition: all 0.25s ease;
+
+  
+
+      @include breakMinMax(991.98px, 1199.98px) {
+        left: -3px;
+      }
+      @include breakMinMax(1200px, 1366px) {
+        left: 5px;
+      }
 
       &:hover {
         color: $tseng-secondary-hover;
@@ -143,11 +156,18 @@
     .owl-carousel .owl-nav button.owl-next {
       position: absolute;
       right: 10px;
-      top: 15%;
+      transform: translateY(-50%);
+      top:46%;
       font-size: 4rem;
       color: $tseng-secondary;
       transition: all 0.25s ease;
 
+      @include breakMinMax(991.98px, 1199.98px) {
+        right: -3px;
+      }
+      @include breakMinMax(1200px, 1366px) {
+        right: 5px;
+      }
       &:hover {
         color: $tseng-secondary-hover;
         background: transparent;

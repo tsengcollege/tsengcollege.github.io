@@ -34,7 +34,10 @@
 		.btn {
 			border-color: transparent;
 			height: 2.9rem;
-			outline-style:none 
+
+			&:focus-visible {
+				outline: 1px solid $tseng-secondary-hover; /* Change the color and thickness as needed */
+			}
 		}
 
 		.dropdown-menu {

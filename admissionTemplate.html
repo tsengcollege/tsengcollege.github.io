@@ -1,0 +1,1631 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Programs Template</title>
+    <!--Bootstrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--Custom css-->
+    <link href="style/child-theme.css" rel="stylesheet">
+
+
+    <!--owl.carousel css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!--AOS Animation css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+        integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--Scripts-->
+    <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</head>
+
+<body>
+    <div class="tseng-mainContainer">
+        <!--Header start from here-->
+        <header class="headerContainer sticky-top">
+            <div class="headerTopBar">
+
+                <div class="headerTopBarLeft">
+                    <div class="d-flex tseng-dropDown">
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="dropDownTitle">My<span class=""><strong>CSUN</strong></span></span>
+                            </button>
+                            <ul class="dropdown-menu  dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                <li>
+                                    <a href="https://portal.csun.edu/login" target="_blank" class="dropdown-item">CSUN
+                                        Portal</a>
+                                </li>
+                                <li>
+                                    <a href="https://mail.google.com/a/my.csun.edu" target="_blank"
+                                        class="dropdown-item">Gmail</a>
+                                </li>
+                                <li>
+                                    <a href="https://login.microsoftonline.com/login.srf?wa=wsignin1.0&amp;whr=csun.edu&amp;wreply=https%3A//office.com/"
+                                        target="_blank" class="dropdown-item">Microsoft Office 365</a>
+                                </li>
+                                <li>
+                                    <a href="https://canvas.csun.edu/" target="_blank" class="dropdown-item">Canvas</a>
+                                </li>
+                                <li>
+                                    <a href="https://mycsun.account.box.com/login" target="_blank"
+                                        class="dropdown-item">Box</a>
+                                </li>
+                                <li>
+                                    <a href="https://csun.zoom.us/" target="_blank" class="dropdown-item">Zoom</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="headerTopBarMiddle">
+                    <ul>
+                        <li><a href="#">Current Students</a></li>
+                        <li><a href="#">Faculty & Staff</a></li>
+                        <li><a href="#">Alumni</a></li>
+                        <li><a href="#">Local Community</a></li>
+                        <li><a href="#">Información en español</a></li>
+                    </ul>
+
+                </div>
+                <div class="headerTopBarRight">
+                    <ul>
+                        <li>
+                            <a href="#">Request Info</a>
+                        </li>
+                        <li>
+                            <a href="#">Visit</a>
+                        </li>
+                        <li>
+                            <a href="https://www.calstate.edu/apply/Pages/default.aspx" target="_blank" aria-label="Apply">Apply</a>
+                        </li>
+                        <li>
+                            <a href="https://www.csun.edu/covid-19" aria-label="Covid-19">Covid-19</a>
+                        </li>
+                        <li>
+                            <a href="https://engage.csun.edu/" target="_blank" aria-label="Give">Give</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="headerNavContainer">
+                <!-- Start Mega Menu HTML -->
+                <nav class="navbar navbar-expand-xl navbar-light shadow headerNavBar">
+                    <div class="container-fluid">
+                        <a class="navbar-brand d-none d-lg-block" href="#"><img src="images/csunLogo.svg"
+                                alt="CSUN Logo" class="img-fluid"></a>
+                        <div class="smallDeviceLogo">
+                            <div><img src="images/csunLogo.svg" alt="CSUN Logo"></div>
+                        </div>
+                        <div class="searchContainerMobile" id="searchContainerMobile">
+                            <div class="overlay" onclick="toggleSearch('searchContainerMobile')"></div>
+                            <img src="images/icons/iconSearchBlack.svg" alt="Search Icon" class="search-icon"
+                                onclick="toggleSearch('searchContainerMobile')">
+                            <img src="images/icons/iconCloseBlack.svg" alt="Close Icon" class="close-icon"
+                                onclick="toggleSearch('searchContainerMobile')" />
+
+                            <div class="searchFormBox" id="searchInputContainerMobile">
+                                <div class="searchFormDisplay">
+                                    <input type="search" id="searchInput" class="searchInputBox" placeholder="Search..."
+                                        aria-label="Search">
+
+                                    <a href="#" class="searchButton"><img src="images/icons/iconSearch.svg"
+                                            title="Search Icon"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbar-content" aria-label="Toggle navigation">
+                            <div class="hamburger-toggle">
+                                <div class="hamburger">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </button>
+                        <div class="collapse navbar-collapse navbarCollapseMobile" id="navbar-content">
+                            <!--Mobile, tablet Device Specific Header Drop Down-->
+                            <div class="headerTopBarDropDownMobile">
+                                <div class="headerTopBarLeft">
+                                    <div class="tseng-dropDown">
+                                        <div class="dropdown">
+                                            <button class="btn dropdown-toggle" type="button"
+                                                id="dropdownMenuButtonMobile" data-bs-toggle="dropdown"
+                                                aria-expanded="false">
+                                                <span class="dropDownTitle">My<span class="">CSUN</span></span>
+                                            </button>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonMobile">
+                                                <li>
+                                                    <a href="https://portal.csun.edu/login" target="_blank"
+                                                        class="dropdown-item">CSUN
+                                                        Portal</a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://mail.google.com/a/my.csun.edu" target="_blank"
+                                                        class="dropdown-item">Gmail</a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://login.microsoftonline.com/login.srf?wa=wsignin1.0&amp;whr=csun.edu&amp;wreply=https%3A//office.com/"
+                                                        target="_blank" class="dropdown-item">Microsoft Office 365</a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://canvas.csun.edu/" target="_blank"
+                                                        class="dropdown-item">Canvas</a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://mycsun.account.box.com/login" target="_blank"
+                                                        class="dropdown-item">Box</a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://csun.zoom.us/" target="_blank"
+                                                        class="dropdown-item">Zoom</a>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <!--Mobile, tablet Device Specific Header links-->
+
+                            <ul class="navbar-nav ms-auto">
+                                <!--Academic Programs-->
+                                <li class="nav-item dropdown dropdown-mega position-static">
+                                    <a class="nav-link megaMenuNavLink dropdown-toggle" href="#"
+                                        data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false"
+                                        id="dropdownMenuCourse1">Academic Programs </a>
+                                    <div class="dropdown-menu">
+                                        <div class="mega-content">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-12 col-xl-3">
+                                                        <div class="megaMenuContent">
+                                                            <div class="contentHeader"><span>Academic</span> Programs
+                                                            </div>
+                                                            <div class="megaMenuDesc">
+                                                                Life outside of the classroom is an important part of
+                                                                the college experience. It's where you make new friends,
+                                                                have some fun and can even make a difference on campus.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-xl-6">
+                                                        <div class="row">
+                                                            <div class="col-12 col-md-6">
+                                                                <div class="megaMenuTriggerContainer">
+                                                                    <ul>
+                                                                        <li><a href="#">Why CSUN?</a></li>
+                                                                        <li><a href="#">View All Programs</a></li>
+                                                                        <li><a href="#">Programs By Field</a></li>
+                                                                        <li><a href="#">Online Programs</a></li>
+                                                                        <li><a href="#">International Programs &
+                                                                                Partnerships</a></li>
+                                                                        <li><a href="#">University Access</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 col-md-6">
+                                                                <div class="megaMenuTriggerContainer">
+                                                                    <ul>
+                                                                        <li><a href="#">CSUN ASAP</a></li>
+                                                                        <li><a href="#">Fall Open University</a></li>
+                                                                        <li><a href="#">Spring Open University</a></li>
+                                                                        <li><a href="#">Winter Term</a></li>
+                                                                        <li><a href="#">Summer Session</a></li>
+                                                                        <li><a href="#">Contracted Program</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-xl-3">
+                                                        <img src="images/homepage/megaMenuAcadProg.jpg"
+                                                            alt="Academic Programs"
+                                                            class="img-fluid w-100 d-none d-xl-block">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!--About Us-->
+                                <li class="nav-item dropdown dropdown-mega position-static">
+                                    <a class="nav-link megaMenuNavLink dropdown-toggle" href="#"
+                                        data-bs-toggle="dropdown" data-bs-auto-close="outside">About Us </a>
+                                    <div class="dropdown-menu">
+                                        <div class="mega-content">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-12 col-xl-3">
+                                                        <div class="megaMenuContent">
+                                                            <div class="contentHeader"><span>About</span> Us</div>
+                                                            <div class="megaMenuDesc">
+                                                                Life outside of the classroom is an important part of
+                                                                the college experience. It's where you make new friends,
+                                                                have some fun and can even make a difference on campus.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-xl-6">
+                                                        <div class="row">
+                                                            <div class="col-12 col-md-6">
+                                                                <div class="megaMenuTriggerContainer">
+                                                                    <ul>
+                                                                        <li><a href="#">Why CSUN?</a></li>
+                                                                        <li><a href="#">View All Programs</a></li>
+                                                                        <li><a href="#">Programs By Field</a></li>
+                                                                        <li><a href="#">Online Programs</a></li>
+                                                                        <li><a href="#">International Programs &
+                                                                                Partnerships</a></li>
+                                                                        <li><a href="#">University Access</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 col-md-6">
+                                                                <div class="megaMenuTriggerContainer">
+                                                                    <ul>
+                                                                        <li><a href="#">CSUN ASAP</a></li>
+                                                                        <li><a href="#">Fall Open University</a></li>
+                                                                        <li><a href="#">Spring Open University</a></li>
+                                                                        <li><a href="#">Winter Term</a></li>
+                                                                        <li><a href="#">Summer Session</a></li>
+                                                                        <li><a href="#">Contracted Program</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-xl-3">
+                                                        <img src="images/homepage/megaMenuAcadProg.jpg"
+                                                            alt="Academic Programs"
+                                                            class="img-fluid w-100 d-none d-xl-block">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <!--Student Information-->
+                                <li class="nav-item dropdown dropdown-mega position-static">
+                                    <a class="nav-link megaMenuNavLink dropdown-toggle" href="#"
+                                        data-bs-toggle="dropdown" data-bs-auto-close="outside">Student Information</a>
+                                    <div class="dropdown-menu">
+                                        <div class="mega-content">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-12 col-xl-3 ">
+                                                        <div class="megaMenuContent">
+                                                            <div class="contentHeader"><span>Student</span> Information
+                                                            </div>
+                                                            <div class="megaMenuDesc">
+                                                                Life outside of the classroom is an important part of
+                                                                the college experience. It's where you make new friends,
+                                                                have some fun and can even make a difference on campus.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-xl-6">
+                                                        <div class="row">
+                                                            <div class="col-12 col-md-6">
+                                                                <div class="megaMenuTriggerContainer">
+                                                                    <ul>
+                                                                        <li><a href="#">Why CSUN?</a></li>
+                                                                        <li><a href="#">View All Programs</a></li>
+                                                                        <li><a href="#">Programs By Field</a></li>
+                                                                        <li><a href="#">Online Programs</a></li>
+                                                                        <li><a href="#">International Programs &
+                                                                                Partnerships</a></li>
+                                                                        <li><a href="#">University Access</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 col-md-6">
+                                                                <div class="megaMenuTriggerContainer">
+                                                                    <ul>
+                                                                        <li><a href="#">CSUN ASAP</a></li>
+                                                                        <li><a href="#">Fall Open University</a></li>
+                                                                        <li><a href="#">Spring Open University</a></li>
+                                                                        <li><a href="#">Winter Term</a></li>
+                                                                        <li><a href="#">Summer Session</a></li>
+                                                                        <li><a href="#">Contracted Program</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-xl-3">
+                                                        <img src="images/homepage/megaMenuAcadProg.jpg"
+                                                            alt="Academic Programs"
+                                                            class="img-fluid w-100 d-none d-xl-block">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!--News & Events-->
+                                <li class="nav-item dropdown dropdown-mega position-static">
+                                    <a class="nav-link megaMenuNavLink dropdown-toggle" href="#"
+                                        data-bs-toggle="dropdown" data-bs-auto-close="outside"> News & Events </a>
+                                    <div class="dropdown-menu">
+                                        <div class="mega-content">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-12 col-xl-3 ">
+                                                        <div class="megaMenuContent">
+                                                            <div class="contentHeader"><span>News</span> & Events</div>
+                                                            <div class="megaMenuDesc">
+                                                                Life outside of the classroom is an important part of
+                                                                the college experience. It's where you make new friends,
+                                                                have some fun and can even make a difference on campus.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-xl-6">
+                                                        <div class="row">
+                                                            <div class="col-12 col-md-6">
+                                                                <div class="megaMenuTriggerContainer">
+                                                                    <ul>
+                                                                        <li><a href="#">Why CSUN?</a></li>
+                                                                        <li><a href="#">View All Programs</a></li>
+                                                                        <li><a href="#">Programs By Field</a></li>
+                                                                        <li><a href="#">Online Programs</a></li>
+                                                                        <li><a href="#">International Programs &
+                                                                                Partnerships</a></li>
+                                                                        <li><a href="#">University Access</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 col-md-6">
+                                                                <div class="megaMenuTriggerContainer">
+                                                                    <ul>
+                                                                        <li><a href="#">CSUN ASAP</a></li>
+                                                                        <li><a href="#">Fall Open University</a></li>
+                                                                        <li><a href="#">Spring Open University</a></li>
+                                                                        <li><a href="#">Winter Term</a></li>
+                                                                        <li><a href="#">Summer Session</a></li>
+                                                                        <li><a href="#">Contracted Program</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-xl-3">
+                                                        <img src="images/homepage/megaMenuAcadProg.jpg"
+                                                            alt="Academic Programs"
+                                                            class="img-fluid w-100 d-none d-xl-block">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!--Request Info-->
+                                <li class="nav-item dropdown dropdown-mega position-static">
+                                    <a class="nav-link megaMenuNavLink dropdown-toggle" href="#"
+                                        data-bs-toggle="dropdown" data-bs-auto-close="outside">Request Info </a>
+                                    <div class="dropdown-menu">
+                                        <div class="mega-content">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-12 col-xl-3 ">
+                                                        <div class="megaMenuContent">
+                                                            <div class="contentHeader"><span>Request </span>Info</div>
+                                                            <div class="megaMenuDesc">
+                                                                Life outside of the classroom is an important part of
+                                                                the college experience. It's where you make new friends,
+                                                                have some fun and can even make a difference on campus.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-xl-6 ">
+                                                        <div class="row">
+                                                            <div class="col-12 col-md-6">
+                                                                <div class="megaMenuTriggerContainer">
+                                                                    <ul>
+                                                                        <li><a href="#">Why CSUN?</a></li>
+                                                                        <li><a href="#">View All Programs</a></li>
+                                                                        <li><a href="#">Programs By Field</a></li>
+                                                                        <li><a href="#">Online Programs</a></li>
+                                                                        <li><a href="#">International Programs &
+                                                                                Partnerships</a></li>
+                                                                        <li><a href="#">University Access</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 col-md-6">
+                                                                <div class="megaMenuTriggerContainer">
+                                                                    <ul>
+                                                                        <li><a href="#">CSUN ASAP</a></li>
+                                                                        <li><a href="#">Fall Open University</a></li>
+                                                                        <li><a href="#">Spring Open University</a></li>
+                                                                        <li><a href="#">Winter Term</a></li>
+                                                                        <li><a href="#">Summer Session</a></li>
+                                                                        <li><a href="#">Contracted Program</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-xl-3">
+                                                        <img src="images/homepage/megaMenuAcadProg.jpg"
+                                                            alt="Academic Programs"
+                                                            class="img-fluid w-100 d-none d-xl-block">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                            </ul>
+                            <div class="searchContainer d-none d-xl-block" id="searchContainer">
+                                <div class="overlay" onclick="toggleSearch('searchContainer')"></div>
+                                <img src="images/icons/iconSearchRedBg.svg" alt="Search Icon" class="search-icon"
+                                    onclick="toggleSearch('searchContainer')">
+                                <img src="images/icons/iconClose.svg" alt="Close Icon" class="close-icon"
+                                    onclick="toggleSearch('searchContainer')" />
+
+                                <div class="searchFormBox">
+                                    <div class="searchFormDisplay">
+                                        <input type="search" id="searchInput" class="searchInputBox"
+                                            placeholder="Search..." aria-label="Search">
+
+                                        <a href="#" class="searchButton"><img src="images/icons/iconSearch.svg"
+                                                title="Search Icon"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Mobile, tablet Device Specific Header links-->
+                            <div class="headerTopBarMiddleLinksMobile">
+
+                                <div class="headerTopBarMiddle">
+                                    <ul>
+                                        <li><a href="#">Current Students</a></li>
+                                        <li><a href="#">Faculty & Staff</a></li>
+                                        <li><a href="#">Alumni</a></li>
+                                        <li><a href="#">Local Community</a></li>
+                                        <li><a href="#">Información en español</a></li>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+                            <!--Mobile, tablet Device Specific Header Drop Down-->
+
+                            <!--Mobile, tablet Device Specific Header Action right side links-->
+                            <div class="headerTopBarRightActionLinksMobile">
+                                <div class="headerTopBarRight">
+                                    <ul>
+                                        <li>
+                                            <a href="#" aria-label="Request Info">Request Info</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" aria-label="Visit">Visit</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.calstate.edu/apply/Pages/default.aspx"
+                                                target="_blank" aria-label="Apply">Apply</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.csun.edu/covid-19"  aria-label="Covid-19">Covid-19</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://engage.csun.edu/" target="_blank" aria-label="Give">Give</a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+
+                            <!--Mobile, tablet Device Specific Header Action right side links-->
+                        </div>
+                    </div>
+                </nav>
+                <!-- END Mega Menu HTML -->
+
+            </div>
+
+        </header>
+
+        <!--Header ends here-->
+
+        <!--Banner Area Starts from here-->
+        <section class="programTemplateBannerContainer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-9">
+                        <div class="programTemplateBannerContent">
+                            <div class="pageTitle" role="heading" aria-level="Academic Programs">Academic Programs</div>
+                            <h1>Master of Science in <br>Applied Behavior Analysis</h1>
+                            <div class="downloadBrochure">
+                                <a href="#" class="" title="Download Brochure">Download Brochure
+                                    <img src="images/icons/iconDownloadRedRound.svg" alt="Download Brochure">
+
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 bannerTriggerContainer">
+
+                        <div class="applyTrigger">
+                            <a href="#">How to Apply</a>
+                        </div>
+                        <div class="requestInfoTrigger">
+                            <a href="#">Request more Info</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+        <!--Banner Area ends here-->
+
+        <!--Sticky Quick Link right side starts from here-->
+        <div class="quickStickyLinksContainer">
+            <a href="#" title="Request  Info" class="quickStickyLink">
+                <span class="quickStickyLinkIcon">
+                    <img src="images/icons/iconRequestInfo.svg" alt="Request Info">
+                </span>
+                <span class="quickStickyLinkIconHover">
+                    <img src="images/icons/iconRequestInfoHover.svg" alt="Request  Info">
+                </span>
+                <span class="quickStickyLinkText">Request Info</span>
+            </a>
+            <a href="#" title="Contact us" class="quickStickyLink">
+
+                <span class="quickStickyLinkIcon">
+                    <img src="images/icons/iconContactUs.svg" alt="Contact us">
+                </span>
+                <span class="quickStickyLinkIconHover">
+                    <img src="images/icons/iconContactUsHover.svg" alt="Contact us">
+                </span>
+                <span class="quickStickyLinkText">Contact us</span>
+            </a>
+            <a href="#" title="View Campus" class="quickStickyLink">
+                <span class="quickStickyLinkIcon">
+                    <img src="images/icons/iconViewCampus.svg" alt="View Campus">
+                </span>
+                <span class="quickStickyLinkIconHover">
+                    <img src="images/icons/iconViewCampusHover.svg" alt="View Campus">
+                </span>
+                <span class="quickStickyLinkText">View Campus</span>
+            </a>
+        </div>
+
+        <!--Sticky Quick Link right side ends here-->
+
+
+        <!--Program Links + Breadcrumbs starts from here-->
+        <section class="programLinksBreadCrumbsContainer">
+            <!--breadcrumbs-->
+            <div class="bannerBreadCrumbs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="breadCrumbsList">
+                                <ul>
+                                    <li><a href="#" aria-label="Home"><img src="images/icons/iconHome.svg"
+                                                alt="Home"></a></li>
+                                    <li><a href="#">Tseng College</a></li>
+                                    <li><a href="#">Academic Programs</a></li>
+                                    <li>Master of Science in Applied Behavior Analysis</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--breadcrumbs-->
+            <!--programLinks-->
+            <div class="programLinksContainer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="programLinkList">
+
+                                <div class="dropdown">
+                                    <button class="btn dropdown-toggle customNav" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="dropdownNavigation">
+                                        Overview
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownNavigation">
+                                      <li class="active navDdlItems">Overview</li>
+                                      <li class="navDdlItems"><a href="javascript:void(0)" class="dropdown-item">Admission</a></li>
+                                      <li class="navDdlItems"><a href="javascript:void(0)" class="dropdown-item">Academics</a></li>
+                                      <li class="navDdlItems"><a href="javascript:void(0)" class="dropdown-item">Curriculum </a></li>
+                                      <li class="navDdlItems"><a href="javascript:void(0)" class="dropdown-item">Practicum</a></li>
+                                      <li class="navDdlItems"><a href="javascript:void(0)" class="dropdown-item">Course Schedules</a></li>
+                                      <li class="navDdlItems"><a href="javascript:void(0)" class="dropdown-item">Tuition & Fees</a></li>
+                                      <li class="navDdlItems"><a href="javascript:void(0)" class="dropdown-item">Faculty</a></li>
+                                      <li class="navDdlItems"><a href="javascript:void(0)"  class="dropdown-item">FAQ</a></li>
+                                    </ul>
+                                  </div>
+
+                                  <!--script for Dropdown menu-->
+                                  <input type='hidden' id='vote' value='' />
+                                  <script>
+                                     document.querySelectorAll('.navDdlItems').forEach( function(el) {
+                                                 
+                                         el.addEventListener('click', function() {
+                                             document.querySelector('.customNav').innerText = el.textContent;
+                                             document.querySelector('#vote').value = el.textContent;
+                                         });
+                                     });
+                                     </script>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!--programLinks-->
+
+        </section>
+        <!--Program Links + Breadcrumbs  ends from here-->
+
+
+
+        <!--page divided into 2 parts from here-->
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-9">
+
+                    <!--Admission Requirements Section starts from here-->
+                    <section class="admissionRequiremnetContainer"  data-aos="fade-up" data-aos-duration="1500">
+                        <h2>Admission Requirements</h2>
+
+                        <div class="admissionListBox">
+                            <ul>
+                                <li>An online application (see the "<a href="#" class="linkunderline-1">How To
+                                        Apply</a>" page)</li>
+                                <li>A well-written statement of purpose (approximately 1,000 words, double-spaced,
+                                    12-point font)</li>
+                                <li>Original or certified copies of all academic transcripts
+                                    <ul>
+                                        <li>Students graduating with a bachelor’s degree in the spring term (before
+                                            June) are encouraged to apply</li>
+                                    </ul>
+                                </li>
+                                <li>Three strong letters of recommendation</li>
+                                <li>No GRE required</li>
+
+                            </ul>
+                            <div class="applyNowButton">
+                                <a href="#" title="Apply Now">Apply Now</a>
+                             </div>
+                        </div>
+
+
+                    </section>
+                    <!--Admission Requirements Section ends here-->
+
+                    <!--Applicants should have all of the following Section starts from here-->
+
+                    <section class="applicantsContainer" data-aos="zoom-in-up" data-aos-duration="1500">
+                        <div class="row">
+                            <div class="col-12 col-md-7 col-xxl-8">
+                                <h4>Applicants should have all of the following:</h4>
+
+                                <ul>
+                                    <li>A well-written statement of purpose, for example
+                                        <ul>
+                                            <li>Expressed conceptual understanding of the field of behavior analysis,
+                                                the program at CSUN, and future goals as board certified behavior
+                                                analysts</li>
+                                            <li>Clear commitment to becoming scientist-practitioners in the field of
+                                                behavior analysis</li>
+                                        </ul>
+                                    </li>
+                                    <li>Solid academic backgrounds (e.g., high academic grades, particularly in research
+                                        methods, and behavior analysis coursework)</li>
+
+                                    <li>Strong Recommendation Letters from credible recommenders who observed the
+                                        candidate in various relevant settings (e.g., as a student, as a behavior
+                                        interventionist, and supervisee).</li>
+                                    <li>Valuable clinical experience through faculty research, employment, internships,
+                                        volunteerships, etc.</li>
+
+                                </ul>
+                            </div>
+                            <div class="col-12 col-md-5 col-xxl-4 text-lg-end">
+                                <img src="images/admission/applicantPlaceHolder.jpg"
+                                    alt="placeholder image for applicants" class="img-fluid">
+
+                            </div>
+                        </div>
+
+                    </section>
+
+                    <!--Applicants should have all of the following Section ends here-->
+
+                    <!--For Admission to Classified Graduate Status Section starts from here-->
+
+                    <section class="applicantsOrderedListingContainer" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+                        <div class="row">
+                            <div class="col-12 col-md-5 col-xxl-4 text-lg-start order-2 order-lg-1">
+                                <img src="images/admission/admissionPlaceHolder.jpg"
+                                    alt="placeholder image for applicants" class="img-fluid">
+
+                            </div>
+                            <div class="col-12 col-md-7 col-xxl-8 order-1 order-lg-2">
+                                <h4>For Admission to Classified Graduate Status</h4>
+
+                                <ol>
+                                    <li>Admission to the program generally requires an Undergraduate Degree (or its
+                                        equivalent for international students), from a regionally accredited
+                                        institution, in Psychology. Applicants who do not have a Degree in Psychology
+                                        should consult with the Academic Director.</li>
+                                    <li>A GPA of 3.0 is required except on approval by the Graduate Admission Committee.
+                                    </li>
+                                    <li>General University requirements also must be met. Carefully consult other
+                                        sections of the CSUN catalog for details. These requirements include passing the
+                                        Upper Division Writing Proficiency Exam (UDWPE) with a score of 8 or higher.
+                                    </li>
+
+
+                                </ol>
+                            </div>
+
+
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="keyPointsSection" data-aos="fade-up" data-aos-duration="1500">
+                                    <h6>Conditionally Classified Status</h6>
+
+                                    <ul>
+                                        <li>Students who do not meet all admissions requirements for classified status
+                                            may be accepted as conditionally classified students. Conditionally
+                                            classified students will complete the “conditions” of their admission within
+                                            the first year of their program and request classification from their
+                                            program advisor.</li>
+                                        <li>Note that all CSUN students must be "formally classified" <strong>before
+                                                applying to
+                                                graduate</strong> and earning their degree from CSUN.</li>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </section>
+
+                    <!--For Admission to Classified Graduate Status Section ends here-->
+
+
+                    <!--Admission to the University Section starts from here-->
+
+                    <section class="universityBannerContainer" data-aos="zoom-in-up" data-aos-duration="1500">
+                        <div class="welcomeBox">
+                            <div class="smallText">Admission to the <br>University</div>
+                            <div class="largeText">
+                                <img src="images/admission/csunText.svg" alt="CSUN Text" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="aboutBanner">
+                            <div class="text">Students must submit an online <a href="#" class="linkWhiteunderline-1">
+                                    application</a> to the program and be admitted prior to taking the first class in
+                                the program. Students are required to provide official transcripts from the required
+                                institutions of higher education.<br><br>
+                                Before submitting your application, please ensure you meet all <a href="#"
+                                    class="linkWhiteunderline-1">University admission requirements</a>, including a
+                                minimum GPA of 2.5.</div>
+                        </div>
+
+                    </section>
+
+                    <!--Applied Behavior Analysis Section ends here-->
+
+                    <section class="appliedBehaviourAnalysisContainer" data-aos="zoom-in-up" data-aos-duration="1500">
+                        <div class="appliedBehaviourAnalysisContentBox">
+                            <h2><span>Applied Behavior Analysis:</span>
+                                Your Path to a rewarding Career</h2>
+                                <div class="applyNowButton">
+                                    <a href="#" title="Apply Now">Apply Now</a>
+                                 </div>
+                        </div>
+                    </section>
+                    
+                    <!--Applied Behavior Analysis Section starts from here-->
+
+                    
+
+                    <!--English Proficiency Requirements starts from here-->
+
+                    <section class="courseRequirementContainer">
+                        <h4>English Proficiency Requirements</h4>
+                        <p>For Non-U.S. Degree and International Students Only</p>
+                        <p><strong>Exception</strong>: If a graduate applicant has earned a bachelor's or master's
+                            degree from a
+                            regionally accredited institution in the U.S., the TOEFL or other English language
+                            proficiency exam is not required.</p>
+                        <p>The English language tests and minimum scores listed in the table below are accepted by CSUN
+                            for graduate applicants for Master of Science in Applied Behavior Analysis.</p>
+
+                        <div class="tabularDataBox"  data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+
+                            <div class="table-responsive">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Test Name and Website</th>
+                                            <th scope="col">Minimum Score Required for Graduate Students</th>
+                                            <th scope="col">Send Score Directly to CSUN</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="customTdBg"><a href="#" class="linkunderline-1">Cambridge C1
+                                                    Advanced English (formerly CAE)</a></td>
+                                            <td>180</td>
+                                            <td>Email “Confirmation of Entry” page to <a class="linkunderline-1"
+                                                    href="mailto:intladm@csun.edu"
+                                                    title="email Address">intladm@csun.edu</a>.</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td class="customTdBg"><a href="#" class="linkunderline-1">DET - Duolingo
+                                                    English Test</a></td>
+                                            <td>105</td>
+                                            <td>Online through your Duolingo Account. See <a class="linkunderline-1"
+                                                    href="#" title="Sending Your Results">Sending Your Results</a>.</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td class="customTdBg"><a href="#" class="linkunderline-1"
+                                                    title="EIKEN CSE - Common Scale for English">EIKEN CSE - Common
+                                                    Scale for English</a></td>
+                                            <td>2630 (1)</td>
+                                            <td>Contact EIKEN online; they will send the score directly to us.</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td class="customTdBg"><a href="#" class="linkunderline-1"
+                                                    title="GTEC CBT - Global Test of EnglishCommunication Computer-Based Test">GTEC
+                                                    CBT - Global Test of English Communication Computer-Based Test</a>
+                                            </td>
+                                            <td>1200</td>
+                                            <td>Have GTEC send a copy of your "Official Score Certificate" to CSUN.</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td class="customTdBg"><a href="#" class="linkunderline-1"
+                                                    title="IELTS - International English Language Test System">IELTS -
+                                                    International English Language Test System</a></td>
+                                            <td>6.5</td>
+                                            <td>Have IELTS send a copy of your "Test Report Form" to CSUN.</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td class="customTdBg"><a href="#" class="linkunderline-1"
+                                                    title="iTEP Academic - International Test of English Proficiency">iTEP
+                                                    Academic - International Test of English Proficiency</a></td>
+                                            <td>4.0</td>
+                                            <td>Have iTEP send your score to CSUN.</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td class="customTdBg"><a href="#" class="linkunderline-1"
+                                                    title="PTE Academic - Pearson's Test of English">PTE Academic -
+                                                    Pearson's Test of English</a></td>
+                                            <td>58</td>
+                                            <td>Online through your PTE Academic Account</td>
+
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+
+
+                        </div>
+
+                        <p><strong>Exception:</strong> If a graduate applicant has earned a bachelor's or master's
+                            degree from a regionally accredited institution in the U.S., the TOEFL or other English
+                            language proficiency exam is not required.</p>
+                        <p>The English language tests and minimum scores listed in the table below are accepted by CSUN
+                            for graduate applicants for Master of Science in Applied Behavior Analysis.</p>
+
+
+                    </section>
+
+                    <!--English Proficiency Requirements ends from here-->
+
+                    <!--Tution Fees Section starts from here-->
+
+                    <section class="tutionFeesContainer">
+                        <h4>Tuition and Fees</h4>
+
+                        <div class="tutionBox" data-aos="zoom-in-down" data-aos-duration="1500">
+                            <div class="sectionHeading" role="heading" aria-level="2">
+                                Tuition Fall 2024
+                            </div>
+                            <div class="tabularDataBox-Red">
+
+                                <div class="table-responsive">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col" class="w-50">Cost Per Unit</th>
+                                                <th scope="col" class="w-50">Number of Units in this Program</th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>$749</td>
+                                                <td>37</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+
+                            </div>
+                            <div class="feesCalculationSection">
+                                <div class="amountTotalBox">
+                                    <div class="amount">Total Tuition to Degree = <strong>$27,713</strong></div>
+                                    <span>(paid in 6 payments)</span>
+
+                                </div>
+                                <div class="termsCondition">
+                                    <span>*</span>Tuition costs only - see details below for more
+                                    information.<br>Tuition is subject to change. Tuition costs vary by cohort
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="feesBox" data-aos="zoom-in-up" data-aos-duration="1500">
+                            <div class="sectionHeading" role="heading" aria-level="2">
+                                Fees
+                            </div>
+                            <div class="tabularDataBox-Red" >
+
+                                <div class="table-responsive">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col" class="w-25">University Application Fee</th>
+                                                <th scope="col" class="w-25">Boos and Supplies</th>
+                                                <th scope="col" class="w-25">Graduation Application Fee</th>
+                                                <th scope="col" class="w-25">Practica Course Fees</th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>$70 (non-refundable)</td>
+                                                <td>cost varies by program</td>
+                                                <td>$47 </td>
+                                                <td>$1893 per term</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+
+                            </div>
+                            <div class="feesCalculationSection">
+                                <div class="amountTotalBox">
+                                    <div class="amount">Total Tuition plus Fees  = <strong>$38,823</strong></div>
+                                    
+                                </div>
+                             
+                            </div>
+                        </div>
+
+
+
+
+                    </section>
+
+
+                    <!--Tution Fees Section ends -->
+
+
+
+                    <!--Request more info Section starts from here-->
+
+                    <section class="programMRequestinfoContainer" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="row">
+                            <div class="col-12 col-xl-4 position-relative d-flex">
+                                <div class="requestInfoBg">
+                                    <img src="images/programTemplate/request_info.jpg" alt="Request Info"
+                                        class="img-fluid">
+                                    <div class="requestInfoContainer">
+                                        <div class="smallHeading">Request more info</div>
+                                        <div class="largeHeading">Express<br> yourself. And<br> your interest.</div>
+                                        <div class="quickCallBox">
+                                            <div class="smallText">For Quick Call</div>
+                                            <div class="number">(818) 273-6870</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-xl-8">
+                                <div class="requestFormSection">
+                                    <div class="mb-2">
+                                        <input id="fullName" class="form-control form-control-lg" type="text"
+                                            placeholder="Full Name" aria-label="Full Name">
+
+                                    </div>
+                                    <div class="mb-2">
+                                        <input id="email" class="form-control form-control-lg" type="email"
+                                            placeholder="Email" aria-label="Email">
+                                    </div>
+                                    <div class="mb-2">
+                                        <input id="phone" class="form-control form-control-lg" type="tel"
+                                            placeholder="Phone" aria-label="Phone">
+                                    </div>
+                                    <div class="mb-3">
+                                        <textarea class="form-control" id="message" rows="3" placeholder="Message"
+                                            aria-label="Message"></textarea>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="consentCheck"
+                                            aria-labelledby="consentCheckLabel">
+                                        <span id="consentCheckLabel" class="form-check-label">
+                                            I am giving express written consent to be contacted by email, phone, and/or
+                                            text by California State University, Northridge. I understand and agree that
+                                            these communications may be generated using an automated technology.
+                                        </span>
+                                    </div>
+                                    <div class="capchaPlaceholder">
+                                        <img src="images/programTemplate/robotPlaceholder.jpg" alt="captcha"
+                                            class="img-fluid">
+                                    </div>
+                                    <input type="submit" value="Submit">
+                                </div>
+
+
+
+                            </div>
+                        </div>
+
+                    </section>
+
+                    <!--Request more info  Section ends here-->
+
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="programSideBarContainer">
+                        <!--Course Schedules starts from here-->
+                        <div class="programCourseSchedule" data-aos="zoom-in-up" data-aos-duration="1500">
+                            <div class="heading" role="heading" aria-level="2">Course Schedules</div>
+                            <div class="programTabArea">
+                                <div class="tagline">Schedules for available cohorts</div>
+                                <nav>
+                                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                        <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab"
+                                            data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
+                                            aria-selected="true">Upcoming<br>Cohort(s)</button>
+                                        <button class="nav-link" id="nav-Current-tab" data-bs-toggle="tab"
+                                            data-bs-target="#nav-Current" type="button" role="tab"
+                                            aria-controls="nav-Current" aria-selected="false">Current & Previous<br>
+                                            Cohort(s)</button>
+
+                                    </div>
+                                </nav>
+                                <div class="tab-content" id="nav-tabContent">
+                                    <div class="tab-pane fade active show" id="nav-home" role="tabpanel"
+                                        aria-labelledby="nav-home-tab">
+                                        <ul>
+                                            <li><a href="#" class="linkunderline-1">ABA09 On Campus: Fall 2023</a></li>
+                                            <li><a href="#" class="linkunderline-1">ABA08 On Campus: Fall 2022</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-pane fade" id="nav-Current" role="tabpanel"
+                                        aria-labelledby="nav-Current-tab">
+                                        <ul>
+                                            <li><a href="#" class="linkunderline-1">ABA09 On Campus: Fall 2023</a></li>
+                                            <li><a href="#" class="linkunderline-1">ABA08 On Campus: Fall 2022</a></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <!--Course Schedules starts from here-->
+
+                        <!--Professional Accreditation starts from here-->
+                        <div class="programCourseSchedule">
+                            <div class="heading">Professional Accreditation</div>
+                            <div class="professionalAccrSection">
+                                <!--Carousel Section-->
+
+                                <div class="owl-carousel owl-theme programTmp-professionalAccreditation">
+                                    <div class="item" data-aos="zoom-in">
+                                        <div class="professionalAccrLogoSection">
+                                            <img src="images/programTemplate/ABA-VCS-badge.jpg" class="img-fluid shadow"
+                                                alt="ABA-VCS-badge">
+                                        </div>
+                                    </div>
+                                    <div class="item" data-aos="zoom-in" data-aos-delay="300">
+                                        <div class="professionalAccrLogoSection">
+                                            <img src="images/programTemplate/ABA-badge-CSUN-pass-rate-92.jpg"
+                                                class="img-fluid shadow" alt="ABA-badge-CSUN-pass-rate-92">
+                                        </div>
+
+                                    </div>
+
+                                    <div class="item" data-aos="zoom-in" data-aos-delay="300">
+                                        <div class="professionalAccrLogoSection">
+                                            <img src="images/programTemplate/ABA-ProgramGuide-badge.jpg"
+                                                class="img-fluid shadow" alt="ABA-ProgramGuide-badge">
+                                        </div>
+
+                                    </div>
+
+
+
+
+                                </div>
+
+
+                                <!--Carousel Section ends-->
+
+                            </div>
+
+                        </div>
+                        <!--Professional Accreditation ends here-->
+
+                        <!--Download Brochure starts from here-->
+                        <div class="programCourseSchedule" data-aos="fade-up" data-aos-duration="1500">
+                            <div class="programDownloadBrochure">
+                                <div class="brochureImage">
+                                    <img src="images/programTemplate/downloadBrochure.jpg" alt="Download Brochure"
+                                        class="img-fluid">
+                                </div>
+                                <div class="brochureContent">
+                                    <div class="name">
+                                        Master of Science Applied Behavior Analysis
+                                    </div>
+                                    <div class="downloadLink">
+                                        <span><a href="#" class="linkunderline-1">Download Brochure</a></span>
+                                        <span><img src="images/icons/iconDownloadRedRound.svg"
+                                                alt="Download Brochure"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                        <!--Download Brochure ends from here-->
+
+                        <!--Request Form starts from here-->
+                        <div class="programSideRequestinfo" data-aos="fade-down" data-aos-duration="1500">
+                            <div class="smallHeading">Request more info</div>
+                            <div class="largeHeading">Express yourself.<br> And your interest.</div>
+
+                            <div class="mb-2">
+                                <input class="form-control form-control-lg" type="text" placeholder="Full Name"
+                                    aria-label="Full Name" id="fullName1">
+                            </div>
+                            <div class="mb-2">
+                                <input class="form-control form-control-lg" type="email" placeholder="Email"
+                                    aria-label="Email" id="email1">
+                            </div>
+                            <div class="mb-2">
+                                <input class="form-control form-control-lg" type="tel" placeholder="Phone"
+                                    aria-label="Phone" id="phone1">
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                    placeholder="Message" id="message1" aria-label="Message"></textarea>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="consentCheck1"
+                                    aria-label="consentCheckLabel1">
+
+
+                                <span class="form-check-label" for="consentCheckLabel1">
+                                    I am giving express written consent to be contacted by email, phone, and/or
+                                    text by California State University, Northridge.
+                                    I understand and agree that these communications may be generated using an
+                                    automated technology.
+                                </span>
+                            </div>
+                            <div class="capchaPlaceholder">
+                                <img src="images/programTemplate/robotPlaceholder.jpg" alt="capcha" class="img-fluid">
+                            </div>
+                            <input type="submit" value="Submit">
+
+
+
+
+                        </div>
+
+
+                        <!--Request Form  ends here-->
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!--page divided into 2 parts ends here-->
+
+
+        <!--Footer Section starts from here-->
+        <footer class="footerSectionContainer">
+            <div class="container footerOuter">
+                <div class="row">
+                    <div class="col-12 col-md-8">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="footerLogo">
+                                    <img src="images/footer/logoCsun-tseng-footer.png" alt="CSUN Tseng Collage"
+                                        class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="quickLinksContainer">
+                                    <h5>Quick links</h5>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Programs by Field of Study</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Programs by Degree</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Online Programs</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Information Session</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Frequently Asked Questions</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-8">
+                                <div class="informationContainer">
+                                    <h5>Information about</h5>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Office of the Dean</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Brochures and Publications</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Online Learning Resources</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://engage.csun.edu/" target="_blank" aria-label="Give">Give</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" aria-label="Webmail">Webmail</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" aria-label="Request Info">Request Info</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-12 col-xl-4">
+                                <div class="locationContainer">
+                                    <div class="iconMap">
+                                        <img src="images/footer/iconLocation.png" alt="location">
+                                    </div>
+                                    <div class="address">18111 Nordhoff Street Northridge, CA 91330</div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-xl-8">
+                                <div class="socialMediaContainer">
+                                    <a href="#" title="Facebook"><img src="images/footer/iconFacebook.png"
+                                            alt="Facebook"></a>
+                                    <a href="#" title="Instagram"><img src="images/footer/iconInstagram.png"
+                                            alt="Instagram"></a>
+                                    <a href="#" title="X"><img src="images/footer/iconX.png" alt="X"></a>
+                                    <a href="#" title="Youtube"><img src="images/footer/iconYoutube.png"
+                                            alt="Youtube"></a>
+                                    <a href="#" title="Linkedin"><img src="images/footer/iconLinkedIn.png"
+                                            alt="Linkedin"></a>
+
+
+                                </div>
+
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="col-12 col-md-4 csunLogoContainer">
+                        <div class="csunLogoNorthridge">
+                            <img src="images/footer/logoCsun-Northridge.png" alt="CSUN Logo" class="Img-fluid">
+                            <div class="subText">BUILD THE FUTURE <br>YOU ENVISION</div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="footerBarLinks">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="linksContainer">
+                                <a href="#" title="Accessibility">Accessibility</a>
+                                <a href="#" title="Annual Security Report (CLERY)">Annual Security Report (CLERY)</a>
+                                <a href="#" title="Document Reader">Document Reader</a>
+                                <a href="#" title="CSU System">CSU System</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="websitePolicyContainer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="websitePolicylinksContainer">
+                                &copy; 2024 California State University Northridge
+                                <a href="#" title="Document Reader">Terms & Conditions</a>
+                                <a href="#" title="CSU System">Privacy Policy</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="studentSectionOverlay"><img src="images/footer/footerStudentImg.png" alt="Student With Laptops"
+                    class="img-fluid"></div>
+        </footer>
+        <!--Footer Section starts ends here-->
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+        <script src="js/owl.carousel.js"></script>
+        <script>
+
+            $(document).ready(function () {
+                if ($('.programTmp-facilitieResources').length > 0) {
+                    $('.programTmp-facilitieResources').owlCarousel({
+                        loop: true,
+                        //animateOut: 'slideOutDown',
+                        //animateIn: 'flipInX',
+                        margin: 25,
+                        nav: true,
+                        responsiveClass: true,
+                        responsive: {
+                            0: {
+                                items: 1,
+                                nav: false,
+                                loop: false
+                            },
+                            600: {
+                                items: 2,
+                                nav: false,
+                                loop: false
+                            },
+                            1000: {
+                                items: 3,
+                                nav: true,
+                                loop: false
+                            },
+
+                            1600: {
+                                items: 3,
+                                nav: true,
+                                loop: false
+                            }
+                        }
+                    });
+                }
+
+                //Professional accreditation
+
+                if ($('.programTmp-professionalAccreditation').length > 0) {
+                    $('.programTmp-professionalAccreditation').owlCarousel({
+                        loop: true,
+                        //animateOut: 'slideOutDown',
+                        //animateIn: 'flipInX',
+                        margin: 25,
+                        nav: true,
+                        responsiveClass: true,
+                        responsive: {
+                            0: {
+                                items: 1,
+                                nav: true,
+                                loop: false
+                            },
+                            600: {
+                                items: 1,
+                                nav: true,
+                                loop: false
+                            },
+                            1000: {
+                                items: 1,
+                                nav: true,
+                                loop: false
+                            },
+
+                            1600: {
+                                items: 1,
+                                nav: true,
+                                loop: false
+                            }
+                        }
+                    });
+                }
+
+
+
+                //student sucess stories
+
+                if ($('.programTmp-StudentsSuccessStories').length > 0) {
+                    $('.programTmp-StudentsSuccessStories').owlCarousel({
+                        loop: true,
+                        //animateOut: 'slideOutDown',
+                        //animateIn: 'flipInX',
+                        margin: 52,
+                        nav: false,
+                        responsiveClass: true,
+                        responsive: {
+                            0: {
+                                items: 1,
+                                nav: false,
+                                loop: false
+                            },
+                            600: {
+                                items: 2,
+                                nav: false,
+                                loop: false
+                            },
+                            1000: {
+                                items: 2,
+                                nav: false,
+                                loop: false
+                            },
+
+                            1600: {
+                                items: 2,
+                                nav: false,
+                                loop: false
+                            }
+                        },
+                        onInitialized: setEqualHeight
+                    });
+                }
+
+
+            });
+            function setEqualHeight(event) {
+                var maxHeight = 0;
+                $('.owl-carousel.programTmp-StudentsSuccessStories .owl-item').each(function () {
+                    var itemHeight = $(this).height();
+                    maxHeight = (itemHeight > maxHeight) ? itemHeight : maxHeight;
+                });
+                maxHeight += 100;
+                $('.owl-carousel.programTmp-StudentsSuccessStories .owl-item').css('min-height', maxHeight + 'px');
+                $('.owl-carousel.programTmp-StudentsSuccessStories .owl-item .item').css('min-height', maxHeight + 'px');
+            }
+        </script>
+        <script>
+            AOS.init();
+        </script>
+
+        <!--Script for Mega Menu-->
+        <script>
+
+            document.addEventListener('click', function (e) {
+                // Hamburger menu
+                if (e.target.classList.contains('hamburger-toggle')) {
+                    e.target.children[0].classList.toggle('active');
+                }
+            })
+
+        </script>
+        <!--Script for Mega Menu-->
+
+        <!--Script for Search-->
+
+        <script>
+            function toggleSearch(containerId) {
+                var searchIcon = document.querySelector('#' + containerId + ' .search-icon');
+                var closeIcon = document.querySelector('#' + containerId + ' .close-icon');
+                var searchContainer = document.getElementById(containerId);
+
+                searchIcon.classList.toggle('active');
+                closeIcon.classList.toggle('active');
+                searchContainer.classList.toggle('active');
+            }
+        </script>
+        <!--Script for Search-->
+
+        <!--script for show hide text-->
+        <script>
+            function toggleText() {
+
+                // Get all the elements from the page
+                let points =
+                    document.getElementById("points");
+
+                let showMoreText =
+                    document.getElementById("moreText");
+
+                let buttonText =
+                    document.getElementById("textButton");
+
+                // If the display property of the dots 
+                // to be displayed is already set to 
+                // 'none' (that is hidden) then this 
+                // section of code triggers
+                if (points.style.display === "none") {
+
+                    // Hide the text between the span
+                    // elements
+                    showMoreText.style.display = "none";
+
+                    // Show the dots after the text
+                    points.style.display = "inline";
+
+                    // Change the text on button to 
+                    // 'Show More'
+                    buttonText.innerHTML = "Show More";
+                }
+
+                // If the hidden portion is revealed,
+                // we will change it back to be hidden
+                else {
+
+                    // Show the text between the
+                    // span elements
+                    showMoreText.style.display = "inline";
+
+                    // Hide the dots after the text
+                    points.style.display = "none";
+
+                    // Change the text on button
+                    // to 'Show Less'
+                    buttonText.innerHTML = "Show Less";
+                }
+            }
+        </script>
+        <!--script for show hide text-->
+
+    </div>
+</body>
+
+</html>

@@ -43,4 +43,30 @@
             }
         }
     }
+    .applyNowButton {
+     
+        margin-top: 35px;
+      
+      a{
+        display: inline-block;
+        background: $tseng-secondary;
+        color: $white;
+        padding: 1.12rem 6rem;
+        text-align: center;
+        transition: all 0.25s ease;
+        font-weight: 700;
+        font-size: 1.12rem;
+        text-decoration:none;
+        &:hover{
+          background: $tseng-secondary-hover;
+        }
+        @include breakMaxOnly(1024px) {
+          display:block;
+        }
+        @include breakMaxOnly(767px) {
+          padding-left:3rem;
+          padding-right:3rem;
+        }
+      }
+    }
 }
