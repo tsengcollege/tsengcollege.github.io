@@ -1,22 +1,32 @@
 .programFieldTabContainer {
-  margin-top: -80px;
+  margin-top: -90px;
   z-index: 1;
   position: relative;
+  .nav-item{
+  flex:1;
+  margin-right:10px;
+  &:last-child{
+    margin-right:0;
+  }
+  }
   .nav-tabs {
     border: 0;
     display: flex;
-    justify-content: space-between;
+   
     .nav-link {
       color: #fff;
       background-color: $tseng-secondary-hover;
       //   margin: 0 10px;
       font-size: 1.25rem;
-      width: 24.5%;
+     width:100%;
       border-radius: 0;
+      font-weight: 700;
+      padding:15px;
+      border:0;
       &.active {
         color: $tseng-secondary;
-        background-color: #fff;
-        font-weight: 600;
+        background-color: $white;
+        font-weight: 700;
         border: 0;
       }
     }
@@ -24,25 +34,29 @@
 
   .tab-content {
     box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.09);
-    padding: 40px;
+    padding: 40px 40px 8px 40px;
     background-color: $white;
+   
     @include breakMaxOnly(767.98px) {
       padding: 25px;
     }
   }
+  .tab-pane{
+    border:0;
+  }
 
   #nav-public {
-    .heading {
-      font-size: 2.125rem;
-      font-weight: bold;
-    }
+ 
   }
 
   .ourAlumni {
+      margin-top:60px;
+      margin-bottom:60px;
+
     .subHeading {
       color: $tseng-secondary;
-      font-weight: 500;
-      font-size: 1.125rem;
+      font-weight: 600;
+      font-size: 1.12rem;
     }
     li {
       font-size: 0.875rem;
@@ -54,7 +68,10 @@
   }
   .companiesHiringContainer {
     background-color: $lightgery-shade-3;
-    padding: 20px;
+    padding: 27px 40px 40px 40px;
+    margin-bottom:40px;
+ 
+
   }
   .companiesHiring {
     position: relative;
@@ -80,7 +97,7 @@
       //   transition: all 0.25s ease;
       //
       position: absolute;
-      left: -10px;
+      left: -30px;
       /* top: 0; */
       font-size: 4rem;
       color: $tseng-secondary;
@@ -101,7 +118,7 @@
 
     &.owl-carousel .owl-nav button.owl-next {
       position: absolute;
-      right: -10px;
+      right: -30px;
       /* top: 0; */
       font-size: 4rem;
       color: $tseng-secondary;
@@ -119,5 +136,79 @@
     &.owl-carousel .owl-nav button.owl-next.disabled {
       color: $darkgrey-shade-1;
     }
+    @include breakMaxOnly(991px) {
+
+      &.owl-theme .owl-dots .owl-dot.active span,
+      &.owl-theme .owl-dots .owl-dot:hover span {
+          background: $tseng-secondary;
+      }
+  }
+  }
+
+  .accordion-body{
+    padding:0;
+  }
+  @media (max-width: 1024px) {
+    .tab-content > .tab-pane {
+      display: block;
+      opacity: 1;
+    }
+    }
+
+
+   
+
+    @include breakMinMax(320px,1199px){
+      .accordion-button:not(.collapsed){
+        background:$white;
+        color:$tseng-primary;
+
+        &:after{
+         
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23000000' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e");
+            rotate:(0deg);
+        
+        }
+      }
+      .accordion-button{
+        background:$tseng-secondary;
+        color: $white;
+        font-size: 1.25rem;
+        font-weight: 700;
+        margin-bottom:10px;
+        &:after{
+        
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e");
+      
+        
+        }
+
+      }
+  }
+
+
+
+
+
+}
+
+.PublicSectorSocialServices{
+  .card{
+    margin-bottom:50px;
+  }
+  .heading {
+    font-size: 2.125rem;
+    font-weight: bold;
+  }
+  .descriptiontxt{
+    line-height:28px;
+    padding-top:10px;
+    padding-bottom:40px;
+  }
+  @include breakMinMax(320px,1199px){
+    margin-top:20px;
   }
 }
+
+
+

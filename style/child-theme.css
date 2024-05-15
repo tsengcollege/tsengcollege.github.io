@@ -77,7 +77,8 @@ html, body {
 /*Headings*/
 h1 {
   color: #000000;
-  font-size: 2.87rem; /*46px*/
+  font-size: 2.87rem;
+  /*46px*/
   font-weight: 700;
   line-height: 3.37rem;
   margin-bottom: 2.5rem;
@@ -85,7 +86,8 @@ h1 {
 
 h2 {
   color: #000000;
-  font-size: 2.12rem; /*34px*/
+  font-size: 2.12rem;
+  /*34px*/
   font-weight: 700;
   line-height: 2.25rem;
   margin-bottom: 2.56rem;
@@ -93,7 +95,8 @@ h2 {
 
 h4 {
   color: #000000;
-  font-size: 1.5rem; /*24px*/
+  font-size: 1.5rem;
+  /*24px*/
   font-weight: 700;
   line-height: 2rem;
   margin-bottom: 1.3rem;
@@ -101,14 +104,16 @@ h4 {
 
 h5 {
   color: #000000;
-  font-size: 1.37rem; /*22px*/
+  font-size: 1.37rem;
+  /*22px*/
   line-height: 1.56rem;
   margin-bottom: 1.1rem;
 }
 
 h6 {
   color: #000000;
-  font-size: 1.25rem; /*20px*/
+  font-size: 1.25rem;
+  /*20px*/
   line-height: 1.56rem;
   margin-bottom: 0.93rem;
 }
@@ -272,6 +277,10 @@ p strong {
   font-weight: 600;
 }
 
+button:focus {
+  outline: 1px solid gray !important;
+}
+
 .headerTopBar {
   background: #f8f9f8;
   /*height:2.8rem;*/
@@ -309,7 +318,8 @@ p strong {
   height: 2.9rem;
 }
 .tseng-dropDown .dropdown .btn:focus-visible {
-  outline: 1px solid #ad001d; /* Change the color and thickness as needed */
+  outline: 1px solid #ad001d;
+  /* Change the color and thickness as needed */
 }
 .tseng-dropDown .dropdown .dropdown-menu {
   padding: 1.5rem 2rem 2rem;
@@ -685,11 +695,13 @@ p strong {
 }
 .headerNavContainer .searchContainer .searchFormBox {
   position: absolute;
-  top: calc(100% + 0px); /* Below the search icon */
+  top: calc(100% + 0px);
+  /* Below the search icon */
   right: 0;
   display: none;
   transition: opacity 0.5s ease-in-out;
-  background: #fff; /* Background color for the open state */
+  background: #fff;
+  /* Background color for the open state */
   padding: 2rem 2.5rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
@@ -724,7 +736,8 @@ p strong {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Semi-transparent black overlay */
   display: none;
 }
 .headerNavContainer .searchContainerMobile {
@@ -763,11 +776,13 @@ p strong {
 }
 .headerNavContainer .searchContainerMobile .searchFormBox {
   position: absolute;
-  top: calc(100% + 40px); /* Below the search icon */
+  top: calc(100% + 40px);
+  /* Below the search icon */
   right: -72px;
   display: none;
   transition: opacity 0.5s ease-in-out;
-  background: #fff; /* Background color for the open state */
+  background: #fff;
+  /* Background color for the open state */
   padding: 2rem 2.5rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   z-index: 99;
@@ -823,7 +838,8 @@ p strong {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Semi-transparent black overlay */
   display: none;
 }
 @media (max-width: 767px) {
@@ -2728,7 +2744,7 @@ p strong {
   background: url(../images/programTemplate/banner/bannerImage.jpg);
   background-repeat: no-repeat !important;
   background-color: #000000 !important;
-  background-size: 100% !important;
+  background-size: cover !important;
   background-position: center !important;
   min-height: 400px;
   /*display: flex;
@@ -2955,6 +2971,8 @@ p strong {
     color: #D22030;
     padding-bottom: 16px;
   }
+}
+@media (min-width: 1200px) {
   .programLinksBreadCrumbsContainer .programLinksContainer .programLinkList ul a {
     display: block;
     text-decoration: none;
@@ -3268,6 +3286,10 @@ p strong {
 
 .programsHighlightsContainer {
   margin-bottom: 17px;
+}
+.programsHighlightsContainer.seprationLine {
+  border-top: 4px solid #D22030;
+  padding-top: 25px;
 }
 .programsHighlightsContainer h4 span {
   color: #D22030;
@@ -3594,7 +3616,7 @@ p strong {
 .programStudentResourcesContainer .imagePlaceHolder img {
   max-width: 100%;
   width: 100%;
-  height: 257px;
+  height: 350px;
   object-fit: cover;
 }
 
@@ -3661,7 +3683,7 @@ p strong {
   height: 100%;
   /* Adjust the height on hover */
   padding-bottom: 40px;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.75) 9.89%, rgb(0, 0, 0) 100%);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.75) 9.89%, black 100%);
   justify-content: flex-start;
 }
 .programFacilitiesResourcesContainer .programFacilitiesResourcesRepeatBox:hover .programFacilitiesResourcesText .textDescription {
@@ -4059,7 +4081,7 @@ p strong {
 }
 @media (max-width: 991px) {
   .programSideBarContainer .professionalAccrSection .owl-theme .owl-dots .owl-dot.active span,
-  .programSideBarContainer .professionalAccrSection .owl-theme .owl-dots .owl-dot:hover span {
+.programSideBarContainer .professionalAccrSection .owl-theme .owl-dots .owl-dot:hover span {
     background: #D22030;
   }
   .programSideBarContainer .professionalAccrSection .owl-nav {
@@ -5009,7 +5031,7 @@ p strong {
 }
 .pathCareerContainer .pathCareer {
   text-align: center;
-  padding: 50px 80px 100px;
+  padding: 60px 0 151px 0;
 }
 @media (max-width: 991.98px) {
   .pathCareerContainer .pathCareer {
@@ -5020,7 +5042,7 @@ p strong {
   color: #fff;
 }
 .pathCareerContainer .heading {
-  font-size: 4.313rem;
+  font-size: 4.31rem;
   font-weight: bold;
 }
 @media (max-width: 767.98px) {
@@ -5030,51 +5052,63 @@ p strong {
 }
 .pathCareerContainer .subHeading {
   font-size: 2.063rem;
-  margin-bottom: 20px;
-  border-bottom: 0.5px solid rgba(173, 0, 29, 0.4);
-  padding-bottom: 20px;
+  margin-bottom: 25px;
+  border-bottom: 0.5px solid #EC5A67;
+  padding-bottom: 25px;
 }
 @media (max-width: 767.98px) {
   .pathCareerContainer .subHeading {
-    font-size: 1.313rem;
+    font-size: 1.31rem;
   }
 }
 .pathCareerContainer .para {
-  font-size: 1.125rem;
-  padding: 0 100px 40px;
+  font-size: 1.12rem;
+  max-width: 55%;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media (max-width: 991.98px) {
   .pathCareerContainer .para {
     padding: 0 0 40px;
+    max-width: 90%;
   }
 }
 
 .programFieldTabContainer {
-  margin-top: -80px;
+  margin-top: -90px;
   z-index: 1;
   position: relative;
+}
+.programFieldTabContainer .nav-item {
+  flex: 1;
+  margin-right: 10px;
+}
+.programFieldTabContainer .nav-item:last-child {
+  margin-right: 0;
 }
 .programFieldTabContainer .nav-tabs {
   border: 0;
   display: flex;
-  justify-content: space-between;
 }
 .programFieldTabContainer .nav-tabs .nav-link {
   color: #fff;
   background-color: #ad001d;
   font-size: 1.25rem;
-  width: 24.5%;
+  width: 100%;
   border-radius: 0;
+  font-weight: 700;
+  padding: 15px;
+  border: 0;
 }
 .programFieldTabContainer .nav-tabs .nav-link.active {
   color: #D22030;
   background-color: #fff;
-  font-weight: 600;
+  font-weight: 700;
   border: 0;
 }
 .programFieldTabContainer .tab-content {
   box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.09);
-  padding: 40px;
+  padding: 40px 40px 8px 40px;
   background-color: #fff;
 }
 @media (max-width: 767.98px) {
@@ -5082,14 +5116,17 @@ p strong {
     padding: 25px;
   }
 }
-.programFieldTabContainer #nav-public .heading {
-  font-size: 2.125rem;
-  font-weight: bold;
+.programFieldTabContainer .tab-pane {
+  border: 0;
+}
+.programFieldTabContainer .ourAlumni {
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 .programFieldTabContainer .ourAlumni .subHeading {
   color: #D22030;
-  font-weight: 500;
-  font-size: 1.125rem;
+  font-weight: 600;
+  font-size: 1.12rem;
 }
 .programFieldTabContainer .ourAlumni li {
   font-size: 0.875rem;
@@ -5100,7 +5137,8 @@ p strong {
 }
 .programFieldTabContainer .companiesHiringContainer {
   background-color: #F6F7F9;
-  padding: 20px;
+  padding: 27px 40px 40px 40px;
+  margin-bottom: 40px;
 }
 .programFieldTabContainer .companiesHiring {
   position: relative;
@@ -5119,7 +5157,7 @@ p strong {
 .programFieldTabContainer .companiesHiring.owl-carousel .owl-nav button.owl-prev {
   position: absolute;
   position: absolute;
-  left: -10px;
+  left: -30px;
   /* top: 0; */
   font-size: 4rem;
   color: #D22030;
@@ -5138,7 +5176,7 @@ p strong {
 }
 .programFieldTabContainer .companiesHiring.owl-carousel .owl-nav button.owl-next {
   position: absolute;
-  right: -10px;
+  right: -30px;
   /* top: 0; */
   font-size: 4rem;
   color: #D22030;
@@ -5155,9 +5193,62 @@ p strong {
 .programFieldTabContainer .companiesHiring.owl-carousel .owl-nav button.owl-next.disabled {
   color: #55565A;
 }
+@media (max-width: 991px) {
+  .programFieldTabContainer .companiesHiring.owl-theme .owl-dots .owl-dot.active span, .programFieldTabContainer .companiesHiring.owl-theme .owl-dots .owl-dot:hover span {
+    background: #D22030;
+  }
+}
+.programFieldTabContainer .accordion-body {
+  padding: 0;
+}
+@media (max-width: 1024px) {
+  .programFieldTabContainer .tab-content > .tab-pane {
+    display: block;
+    opacity: 1;
+  }
+}
+@media (min-width: 320px) and (max-width: 1199px) {
+  .programFieldTabContainer .accordion-button:not(.collapsed) {
+    background: #fff;
+    color: #000000;
+  }
+  .programFieldTabContainer .accordion-button:not(.collapsed):after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23000000' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e");
+    rotate: 0deg;
+  }
+  .programFieldTabContainer .accordion-button {
+    background: #D22030;
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .programFieldTabContainer .accordion-button:after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e");
+  }
+}
+
+.PublicSectorSocialServices .card {
+  margin-bottom: 50px;
+}
+.PublicSectorSocialServices .heading {
+  font-size: 2.125rem;
+  font-weight: bold;
+}
+.PublicSectorSocialServices .descriptiontxt {
+  line-height: 28px;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+@media (min-width: 320px) and (max-width: 1199px) {
+  .PublicSectorSocialServices {
+    margin-top: 20px;
+  }
+}
 
 .newPathContainer {
   background-color: #F6F7F9;
+  padding: 50px 0;
 }
 .newPathContainer .accordion-item {
   border-radius: 0 !important;
@@ -5176,15 +5267,27 @@ p strong {
   font-size: 1.25rem;
   font-weight: 500;
   margin-bottom: -1px;
+  padding-left: 40px;
 }
 .newPathContainer .accordion-button:not(.collapsed)::after {
   background-image: url("../images/portfolio_home/btn.svg");
   transform: rotate(0);
 }
+@media (min-width: 320px) and (max-width: 1024px) {
+  .newPathContainer .accordion-button:not(.collapsed) {
+    padding-left: 17px;
+  }
+}
 .newPathContainer .accordion-button.collapsed {
   border-radius: 0 !important;
   font-weight: 600;
   font-size: 1.25rem;
+}
+.newPathContainer .accordion-button:focus:not(:focus-visible) {
+  outline: 1px solid gray !important;
+}
+.newPathContainer .accordion-button:focus {
+  outline: 1px solid gray !important;
 }
 .newPathContainer .accordion-collapse {
   background-color: #D22030;
@@ -5200,3 +5303,13 @@ p strong {
   font-weight: bold;
   display: inline-block;
 }
+@media (min-width: 320px) and (max-width: 1024px) {
+  .newPathContainer .accordion-body {
+    padding: 14px 17px !important;
+  }
+}
+.newPathContainer #masterDegree .accordion-body {
+  padding: 20px 40px 25px 40px;
+}
+
+/*# sourceMappingURL=child-theme.css.map */

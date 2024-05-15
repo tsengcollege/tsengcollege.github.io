@@ -3,7 +3,7 @@
 
   .pathCareer {
     text-align: center;
-    padding: 50px 80px 100px;
+    padding: 60px 0 151px 0;
     @include breakMaxOnly(991.98px) {
       padding: 50px 0px 100px;
     }
@@ -12,7 +12,7 @@
     color: $white;
   }
   .heading {
-    font-size: 4.313rem;
+    font-size: 4.31rem;
     font-weight: bold;
     @include breakMaxOnly(767.98px) {
       font-size: 2.313rem;
@@ -20,18 +20,21 @@
   }
   .subHeading {
     font-size: 2.063rem;
-    margin-bottom: 20px;
-    border-bottom: 0.5px solid rgba($tseng-secondary-hover, 0.4);
-    padding-bottom: 20px;
+    margin-bottom: 25px;
+    border-bottom: 0.5px solid #EC5A67;
+    padding-bottom: 25px;
     @include breakMaxOnly(767.98px) {
-        font-size: 1.313rem;
+        font-size: 1.31rem;
       }
   }
   .para {
-    font-size: 1.125rem;
-    padding: 0 100px 40px;
+    font-size: 1.12rem;
+    max-width:55%;
+    margin-left:auto;
+    margin-right:auto;
     @include breakMaxOnly(991.98px) {
       padding: 0 0 40px;
+      max-width:90%;
     }
   }
 }

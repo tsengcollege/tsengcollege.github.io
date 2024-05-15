@@ -1,5 +1,6 @@
 .newPathContainer {
   background-color: $lightgery-shade-3;
+  padding:50px 0;
   .accordion-item {
     border-radius: 0 !important;
     border: 0;
@@ -18,15 +19,27 @@
       font-size: 1.25rem;
       font-weight: 500;
       margin-bottom: -1px;
+      padding-left:40px;
       &::after {
         background-image: url("../images/portfolio_home/btn.svg");
         transform: rotate(0);
       }
+      @include breakMinMax(320px, 1024px){
+        padding-left:17px;
+
+   }
     }
     &.collapsed {
       border-radius: 0 !important;
       font-weight: 600;
       font-size: 1.25rem;
+    }
+  
+    &:focus:not(:focus-visible){
+      outline:1px solid gray !important;
+    }
+    &:focus{
+      outline:1px solid gray !important;
     }
   }
   .accordion-collapse {
@@ -46,6 +59,15 @@
         font-weight: bold;
         display: inline-block;
       }
+    }
+    @include breakMinMax(320px, 1024px){
+         padding: 14px 17px !important;
+
+    }
+  }
+  #masterDegree{
+    .accordion-body{
+      padding:20px 40px 25px 40px;
     }
   }
 }
