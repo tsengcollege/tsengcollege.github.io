@@ -58,6 +58,11 @@ html, body {
     font-size: 15px;
   }
 }
+@media (min-width: 1921px) {
+  html, body {
+    font-size: 24px;
+  }
+}
 
 @media (min-width: 992px) {
   .container {
@@ -520,6 +525,11 @@ button:focus {
 }
 .headerNavContainer .headerNavBar {
   padding: 0.8rem 0;
+}
+@media (min-width: 1921px) {
+  .headerNavContainer .headerNavBar .navbar-brand Img {
+    width: 600px;
+  }
 }
 .headerNavContainer .megaMenuNavLink {
   color: #000000;
@@ -5310,6 +5320,71 @@ button:focus {
 }
 .newPathContainer #masterDegree .accordion-body {
   padding: 20px 40px 25px 40px;
+}
+
+.cSunWhyContainer {
+  padding-top: 45px;
+}
+.cSunWhyContainer .whyCsunText {
+  color: #000000;
+  text-align: center;
+  font-size: 3.37rem;
+  font-weight: 300;
+  line-height: 120px;
+  text-transform: uppercase;
+}
+.cSunWhyContainer .cSun-textImg {
+  text-align: center;
+  margin-bottom: 56px;
+}
+.cSunWhyContainer .cSun-textImg img {
+  max-width: 100%;
+}
+
+.cSunNumberSliderContainer {
+  display: flex;
+}
+.cSunNumberSliderContainer .cSunNumberSliderRepeat {
+  border: 14px solid #D9D9D9;
+  padding: 1.81rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.25s ease;
+}
+.cSunNumberSliderContainer .cSunNumberSliderRepeat.animate .number {
+  animation: count 2s forwards;
+}
+@keyframes count {
+  0% {
+    counter-reset: 0;
+  }
+  100% {
+    counter-reset: var(--counter);
+  }
+}
+.cSunNumberSliderContainer .cSunNumberSliderRepeat .numberInfo .number {
+  color: #D22030;
+  font-size: 2.12rem;
+  font-weight: 700;
+  line-height: 40px;
+}
+.cSunNumberSliderContainer .cSunNumberSliderRepeat .numberInfo .text {
+  color: #000000;
+  font-size: 1.37rem;
+  font-weight: 500;
+  line-height: 25px;
+  margin-top: 10px;
+}
+.cSunNumberSliderContainer .cSunNumberSliderRepeat .numberInfo.borderRight0 {
+  border-right: 0;
+}
+@media (max-width: 767px) {
+  .cSunNumberSliderContainer .cSunNumberSliderRepeat .numberInfo.borderRight0 {
+    border-bottom: 0px solid rgba(255, 255, 255, 0.4);
+    padding-bottom: 0rem;
+    margin-bottom: 0rem;
+  }
 }
 
 /*# sourceMappingURL=child-theme.css.map */
