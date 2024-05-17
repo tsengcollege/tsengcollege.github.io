@@ -118,4 +118,14 @@
             padding-top:5px !important;
         }
     }
+
+    &.studentSucessStory-Inner{
+        .programStudentSucessStoryHeader {
+            position:relative;
+
+            @include breakMaxOnly(767px){
+                position:inherit;
+            }
+        }
+    }
 }

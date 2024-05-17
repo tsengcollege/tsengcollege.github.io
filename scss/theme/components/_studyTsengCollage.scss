@@ -147,4 +147,49 @@
             }
         }
     }
+    &.studyTsengSection-Inner{
+        background-color: $tseng-secondary;
+        padding-top:50px;
+        padding-bottom:85px;
+
+        .studyTsengCollegeSection {
+            h2 {
+                text-align: left;
+                color:#fff;
+            }
+
+            .studyCoursesScroller {
+                .home-StudyTsengCollegeCarousel {
+
+                    @include breakMaxOnly(991px) {
+        
+                        &.owl-theme .owl-dots .owl-dot.active span,
+                        &.owl-theme .owl-dots .owl-dot:hover span {
+                            background: $white;
+                        }
+                    }
+
+
+                    &.owl-carousel .owl-nav button.owl-prev {
+                        color: $white;
+                
+                    }
+                    &.owl-carousel .owl-nav button.owl-prev.disabled {
+                        color: rgba($white, 0.8);
+                    }
+
+                    &.owl-carousel .owl-nav button.owl-next {
+                        color: $white;
+
+                    }
+                    &.owl-carousel .owl-nav button.owl-next.disabled {
+                        color: rgba($white, 0.8);
+                    }
+        
+                }
+            }
+        }
+
+   
+    }
 }

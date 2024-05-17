@@ -3,14 +3,14 @@
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), 
           url(../images/homepage/studentsCorner.jpg);
           
-    background-size: 100% !important;
+    background-size: cover !important;
     background-color:#000!important;
     min-height: 34.37rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
    
-    background-position: center bottom !important;
+    background-position: center !important;
     background-repeat: no-repeat !important;
 
     @include breakMinOnly(1025px){

@@ -18,11 +18,10 @@
             position:absolute;
             left:50%;
             top:60%;
+            transform: translateY(-50%);
+            transform: translateX(-50%);
 
-            @include breakMaxOnly(767px){
-                left:42%;
-                top:42%;
-            }
+            
 
         }
         
@@ -58,6 +57,8 @@
             line-height:26px;
         }
     }
-
+&.lifeCSunCampus-Inner{
+    margin-bottom:0px;
+}
   
 }

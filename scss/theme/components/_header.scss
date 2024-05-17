@@ -296,9 +296,17 @@
 .headerNavContainer {
 	background: $white;
 	position: relative;
+
 	.headerNavBar {
 		padding: 0.8rem 0;
 
+		.navbar-brand{
+			Img{
+				@include breakMinOnly(1921px){
+					width: 600px;
+				}
+			}
+		}
 
 
 	}
