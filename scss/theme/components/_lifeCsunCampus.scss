@@ -34,6 +34,10 @@
             list-style-type: none;
             display: flex;
 
+            @include breakMaxOnly(767px) {
+                flex-direction: column;
+            }
+
             li{
                 flex:1;
                 border-right:1px solid $white;

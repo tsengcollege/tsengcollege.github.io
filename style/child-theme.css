@@ -82,8 +82,7 @@ html, body {
 /*Headings*/
 h1 {
   color: #000000;
-  font-size: 2.87rem;
-  /*46px*/
+  font-size: 2.87rem; /*46px*/
   font-weight: 700;
   line-height: 3.37rem;
   margin-bottom: 2.5rem;
@@ -91,8 +90,7 @@ h1 {
 
 h2 {
   color: #000000;
-  font-size: 2.12rem;
-  /*34px*/
+  font-size: 2.12rem; /*34px*/
   font-weight: 700;
   line-height: 2.25rem;
   margin-bottom: 2.56rem;
@@ -100,8 +98,7 @@ h2 {
 
 h4 {
   color: #000000;
-  font-size: 1.5rem;
-  /*24px*/
+  font-size: 1.5rem; /*24px*/
   font-weight: 700;
   line-height: 2rem;
   margin-bottom: 1.3rem;
@@ -109,16 +106,14 @@ h4 {
 
 h5 {
   color: #000000;
-  font-size: 1.37rem;
-  /*22px*/
+  font-size: 1.37rem; /*22px*/
   line-height: 1.56rem;
   margin-bottom: 1.1rem;
 }
 
 h6 {
   color: #000000;
-  font-size: 1.25rem;
-  /*20px*/
+  font-size: 1.25rem; /*20px*/
   line-height: 1.56rem;
   margin-bottom: 0.93rem;
 }
@@ -332,8 +327,7 @@ button:focus {
   height: 2.9rem;
 }
 .tseng-dropDown .dropdown .btn:focus-visible {
-  outline: 1px solid #ad001d;
-  /* Change the color and thickness as needed */
+  outline: 1px solid #ad001d; /* Change the color and thickness as needed */
 }
 .tseng-dropDown .dropdown .dropdown-menu {
   padding: 1.5rem 2rem 2rem;
@@ -714,13 +708,11 @@ button:focus {
 }
 .headerNavContainer .searchContainer .searchFormBox {
   position: absolute;
-  top: calc(100% + 0px);
-  /* Below the search icon */
+  top: calc(100% + 0px); /* Below the search icon */
   right: 0;
   display: none;
   transition: opacity 0.5s ease-in-out;
-  background: #fff;
-  /* Background color for the open state */
+  background: #fff; /* Background color for the open state */
   padding: 2rem 2.5rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
@@ -755,8 +747,7 @@ button:focus {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  /* Semi-transparent black overlay */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
   display: none;
 }
 .headerNavContainer .searchContainerMobile {
@@ -795,13 +786,11 @@ button:focus {
 }
 .headerNavContainer .searchContainerMobile .searchFormBox {
   position: absolute;
-  top: calc(100% + 40px);
-  /* Below the search icon */
+  top: calc(100% + 40px); /* Below the search icon */
   right: -72px;
   display: none;
   transition: opacity 0.5s ease-in-out;
-  background: #fff;
-  /* Background color for the open state */
+  background: #fff; /* Background color for the open state */
   padding: 2rem 2.5rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   z-index: 99;
@@ -857,8 +846,7 @@ button:focus {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  /* Semi-transparent black overlay */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
   display: none;
 }
 @media (max-width: 767px) {
@@ -3016,8 +3004,6 @@ button:focus {
     color: #D22030;
     padding-bottom: 16px;
   }
-}
-@media (min-width: 1200px) {
   .programLinksBreadCrumbsContainer .programLinksContainer .programLinkList ul a {
     display: block;
     text-decoration: none;
@@ -3728,7 +3714,7 @@ button:focus {
   height: 100%;
   /* Adjust the height on hover */
   padding-bottom: 40px;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.75) 9.89%, black 100%);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.75) 9.89%, rgb(0, 0, 0) 100%);
   justify-content: flex-start;
 }
 .programFacilitiesResourcesContainer .programFacilitiesResourcesRepeatBox:hover .programFacilitiesResourcesText .textDescription {
@@ -4134,7 +4120,7 @@ button:focus {
 }
 @media (max-width: 991px) {
   .programSideBarContainer .professionalAccrSection .owl-theme .owl-dots .owl-dot.active span,
-.programSideBarContainer .professionalAccrSection .owl-theme .owl-dots .owl-dot:hover span {
+  .programSideBarContainer .professionalAccrSection .owl-theme .owl-dots .owl-dot:hover span {
     background: #D22030;
   }
   .programSideBarContainer .professionalAccrSection .owl-nav {
@@ -4847,6 +4833,11 @@ button:focus {
   list-style-type: none;
   display: flex;
 }
+@media (max-width: 767px) {
+  .lifeCsunCampusContainer .campusImageContainer ul {
+    flex-direction: column;
+  }
+}
 .lifeCsunCampusContainer .campusImageContainer ul li {
   flex: 1;
   border-right: 1px solid #fff;
@@ -4939,7 +4930,7 @@ button:focus {
 @media (max-width: 767px) {
   .singleBannerContainer .singleBannereOuter {
     min-height: auto;
-    margin-bottom: 30px;
+    /*margin-bottom:30px;*/
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -5032,7 +5023,7 @@ button:focus {
   line-height: 17px;
 }
 .campusRequestinfoContainer .requestFormSection {
-  margin: 52px 52px 43px 22px;
+  margin: 52px 52px 43px 52px;
 }
 @media (max-width: 991px) {
   .campusRequestinfoContainer .requestFormSection {
@@ -5781,4 +5772,127 @@ button:focus {
   }
 }
 
-/*# sourceMappingURL=child-theme.css.map */
+.csunRedRibbonContainer {
+  background: #D22030;
+  padding: 40px 0;
+  margin-bottom: 60px;
+}
+.csunRedRibbonContainer .csunContactUs-Info {
+  color: #fff;
+  line-height: 26px;
+}
+.csunRedRibbonContainer .csunContactUs-Info a {
+  color: #fff;
+}
+.csunRedRibbonContainer .csunContactUs-Info a:hover {
+  text-decoration: none;
+}
+
+.csunDepartmentContactContainer {
+  margin-bottom: 55px;
+}
+.csunDepartmentContactContainer .csunDepartmentContactRepeat {
+  border: 1px solid #D22030;
+  background: #fff;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.csunDepartmentContactContainer .csunDepartmentContactRepeat .csunDepartmentemail-number {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+@media (max-width: 767px) {
+  .csunDepartmentContactContainer .csunDepartmentContactRepeat .csunDepartmentemail-number {
+    flex-direction: column;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1280px) {
+  .csunDepartmentContactContainer .csunDepartmentContactRepeat .csunDepartmentemail-number {
+    flex-direction: column;
+  }
+}
+.csunDepartmentContactContainer .csunDepartmentContactRepeat .csunDepartmentemail-number .csunEmail {
+  display: flex;
+}
+.csunDepartmentContactContainer .csunDepartmentContactRepeat .csunDepartmentemail-number .csunEmail .iconEmail {
+  margin-right: 12px;
+}
+.csunDepartmentContactContainer .csunDepartmentContactRepeat .csunDepartmentemail-number .csunEmail .emailid a {
+  text-decoration: none;
+  border-bottom: 1px solid #D22030;
+  color: #000000;
+  padding-bottom: 2px;
+  transition: all 0.25s ease;
+}
+.csunDepartmentContactContainer .csunDepartmentContactRepeat .csunDepartmentemail-number .csunEmail .emailid a:hover {
+  border-bottom: 1px solid #000000;
+  color: #ad001d;
+}
+.csunDepartmentContactContainer .csunDepartmentContactRepeat .csunDepartmentemail-number .csunContactNum {
+  display: flex;
+}
+@media (max-width: 767px) {
+  .csunDepartmentContactContainer .csunDepartmentContactRepeat .csunDepartmentemail-number .csunContactNum {
+    margin-top: 20px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1280px) {
+  .csunDepartmentContactContainer .csunDepartmentContactRepeat .csunDepartmentemail-number .csunContactNum {
+    margin-top: 20px;
+  }
+}
+.csunDepartmentContactContainer .csunDepartmentContactRepeat .csunDepartmentemail-number .csunContactNum .iconTel {
+  margin-right: 12px;
+}
+.csunDepartmentContactContainer .csunDepartmentContactRepeat .csunContactDesc .topic {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.csunDepartmentContactContainer .csunDepartmentContactRepeat .csunContactDesc .contentDesc {
+  margin-bottom: 40px;
+  line-height: 26px;
+}
+.csunDepartmentContactContainer .csunDepartmentContactRepeat .csunContactDesc .contentDesc a {
+  text-decoration: none;
+  border-bottom: 1px solid #D22030;
+  color: #000000;
+  padding-bottom: 2px;
+  transition: all 0.25s ease;
+}
+.csunDepartmentContactContainer .csunDepartmentContactRepeat .csunContactDesc .contentDesc a:hover {
+  border-bottom: 1px solid #000000;
+  color: #ad001d;
+}
+.csunDepartmentContactContainer .csunDepartmentContactRepeat .csunContactDesc .btnCsunContact a {
+  display: inline-block;
+  background: #D22030;
+  color: #fff;
+  flex: 1;
+  padding: 18px 30px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  font-weight: 700;
+}
+.csunDepartmentContactContainer .csunDepartmentContactRepeat .csunContactDesc .btnCsunContact a:hover {
+  background: #ad001d;
+}
+
+.studentSectionContainer.contactUsLearnMore .studentInfoButtonContainer {
+  width: 70%;
+}
+@media (max-width: 767px) {
+  .studentSectionContainer.contactUsLearnMore .studentInfoButtonContainer {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .studentSectionContainer.contactUsLearnMore .studentInfoButtonContainer {
+    width: 90%;
+  }
+}

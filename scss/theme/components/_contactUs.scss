@@ -1,0 +1,144 @@
+
+   .csunRedRibbonContainer{
+    background: $tseng-secondary;
+    padding:40px 0;
+    margin-bottom:60px;
+
+    .csunContactUs-Info{
+        color: $white;
+        line-height: 26px;
+
+        a{
+            color:$white;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+    }
+   }
+
+   .csunDepartmentContactContainer{
+
+    margin-bottom:55px;
+    .csunDepartmentContactRepeat{
+        border:1px solid $tseng-secondary;
+        background: $white;
+        padding:40px;
+        display: flex;
+        flex-direction: column;
+        height:100%;
+
+        .csunDepartmentemail-number{
+            margin-top:10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom:25px;
+
+            @include breakMaxOnly(767px) {
+                flex-direction: column;
+            }
+            @include  breakMinMax(1024px, 1280px) {
+                flex-direction: column;
+            }
+    
+            .csunEmail{
+                display: flex;
+                .iconEmail{
+                    margin-right:12px;
+                }
+                .emailid{
+                    a{
+                        text-decoration: none;
+                        border-bottom:1px solid $tseng-secondary;
+                        color: $tseng-primary;
+                        padding-bottom: 2px;
+                        transition: all .25s ease;
+                    
+                        &:hover{
+                            border-bottom:1px solid $tseng-primary;
+                            color:$tseng-secondary-hover ;
+                        
+                        }
+                    }
+                }
+            }
+            .csunContactNum{
+                display:flex;
+                @include breakMaxOnly(767px) {
+                    margin-top:20px;
+                }
+                @include  breakMinMax(1024px, 1280px) {
+                    margin-top:20px;
+                }
+
+                .iconTel{
+                    margin-right:12px;
+                }
+            }
+            
+        }
+        .csunContactDesc{
+          
+            .topic{
+                font-weight:500;
+                margin-bottom:10px;
+            }
+            .contentDesc{
+                margin-bottom:40px;
+                line-height: 26px;
+                
+                a{
+                    text-decoration: none;
+                    border-bottom:1px solid $tseng-secondary;
+                    color: $tseng-primary;
+                    padding-bottom: 2px;
+                    transition: all .25s ease;
+                
+                    &:hover{
+                        border-bottom:1px solid $tseng-primary;
+                        color:$tseng-secondary-hover ;
+                    
+                    }
+                }
+            }
+
+            .btnCsunContact{
+                a{
+                    display: inline-block;
+                    background: $tseng-secondary;
+                    color: $white;
+                    flex: 1;
+                    padding: 18px 30px;
+                    text-align: center;
+                    text-decoration: none;
+                    transition: all 0.25s ease;
+                    font-weight: 700;
+
+                    &:hover{
+                        background: $tseng-secondary-hover;
+                    }
+                }
+            }
+        }
+
+    }
+ 
+
+
+   }
+   .studentSectionContainer {
+    &.contactUsLearnMore{
+        .studentInfoButtonContainer{
+            width:70%;
+
+            @include breakMaxOnly(767px) {
+                width:100%;
+            }
+            @include  breakMinMax(768px, 991px) {
+                width:90%;
+            }
+        }
+    }
+    
+}
