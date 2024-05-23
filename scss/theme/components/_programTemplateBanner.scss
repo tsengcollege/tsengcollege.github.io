@@ -5,9 +5,20 @@
   background-size: cover !important;
   background-position: center !important;
   min-height: 400px;
-  /*display: flex;
-    flex-direction: column;
-    justify-content: space-between;*/
+  position:relative;
+ 
+    &:after{
+      content: '';
+      z-index: 0;
+      background: rgba(0,0,0,0.6);
+      /* background: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(185,225,255,0) 27%); */
+      position: absolute;
+      top: 0px;
+      width: 100%;
+      height: 100%;
+      left: 0px;
+}
+
   @include breakMinMax(991.98px, 1199.98px) {
     background-size: cover !important;
   }
@@ -51,9 +62,11 @@
       display: inline-block;
       margin-bottom: 10px;
       width: fit-content;
+      z-index:1;
     }
     h1 {
       color: $white;
+      z-index:1;
     }
     .downloadBrochure {
       border-radius: 50px;
@@ -61,6 +74,7 @@
       background: rgba($white, 0.1);
       display: inline-flex;
       width: fit-content;
+      z-index: 1;
 
       a {
         padding: 11px 9px 9px 20px;
@@ -89,6 +103,7 @@
     flex-direction: column;
     justify-content: end;
     padding-bottom: 70px;
+    z-index:1;
 
     @include breakMaxOnly(991px) {
       padding-bottom: 0;

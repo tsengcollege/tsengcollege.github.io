@@ -1,6 +1,5 @@
 .studentSectionContainer {
-    background-image:
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), 
+    background-image:/* linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),*/ 
           url(../images/homepage/studentsCorner.jpg);
           
     background-size: cover !important;
@@ -12,6 +11,19 @@
    
     background-position: center !important;
     background-repeat: no-repeat !important;
+    position:relative;
+ 
+    &:after{
+      content: '';
+      z-index: 0;
+      background: rgba(0,0,0,0.6);
+      /* background: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(185,225,255,0) 27%); */
+      position: absolute;
+      top: 0px;
+      width: 100%;
+      height: 100%;
+      left: 0px;
+}
 
     @include breakMinOnly(1025px){
         background-attachment: fixed !important;
@@ -28,6 +40,8 @@
         font-size: 3rem;
         font-weight: 700;
         line-height: 3.75rem;
+        z-index:1;
+        position: relative;
 
         @include breakMaxOnly(767px){
 			margin-top:5rem;
@@ -41,6 +55,8 @@
         text-align: center;
         font-size: 2rem;
         line-height: 60px;
+        z-index:1;
+        position: relative;
 
         @include breakMaxOnly(767px){
             line-height:normal
@@ -54,6 +70,8 @@
         margin-left: auto;
         margin-right: auto;
         margin-top: 3.2rem;
+        z-index:1;
+        position: relative;
 
         @include breakMaxOnly(767px){
             flex-direction:column;

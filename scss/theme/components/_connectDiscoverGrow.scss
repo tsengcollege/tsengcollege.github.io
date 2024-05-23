@@ -1,0 +1,138 @@
+.connectDiscoverGrowContainer{
+    background: url(../images/prospectiveStudents/connectDiscoverGrowBg.jpg)  no-repeat;
+    background-color: $tseng-primary;;
+    background-size: cover;
+    min-height:500px;
+    padding-top:90px;
+    padding-bottom:70px;
+
+.connectDiscoverGrowHeader{
+    padding-bottom:45px;
+    border-bottom:1px solid rgba($white, .3);
+    margin-bottom:25px;
+
+    .headingLine{
+        color: $white;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-size: 6.37rem;
+        font-weight: 800;
+        line-height: normal;
+        letter-spacing: -2.04px;
+        text-align: center;
+
+        @include  breakMinMax(320px, 574px) {
+            font-size: 5rem;
+        }
+        @include  breakMinMax(1280px, 1529px) {
+            font-size: 5.8rem;
+        }
+
+
+    }
+    .secongTagLine{
+        color:$white;
+        text-align: center;
+        font-size: 1.37rem;
+        line-height: 37px; /* 168.182% */
+       
+    }
+}
+
+.csunHousingCampusLifeSection{
+.headingLine{
+    h4{
+        color: $white;
+    }
+}
+.csunHousingCampusLifeRepeatBox {
+    position: relative;
+    overflow: hidden;
+
+    img {
+        /*width: 100%;*/
+        transition: filter 0.5s, transform 0.5s;
+        /* Add transitions for a smooth effect */
+    }
+
+    &:hover img {
+        transform: scale(1.05);
+        /* Zoom in by 1% on hover */
+    }
+    .nextPageLink{
+        position: absolute;
+        right: 25px;
+        z-index: 9;
+        bottom: 19px;
+        @include  breakMinMax(1280px, 1530px) {
+            bottom: 15px;
+            right: 15px;
+        }
+       
+    }
+
+    .csunHousingCampusLifeText {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        z-index: 1;
+        position: absolute;
+        width: 100%;
+        height: 60px;
+        bottom: 0px;
+        left: 0px;
+        /*background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 9.89%, rgba(0, 0, 0, 0.79) 100%);*/
+        background: rgba($tseng-primary, .80);
+        /* Black background with opacity */
+        color: $white;
+        padding: 30px 20px 0px 20px;
+        transition: height 0.5s, padding 0.5s; 
+
+        @include  breakMinMax(1280px, 1530px) {
+            padding: 20px 10px 0px 10px;
+            height: 50px;
+        }
+        
+        /* Add transition for a smooth effect */
+
+       
+
+        .textHeading{
+            display:block;
+            color:$white;
+            font-size: 1.12rem;
+            font-weight: 600;
+            transform: translateY(-60%);
+            @include  breakMinMax(1280px, 1530px) {
+                font-size: 1rem;
+                transform: translateY(-60%);
+            }
+
+        }
+        .textDescription{
+            color: $white;
+            line-height: 22px;
+            display:none;;
+           
+        }
+     
+    }
+    &:hover {
+
+        .csunHousingCampusLifeText{
+            height: 100%;
+            /* Adjust the height on hover */
+            padding-bottom: 40px;
+            /*background: linear-gradient(180deg, rgba(0, 0, 0, .75) 9.89%, rgba(0, 0, 0, 1) 100%);*/
+            background: rgba($tseng-primary, .83);
+            justify-content: flex-start;
+
+        .textDescription{
+            display: block;
+        }
+    }
+}
+
+}
+
+}
+}
