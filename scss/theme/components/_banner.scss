@@ -124,6 +124,8 @@
     background: $tseng-primary;
   }
   .carouselIndicatorWeb {
+
+
     @include breakMaxOnly(992px) {
       display: none;
     }

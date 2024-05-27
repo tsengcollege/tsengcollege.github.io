@@ -1,0 +1,369 @@
+.staffDirectorySearchContainer{
+    background: #FFF;
+    box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.08);
+    margin-bottom:51px;
+.browseByName{
+    margin-bottom:30px;
+    .accordion-item{
+        border:0;
+        border-radius:0;
+
+        &:first-of-type>{
+            .accordion-header{
+                .accordion-button{
+                    border-radius: 0;
+                    border-bottom:1px solid rgba(195, 195, 195, 0.60);
+                   padding-left:0;
+                }
+            }
+        }
+    }
+
+    .accordion-button{
+        color: $tseng-primary;
+        font-weight: 600;
+
+        &::after {
+            background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='%23D22030' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/></svg>");
+
+          }
+
+        
+        &:not(.collapsed){
+            background-color: #fff;
+            border-radius: 0;
+            box-shadow: none;
+            border-bottom:0px !important;
+           
+            &::after {
+                background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='%23D22030' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/></svg>");
+                
+              }
+        }
+        &:focus:not(:focus-visible){
+            outline:1px solid gray !important;
+          }
+          &:focus{
+            outline:1px solid gray !important;
+          }
+    }
+    .accordion-body{
+        padding-left:0;
+    }
+    
+    
+}
+.searchByalphabet{
+    ul{
+        padding:0;
+        margin:0;
+        display:flex;
+        
+    }
+    li{
+        font-weight: 700;
+        list-style-type: none;
+        margin-right:8px;
+        text-align: center;
+
+        a{
+            color:$tseng-secondary;
+            display: block;
+            padding:6px 12px;
+            border:1px solid $tseng-secondary;
+            text-decoration: none;
+
+            &:hover{
+                background-color:$tseng-secondary;
+                color:$white;
+            }
+            &.active{
+                background-color:$tseng-secondary;
+                color:$white;
+            }
+        }
+        
+    }
+    @include breakMaxOnly(1280px) {
+        overflow-x:auto;
+        width:100%;
+    }
+}
+
+
+
+    .labelstaffSearch{
+        font-weight: 600;
+        margin-bottom:15px;
+    }
+    .searchNameBox{
+        border: 2px solid rgba(195, 195, 195, 0.30);
+            background: #FFF;
+            padding: 10px 15px;
+            margin-bottom:35px;
+            display:flex;
+
+            input[type=search] {
+                border:0;
+                padding:13px 0;
+                flex:1 0 90%;
+
+                &::placeholder{
+                    color:$tseng-primary;
+                }
+                @include breakMaxOnly(425px) {
+                    flex:1 0 85%;
+                }
+              
+                
+            }
+            button{
+                border:0;
+                background-color: transparent;
+            }
+
+            }
+            .searchDropDown {
+                border: 2px solid rgba(195, 195, 195, 0.30);
+                background: #FFF;
+                margin-bottom:35px;
+                .ddSearchOption {
+                  border-radius: 0;
+                  border: 0;
+                  background: $white;
+                  padding: 20px 16px;
+          
+                 
+          
+                  .dropdown {
+                    .btn {
+                      border-color: transparent;
+                      width: 100%;
+                      text-align: left;
+                      color: $tseng-secondary;
+                      font-size: 1.18rem;
+                      font-weight: 600;
+                      padding: 0;
+                      
+                      &:focus{
+                        outline:1px solid gray !important;
+                      }
+      
+                    }
+                    .dropdown-toggle {
+                      &:after {
+                        float: right;
+                        border: 0;
+                        background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='%23D22030' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/></svg>");
+                        background-repeat: no-repeat;
+                        width: 16px;
+                        height: 16px;
+                        margin-top: 6px;
+                        margin-left: 0;
+                      }
+                    }
+          
+                    .dropdown-menu {
+                      padding: 0rem 0.6rem 0.8rem 0.6rem;
+                      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.12);
+                      border: 0;
+                      border-radius: 0;
+                      width: 100%;
+          
+                      a {
+                        font-family: $font-secondary;
+                        font-size: 1.125rem;
+                        padding: 0.5rem 0;
+                        transition: all 0.25s ease;
+                        box-shadow: 0 0.1em $grey-shade-2;
+          
+                        &:hover,
+                        &:focus {
+                          color: $tseng-secondary;
+                          background-color: transparent;
+                          box-shadow: 0 0.25em $tseng-secondary;
+                        }
+                      }
+                    }
+                  }
+                }
+              } 
+
+
+
+
+
+
+
+}
+
+
+.staffDirectoryResultContainer{
+    
+h2{
+    span{
+        color: $tseng-secondary;
+    }
+}
+
+.staffDirectoryRepeatBoxContainer{
+    &.executiveOfficers{
+        padding-bottom:60px;
+        border-bottom:1px solid rgba(195, 195, 195, 0.6);
+        margin-bottom:60px;
+   
+    }
+   
+
+.staffDirectoryRepeatBox{
+    background-color: $white;
+    border:1px solid #D9D9D9;
+    filter: drop-shadow(0px 4px 24px rgba($tseng-primary,.10));
+    display: flex;
+
+    @include breakMaxOnly(1440px) {
+        flex-direction: column;
+        height:100%;
+    }
+
+    .staffPortrait{
+        flex:1 0 30%;
+
+        .customStaffPortrait{
+        
+            @include  breakMinMax(768px, 1024px) {
+                max-height: 400px;
+                object-fit: cover;
+                width: 100%;
+                object-position: top;
+            }
+
+            @include  breakMinMax(1024px, 1440px)  {
+                max-height: 500px;
+                object-fit: cover;
+                width: 100%;
+                object-position: top;
+            }
+           
+    }
+    }
+    .staffProfile{
+        flex:1 0 70%;
+        padding:27px;
+
+        .staffProfileupperDetails{
+            margin-bottom:35px;
+
+        .staffName{
+            display:flex;
+            color: $tseng-secondary;
+            font-size:1.37rem;
+            font-weight: 700;
+            margin-bottom:5px;
+    
+            .fName{
+                margin-right:5px;
+            }
+        }
+
+        .staffDesignation{
+            color: $tseng-primary;
+            font-weight: 600;
+            line-height: 19px; 
+            margin-bottom:5px;
+        }
+        .staffDept{
+            color: $tseng-primary;
+            font-size: 0.87rem;
+            line-height: 19px; 
+           
+            
+        }
+    }
+
+        .staffEmail{
+            display:flex;
+            align-items: center;
+            margin-bottom:10px;
+
+            .emailIcon{
+                margin-right:18px;
+    
+            }
+            .emailID {
+                color:$tseng-primary;
+                font-size: 0.87rem;
+                line-height: 29px;
+
+                a{
+                    color:$tseng-primary;
+                    text-decoration: none;
+                    border-bottom: 1px solid transparent;
+
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        .staffOtherInfoContainer{
+            display: flex;
+            flex-wrap: wrap;
+            
+
+            .staffOtherInfoSection{
+                flex:1 0 50%;
+                display:flex;
+                margin-bottom:10px;
+                align-items: flex-end;
+
+                @include  breakMinMax(768px, 1024px) {
+                    flex-basis:100%;
+                    align-items: center;
+                    margin-bottom:15px;
+                }
+                
+                .otherInfoIcon{
+                    margin-right:18px;
+                }
+                .otherInfoTxt {
+                    color:$tseng-primary;
+                    font-size: 0.87rem;
+                    
+                    strong{
+                        font-weight:700;
+                    }
+                }
+            }
+        }
+    }
+}
+}
+
+
+.loadMoreContainer{
+    margin:70px 0;
+    text-align: center;
+
+    a{
+        color: $tseng-secondary;
+        font-size: 1.12rem;
+        font-weight: 700;
+        line-height: normal;
+        text-decoration: none;
+        transition: all 0.25s ease;
+        border:1px solid $tseng-secondary;
+        padding:18px 65px;
+
+        @include breakMaxOnly(767px) {
+            display:block;
+        }
+
+        &:hover{
+            background: $tseng-secondary;
+            color:$white;
+        }
+    }
+}
+
+}

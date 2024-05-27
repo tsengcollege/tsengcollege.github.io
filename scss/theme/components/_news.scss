@@ -283,6 +283,7 @@
                 a{
                     color:$tseng-primary;
                     text-decoration: none;
+                    border-bottom:1px solid transparent;
 
                     &:hover{
                         text-decoration: underline;

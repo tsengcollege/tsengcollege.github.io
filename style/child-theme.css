@@ -277,10 +277,9 @@ p strong {
   font-weight: 600;
 }
 
-button:focus {
-  outline: 1px solid transparent !important;
-}
-
+/*button:focus{
+	outline:1px solid #333 !important;
+  }*/
 .overlay {
   background: #000000;
   position: absolute;
@@ -594,23 +593,22 @@ button:focus {
 }
 @media (min-width: 1200px) and (max-width: 1536px) {
   .headerNavContainer .megaMenuContent {
-    padding-right: 2rem;
+    padding-right: 1.5rem;
     margin: 1.5rem 1.5rem 0rem 3.31rem;
   }
 }
 .headerNavContainer .megaMenuContent .contentHeader {
   color: #000000;
-  font-family: "Roboto Slab", serif;
   font-size: 2.68rem;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 2.75rem;
   letter-spacing: -0.86px;
   margin-bottom: 1.56rem;
 }
 @media (max-width: 1366px) {
   .headerNavContainer .megaMenuContent .contentHeader {
-    font-size: 1.23rem;
-    line-height: normal;
+    /*font-size: 1.23rem;
+    line-height: normal;*/
   }
 }
 .headerNavContainer .megaMenuContent .contentHeader span {
@@ -623,6 +621,11 @@ button:focus {
   font-weight: 400;
   line-height: 1.62rem;
   letter-spacing: -0.36px;
+}
+@media (max-width: 1366px) {
+  .headerNavContainer .megaMenuContent .megaMenuDesc {
+    line-height: 1.4rem;
+  }
 }
 .headerNavContainer .smallDeviceLogo {
   display: none;
@@ -2803,7 +2806,7 @@ button:focus {
 .programTemplateBannerContainer:after {
   content: "";
   z-index: 0;
-  background: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.6);
   /* background: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(185,225,255,0) 27%); */
   position: absolute;
   top: 0px;
@@ -5302,6 +5305,7 @@ button:focus {
 }
 .programFieldTabContainer .nav-tabs .nav-link {
   color: #282728;
+  /*background-color: $tseng-secondary-hover;*/
   background-color: #D9D9D9;
   font-size: 1.25rem;
   width: 100%;
@@ -5311,7 +5315,7 @@ button:focus {
   border: 0;
 }
 .programFieldTabContainer .nav-tabs .nav-link.active {
-  color: #D22030;
+  color: #282728;
   background-color: #fff;
   font-weight: 700;
   border: 0;
@@ -6306,6 +6310,7 @@ button:focus {
 .mediaEnquiryContainer .mediaEnquiryBox .mediaQRepeat .mediaText a {
   color: #000000;
   text-decoration: none;
+  border-bottom: 1px solid transparent;
 }
 .mediaEnquiryContainer .mediaEnquiryBox .mediaQRepeat .mediaText a:hover {
   text-decoration: underline;
@@ -6366,4 +6371,298 @@ button:focus {
   .followUsContainer .pageEmbedContainer .pageEmbedOuter .pageInstagram {
     margin-bottom: 30px;
   }
+}
+
+.staffDirectorySearchContainer {
+  background: #FFF;
+  box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.08);
+  margin-bottom: 51px;
+}
+.staffDirectorySearchContainer .browseByName {
+  margin-bottom: 30px;
+}
+.staffDirectorySearchContainer .browseByName .accordion-item {
+  border: 0;
+  border-radius: 0;
+}
+.staffDirectorySearchContainer .browseByName .accordion-item:first-of-type > .accordion-header .accordion-button {
+  border-radius: 0;
+  border-bottom: 1px solid rgba(195, 195, 195, 0.6);
+  padding-left: 0;
+}
+.staffDirectorySearchContainer .browseByName .accordion-button {
+  color: #000000;
+  font-weight: 600;
+}
+.staffDirectorySearchContainer .browseByName .accordion-button::after {
+  background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='%23D22030' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/></svg>");
+}
+.staffDirectorySearchContainer .browseByName .accordion-button:not(.collapsed) {
+  background-color: #fff;
+  border-radius: 0;
+  box-shadow: none;
+  border-bottom: 0px !important;
+}
+.staffDirectorySearchContainer .browseByName .accordion-button:not(.collapsed)::after {
+  background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='%23D22030' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/></svg>");
+}
+.staffDirectorySearchContainer .browseByName .accordion-button:focus:not(:focus-visible) {
+  outline: 1px solid gray !important;
+}
+.staffDirectorySearchContainer .browseByName .accordion-button:focus {
+  outline: 1px solid gray !important;
+}
+.staffDirectorySearchContainer .browseByName .accordion-body {
+  padding-left: 0;
+}
+.staffDirectorySearchContainer .searchByalphabet ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+.staffDirectorySearchContainer .searchByalphabet li {
+  font-weight: 700;
+  list-style-type: none;
+  margin-right: 8px;
+  text-align: center;
+}
+.staffDirectorySearchContainer .searchByalphabet li a {
+  color: #D22030;
+  display: block;
+  padding: 6px 12px;
+  border: 1px solid #D22030;
+  text-decoration: none;
+}
+.staffDirectorySearchContainer .searchByalphabet li a:hover {
+  background-color: #D22030;
+  color: #fff;
+}
+.staffDirectorySearchContainer .searchByalphabet li a.active {
+  background-color: #D22030;
+  color: #fff;
+}
+@media (max-width: 1280px) {
+  .staffDirectorySearchContainer .searchByalphabet {
+    overflow-x: auto;
+    width: 100%;
+  }
+}
+.staffDirectorySearchContainer .labelstaffSearch {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.staffDirectorySearchContainer .searchNameBox {
+  border: 2px solid rgba(195, 195, 195, 0.3);
+  background: #FFF;
+  padding: 10px 15px;
+  margin-bottom: 35px;
+  display: flex;
+}
+.staffDirectorySearchContainer .searchNameBox input[type=search] {
+  border: 0;
+  padding: 13px 0;
+  flex: 1 0 90%;
+}
+.staffDirectorySearchContainer .searchNameBox input[type=search]::placeholder {
+  color: #000000;
+}
+@media (max-width: 425px) {
+  .staffDirectorySearchContainer .searchNameBox input[type=search] {
+    flex: 1 0 85%;
+  }
+}
+.staffDirectorySearchContainer .searchNameBox button {
+  border: 0;
+  background-color: transparent;
+}
+.staffDirectorySearchContainer .searchDropDown {
+  border: 2px solid rgba(195, 195, 195, 0.3);
+  background: #FFF;
+  margin-bottom: 35px;
+}
+.staffDirectorySearchContainer .searchDropDown .ddSearchOption {
+  border-radius: 0;
+  border: 0;
+  background: #fff;
+  padding: 20px 16px;
+}
+.staffDirectorySearchContainer .searchDropDown .ddSearchOption .dropdown .btn {
+  border-color: transparent;
+  width: 100%;
+  text-align: left;
+  color: #D22030;
+  font-size: 1.18rem;
+  font-weight: 600;
+  padding: 0;
+}
+.staffDirectorySearchContainer .searchDropDown .ddSearchOption .dropdown .btn:focus {
+  outline: 1px solid gray !important;
+}
+.staffDirectorySearchContainer .searchDropDown .ddSearchOption .dropdown .dropdown-toggle:after {
+  float: right;
+  border: 0;
+  background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='%23D22030' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/></svg>");
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+  margin-top: 6px;
+  margin-left: 0;
+}
+.staffDirectorySearchContainer .searchDropDown .ddSearchOption .dropdown .dropdown-menu {
+  padding: 0rem 0.6rem 0.8rem 0.6rem;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.12);
+  border: 0;
+  border-radius: 0;
+  width: 100%;
+}
+.staffDirectorySearchContainer .searchDropDown .ddSearchOption .dropdown .dropdown-menu a {
+  font-family: "Roboto Slab", serif;
+  font-size: 1.125rem;
+  padding: 0.5rem 0;
+  transition: all 0.25s ease;
+  box-shadow: 0 0.1em #bec6c3;
+}
+.staffDirectorySearchContainer .searchDropDown .ddSearchOption .dropdown .dropdown-menu a:hover, .staffDirectorySearchContainer .searchDropDown .ddSearchOption .dropdown .dropdown-menu a:focus {
+  color: #D22030;
+  background-color: transparent;
+  box-shadow: 0 0.25em #D22030;
+}
+
+.staffDirectoryResultContainer h2 span {
+  color: #D22030;
+}
+.staffDirectoryResultContainer .staffDirectoryRepeatBoxContainer.executiveOfficers {
+  padding-bottom: 60px;
+  border-bottom: 1px solid rgba(195, 195, 195, 0.6);
+  margin-bottom: 60px;
+}
+.staffDirectoryResultContainer .staffDirectoryRepeatBoxContainer .staffDirectoryRepeatBox {
+  background-color: #fff;
+  border: 1px solid #D9D9D9;
+  filter: drop-shadow(0px 4px 24px rgba(0, 0, 0, 0.1));
+  display: flex;
+}
+@media (max-width: 1440px) {
+  .staffDirectoryResultContainer .staffDirectoryRepeatBoxContainer .staffDirectoryRepeatBox {
+    flex-direction: column;
+    height: 100%;
+  }
+}
+.staffDirectoryResultContainer .staffDirectoryRepeatBoxContainer .staffDirectoryRepeatBox .staffPortrait {
+  flex: 1 0 30%;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .staffDirectoryResultContainer .staffDirectoryRepeatBoxContainer .staffDirectoryRepeatBox .staffPortrait .customStaffPortrait {
+    max-height: 400px;
+    object-fit: cover;
+    width: 100%;
+    object-position: top;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .staffDirectoryResultContainer .staffDirectoryRepeatBoxContainer .staffDirectoryRepeatBox .staffPortrait .customStaffPortrait {
+    max-height: 500px;
+    object-fit: cover;
+    width: 100%;
+    object-position: top;
+  }
+}
+.staffDirectoryResultContainer .staffDirectoryRepeatBoxContainer .staffDirectoryRepeatBox .staffProfile {
+  flex: 1 0 70%;
+  padding: 27px;
+}
+.staffDirectoryResultContainer .staffDirectoryRepeatBoxContainer .staffDirectoryRepeatBox .staffProfile .staffProfileupperDetails {
+  margin-bottom: 35px;
+}
+.staffDirectoryResultContainer .staffDirectoryRepeatBoxContainer .staffDirectoryRepeatBox .staffProfile .staffProfileupperDetails .staffName {
+  display: flex;
+  color: #D22030;
+  font-size: 1.37rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.staffDirectoryResultContainer .staffDirectoryRepeatBoxContainer .staffDirectoryRepeatBox .staffProfile .staffProfileupperDetails .staffName .fName {
+  margin-right: 5px;
+}
+.staffDirectoryResultContainer .staffDirectoryRepeatBoxContainer .staffDirectoryRepeatBox .staffProfile .staffProfileupperDetails .staffDesignation {
+  color: #000000;
+  font-weight: 600;
+  line-height: 19px;
+  margin-bottom: 5px;
+}
+.staffDirectoryResultContainer .staffDirectoryRepeatBoxContainer .staffDirectoryRepeatBox .staffProfile .staffProfileupperDetails .staffDept {
+  color: #000000;
+  font-size: 0.87rem;
+  line-height: 19px;
+}
+.staffDirectoryResultContainer .staffDirectoryRepeatBoxContainer .staffDirectoryRepeatBox .staffProfile .staffEmail {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.staffDirectoryResultContainer .staffDirectoryRepeatBoxContainer .staffDirectoryRepeatBox .staffProfile .staffEmail .emailIcon {
+  margin-right: 18px;
+}
+.staffDirectoryResultContainer .staffDirectoryRepeatBoxContainer .staffDirectoryRepeatBox .staffProfile .staffEmail .emailID {
+  color: #000000;
+  font-size: 0.87rem;
+  line-height: 29px;
+}
+.staffDirectoryResultContainer .staffDirectoryRepeatBoxContainer .staffDirectoryRepeatBox .staffProfile .staffEmail .emailID a {
+  color: #000000;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+.staffDirectoryResultContainer .staffDirectoryRepeatBoxContainer .staffDirectoryRepeatBox .staffProfile .staffEmail .emailID a:hover {
+  text-decoration: underline;
+}
+.staffDirectoryResultContainer .staffDirectoryRepeatBoxContainer .staffDirectoryRepeatBox .staffProfile .staffOtherInfoContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+.staffDirectoryResultContainer .staffDirectoryRepeatBoxContainer .staffDirectoryRepeatBox .staffProfile .staffOtherInfoContainer .staffOtherInfoSection {
+  flex: 1 0 50%;
+  display: flex;
+  margin-bottom: 10px;
+  align-items: flex-end;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .staffDirectoryResultContainer .staffDirectoryRepeatBoxContainer .staffDirectoryRepeatBox .staffProfile .staffOtherInfoContainer .staffOtherInfoSection {
+    flex-basis: 100%;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+}
+.staffDirectoryResultContainer .staffDirectoryRepeatBoxContainer .staffDirectoryRepeatBox .staffProfile .staffOtherInfoContainer .staffOtherInfoSection .otherInfoIcon {
+  margin-right: 18px;
+}
+.staffDirectoryResultContainer .staffDirectoryRepeatBoxContainer .staffDirectoryRepeatBox .staffProfile .staffOtherInfoContainer .staffOtherInfoSection .otherInfoTxt {
+  color: #000000;
+  font-size: 0.87rem;
+}
+.staffDirectoryResultContainer .staffDirectoryRepeatBoxContainer .staffDirectoryRepeatBox .staffProfile .staffOtherInfoContainer .staffOtherInfoSection .otherInfoTxt strong {
+  font-weight: 700;
+}
+.staffDirectoryResultContainer .loadMoreContainer {
+  margin: 70px 0;
+  text-align: center;
+}
+.staffDirectoryResultContainer .loadMoreContainer a {
+  color: #D22030;
+  font-size: 1.12rem;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  border: 1px solid #D22030;
+  padding: 18px 65px;
+}
+@media (max-width: 767px) {
+  .staffDirectoryResultContainer .loadMoreContainer a {
+    display: block;
+  }
+}
+.staffDirectoryResultContainer .loadMoreContainer a:hover {
+  background: #D22030;
+  color: #fff;
 }

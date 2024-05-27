@@ -285,10 +285,10 @@ p{
 //*table black Header* //
 
 
-button:focus{
-	outline:1px solid transparent !important;
-  }
-
+/*button:focus{
+	outline:1px solid #333 !important;
+  }*/
+  
   .overlay{
 	background: $tseng-primary;
 	position: absolute;
