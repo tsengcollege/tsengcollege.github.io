@@ -947,6 +947,18 @@ p strong {
 .bannerContainer .carousel-control-prev {
   opacity: 1;
 }
+.bannerContainer .carousel-control-next:focus,
+.bannerContainer .carousel-control-prev:focus {
+  -webkit-box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.3);
+}
+.bannerContainer .carousel-control-next:focus-visible,
+.bannerContainer .carousel-control-prev:focus-visible {
+  -webkit-box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.3);
+}
 .bannerContainer .carousel-control-prev-icon {
   background: url(../images/icons/icon-carousel-left.svg) #fff no-repeat 0.56rem;
   border-radius: 50%;
@@ -978,8 +990,8 @@ p strong {
   }
 }
 .bannerContainer .carousel-inner .carousel-item img.sliderImage {
-  -webkit-animation: zoomBannerEffect 10s;
-  animation: zoomBannerEffect 10s;
+  -webkit-animation: zoomBannerEffect 5s;
+  animation: zoomBannerEffect 5s;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .bannerContainer .carousel-inner .carouselHeightIpad {
@@ -1141,6 +1153,9 @@ p strong {
   .findYourCourseArea .courseFindArea .courseClass .ddlMycourse .dropdown .btn {
     font-size: 1rem;
   }
+}
+.findYourCourseArea .courseFindArea .courseClass .ddlMycourse .dropdown .btn:focus {
+  outline: 1px solid gray !important;
 }
 .findYourCourseArea .courseFindArea .courseClass .ddlMycourse .dropdown .dropdown-toggle:after {
   float: right;
@@ -1517,6 +1532,7 @@ p strong {
   min-height: 33.15rem;
   justify-content: end;
   flex-direction: column;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
 }
 @media (max-width: 767px) {
   .whyCsunContainer .whyCsunSectionFirst .whyCsunHeading {
@@ -1724,6 +1740,17 @@ p strong {
   justify-content: end;
   flex-direction: column;
 }
+.paceContainer .paceBgSection:after {
+  content: "";
+  z-index: 0;
+  /*background-color: rgba(0,0,0,0.6);*/
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%);
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+}
 @media (max-width: 767px) {
   .paceContainer .paceBgSection {
     background-size: contain !important;
@@ -1746,6 +1773,8 @@ p strong {
   font-weight: 500;
   mix-blend-mode: hard-light;
   line-height: 10.31rem;
+  position: relative;
+  z-index: 1;
 }
 @media (max-width: 767px) {
   .paceContainer .paceBgSection .paceHeading {
@@ -1758,6 +1787,8 @@ p strong {
   font-size: 2.81rem;
   font-weight: 700;
   line-height: 4.37rem;
+  position: relative;
+  z-index: 1;
 }
 @media (max-width: 767px) {
   .paceContainer .paceBgSection .paceSubHeading {
@@ -1778,6 +1809,8 @@ p strong {
   font-weight: 500;
   line-height: 2rem;
   margin: 0 14%;
+  position: relative;
+  z-index: 1;
 }
 @media (max-width: 767px) {
   .paceContainer .paceBgSection .paceDesc {
@@ -1789,6 +1822,8 @@ p strong {
   margin-top: 3rem;
   text-align: center;
   margin-bottom: 4.56rem;
+  position: relative;
+  z-index: 1;
 }
 @media (min-width: 320px) and (max-width: 480px) {
   .paceContainer .paceBgSection .paceButtonContainer {
@@ -1819,6 +1854,8 @@ p strong {
 .informationSessionsContainer {
   margin-bottom: 4.37rem;
   position: relative;
+  box-shadow: 0px 34px 34px 0px rgba(0, 0, 0, 0.04);
+  padding-bottom: 70px;
 }
 .informationSessionsContainer .infoSessionHeader {
   /*display: flex;*/
@@ -1940,12 +1977,12 @@ p strong {
 
 .studentTestimonialsContainer {
   margin-bottom: 4.37rem;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.03) 10%, rgba(255, 255, 255, 0.9) 90%);
+  background: #FFF;
   position: relative;
 }
 .studentTestimonialsContainer .studentTestimonialsHeader {
-  /*display: flex;*/
-  padding-top: 4rem;
+  /*display: flex;
+  padding-top: 4rem;*/
   position: relative;
 }
 @media (max-width: 991px) {
@@ -1967,7 +2004,7 @@ p strong {
 .studentTestimonialsContainer .studentTestimonialsHeader .moreTestimonials {
   position: absolute;
   right: 0;
-  top: 4rem;
+  top: 0;
   /* @include breakMaxOnly(991px) {
             position: relative;
             text-align: end;
@@ -2024,6 +2061,41 @@ p strong {
 }
 .studentTestimonialsContainer .home-StudentTestimonialsVideo.owl-theme .owl-dots .owl-dot.active span, .studentTestimonialsContainer .home-StudentTestimonialsVideo.owl-theme .owl-dots .owl-dot:hover span {
   background: #D22030;
+}
+.studentTestimonialsContainer .StudentTestimonialsVideo {
+  /*.video-container {
+   position: relative;
+     width: 100%; 
+   height: 36.5rem ;
+   display: block;
+    overflow: hidden;
+
+    video {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+         left: 0;
+        object-fit: cover;
+        object-position: top left;
+        display: none;
+
+     }
+
+     img {
+         width: 100%;
+         height: 100%;
+         position: absolute;
+       top: 0;
+         left: 0;
+       object-fit: cover;
+         object-position: top left;
+
+    }
+    .imageBlock{
+         display: block;
+    }
+  }*/
 }
 .studentTestimonialsContainer .StudentTestimonialsVideo .videoMessage {
   position: absolute;
@@ -2165,7 +2237,9 @@ p strong {
   background-position: right bottom !important;
   min-height: 40rem;
   border-bottom: 3px solid #D22030;
-  padding-top: 2.38rem;
+  /*padding-top:2.38rem;*/
+  display: flex;
+  align-items: center;
 }
 @media (max-width: 1199px) {
   .whatsNextContainer {
@@ -2522,6 +2596,7 @@ p strong {
   line-height: 3.75rem;
   z-index: 1;
   position: relative;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
 }
 @media (max-width: 767px) {
   .studentSectionContainer .studentTagLine {
@@ -2795,9 +2870,9 @@ p strong {
 }
 
 .programTemplateBannerContainer {
-  background: url(../images/programTemplate/banner/bannerImage.jpg);
+  background-image: url(../images/programTemplate/banner/bannerImage.jpg);
   background-repeat: no-repeat !important;
-  background-color: #000000 !important;
+  background-color: #000 !important;
   background-size: cover !important;
   background-position: center !important;
   min-height: 400px;
@@ -2869,6 +2944,7 @@ p strong {
 .programTemplateBannerContainer .programTemplateBannerContent h1 {
   color: #fff;
   z-index: 1;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
 }
 .programTemplateBannerContainer .programTemplateBannerContent .downloadBrochure {
   border-radius: 50px;
@@ -3698,7 +3774,9 @@ p strong {
   }
 }
 .programFacilitiesResourcesContainer .programFacilitiesResourcesOuter {
-  background: url(../images/programTemplate/facilitiesResource-Bg.png) #000000 no-repeat;
+  background-image: url(../images/programTemplate/facilitiesResource-Bg.png);
+  background-repeat: no-repeat;
+  background-color: #000000;
   background-size: cover;
   padding: 35px;
 }
@@ -3786,7 +3864,7 @@ p strong {
   background: transparent;
 }
 .programFacilitiesResourcesContainer .programTmp-facilitieResources.owl-carousel .owl-nav button.owl-prev:focus-visible {
-  outline: 0;
+  outline: 1px solid gray !important;
 }
 .programFacilitiesResourcesContainer .programTmp-facilitieResources.owl-carousel .owl-nav button.owl-prev.disabled {
   color: #f8f9f8;
@@ -3804,7 +3882,7 @@ p strong {
   background: transparent;
 }
 .programFacilitiesResourcesContainer .programTmp-facilitieResources.owl-carousel .owl-nav button.owl-next:focus-visible {
-  outline: 0;
+  outline: 1px solid gray !important;
 }
 .programFacilitiesResourcesContainer .programTmp-facilitieResources.owl-carousel .owl-nav button.owl-next.disabled {
   color: #f8f9f8;
@@ -4196,7 +4274,7 @@ p strong {
   background: transparent;
 }
 .programSideBarContainer .professionalAccrSection .owl-carousel .owl-nav button.owl-prev:focus-visible {
-  outline: 0;
+  outline: 1px solid gray !important;
 }
 .programSideBarContainer .professionalAccrSection .owl-carousel .owl-nav button.owl-prev.disabled {
   color: #bec6c3;
@@ -4225,7 +4303,7 @@ p strong {
   background: transparent;
 }
 .programSideBarContainer .professionalAccrSection .owl-carousel .owl-nav button.owl-next:focus-visible {
-  outline: 0;
+  outline: 1px solid gray !important;
 }
 .programSideBarContainer .professionalAccrSection .owl-carousel .owl-nav button.owl-next.disabled {
   color: #bec6c3;
@@ -6542,9 +6620,14 @@ p strong {
   filter: drop-shadow(0px 4px 24px rgba(0, 0, 0, 0.1));
   display: flex;
 }
-@media (max-width: 1440px) {
+@media (max-width: 1279px) {
   .staffDirectoryResultContainer .staffDirectoryRepeatBoxContainer .staffDirectoryRepeatBox {
     flex-direction: column;
+    height: 100%;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1366px) {
+  .staffDirectoryResultContainer .staffDirectoryRepeatBoxContainer .staffDirectoryRepeatBox {
     height: 100%;
   }
 }
@@ -6559,9 +6642,17 @@ p strong {
     object-position: top;
   }
 }
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 1024px) and (max-width: 1279px) {
   .staffDirectoryResultContainer .staffDirectoryRepeatBoxContainer .staffDirectoryRepeatBox .staffPortrait .customStaffPortrait {
-    max-height: 500px;
+    max-height: 400px;
+    object-fit: cover;
+    width: 100%;
+    object-position: top;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1366px) {
+  .staffDirectoryResultContainer .staffDirectoryRepeatBoxContainer .staffDirectoryRepeatBox .staffPortrait .customStaffPortrait {
+    height: 310px;
     object-fit: cover;
     width: 100%;
     object-position: top;
@@ -6575,7 +6666,7 @@ p strong {
   margin-bottom: 35px;
 }
 .staffDirectoryResultContainer .staffDirectoryRepeatBoxContainer .staffDirectoryRepeatBox .staffProfile .staffProfileupperDetails .staffName {
-  display: flex;
+  /*display:flex;*/
   color: #D22030;
   font-size: 1.37rem;
   font-weight: 700;
@@ -6583,6 +6674,10 @@ p strong {
 }
 .staffDirectoryResultContainer .staffDirectoryRepeatBoxContainer .staffDirectoryRepeatBox .staffProfile .staffProfileupperDetails .staffName .fName {
   margin-right: 5px;
+  display: inline;
+}
+.staffDirectoryResultContainer .staffDirectoryRepeatBoxContainer .staffDirectoryRepeatBox .staffProfile .staffProfileupperDetails .staffName .lName {
+  display: inline;
 }
 .staffDirectoryResultContainer .staffDirectoryRepeatBoxContainer .staffDirectoryRepeatBox .staffProfile .staffProfileupperDetails .staffDesignation {
   color: #000000;

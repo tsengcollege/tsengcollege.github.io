@@ -70,6 +70,16 @@
   .carousel-control-next,
   .carousel-control-prev {
     opacity: 1;
+    &:focus{
+      -webkit-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.3);
+      -moz-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.3);
+      box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.3);
+    }
+    &:focus-visible{
+      -webkit-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.3);
+    box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.3);
+    }
   }
 
   .carousel-control-prev-icon {
@@ -79,6 +89,7 @@
     width: 2.93rem;
     height: 2.93rem;
     filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.5));
+ 
   }
 
   .carousel-control-next-icon {
@@ -87,6 +98,7 @@
     width: 2.93rem;
     height: 2.93rem;
     filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.5));
+ 
   }
 
   @-webkit-keyframes zoomBannerEffect {
@@ -110,8 +122,8 @@
   .carousel-inner {
     .carousel-item {
       img.sliderImage {
-        -webkit-animation: zoomBannerEffect 10s;
-        animation: zoomBannerEffect 10s;
+        -webkit-animation: zoomBannerEffect 5s;
+        animation: zoomBannerEffect 5s;
       }
     }
     .carouselHeightIpad {
@@ -269,6 +281,10 @@
             @include breakMinMax(1024px, 1280px) {
               font-size: 1rem;
             }
+
+            &:focus{
+              outline: 1px solid gray !important;
+            }
           }
           .dropdown-toggle {
             &:after {
@@ -302,9 +318,11 @@
                 color: $tseng-secondary;
                 background-color: transparent;
                 box-shadow: 0 0.25em $tseng-secondary;
+                
               }
             }
           }
+
         }
       }
     }

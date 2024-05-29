@@ -146,7 +146,7 @@
         background: transparent;
       }
       &:focus-visible {
-        outline: 0;
+        outline:1px solid gray !important;
       }
     }
     .owl-carousel .owl-nav button.owl-prev.disabled {
@@ -173,7 +173,7 @@
         background: transparent;
       }
       &:focus-visible {
-        outline: 0;
+        outline:1px solid gray !important;
       }
     }
     .owl-carousel .owl-nav button.owl-next.disabled {

@@ -221,10 +221,15 @@ h2{
     filter: drop-shadow(0px 4px 24px rgba($tseng-primary,.10));
     display: flex;
 
-    @include breakMaxOnly(1440px) {
-        flex-direction: column;
-        height:100%;
+    @include breakMaxOnly(1279px) {
+       flex-direction: column;
+       height:100%;
+        
     }
+    @include breakMinMax(1280px, 1366px) {
+       height:100%;
+         
+     }
 
     .staffPortrait{
         flex:1 0 30%;
@@ -238,8 +243,14 @@ h2{
                 object-position: top;
             }
 
-            @include  breakMinMax(1024px, 1440px)  {
-                max-height: 500px;
+            @include  breakMinMax(1024px, 1279px)  {
+                max-height: 400px;
+                object-fit: cover;
+                width: 100%;
+                object-position: top;
+            }
+            @include  breakMinMax(1280px, 1366px)  {
+                height:310px;
                 object-fit: cover;
                 width: 100%;
                 object-position: top;
@@ -255,7 +266,7 @@ h2{
             margin-bottom:35px;
 
         .staffName{
-            display:flex;
+            /*display:flex;*/
             color: $tseng-secondary;
             font-size:1.37rem;
             font-weight: 700;
@@ -263,7 +274,13 @@ h2{
     
             .fName{
                 margin-right:5px;
+                display: inline;
             }
+            .lName{
+               
+                display: inline;
+            }
+            
         }
 
         .staffDesignation{

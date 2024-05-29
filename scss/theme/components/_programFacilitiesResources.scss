@@ -13,7 +13,9 @@
     }
 
     .programFacilitiesResourcesOuter {
-        background: url(../images/programTemplate/facilitiesResource-Bg.png) $tseng-primary no-repeat;
+        background-image: url(../images/programTemplate/facilitiesResource-Bg.png);
+        background-repeat: no-repeat;
+        background-color: $tseng-primary;
         background-size: cover;
         padding: 35px;
     }
@@ -112,6 +114,7 @@
             font-size: 4rem;
             color: $white;
             transition: all .25s ease;
+            
 
             &:hover {
                 color: $white-shade1;
@@ -119,8 +122,9 @@
 
             }
             &:focus-visible {
-                outline:0;
+                outline:1px solid gray !important;
             }
+         
         }
         &.owl-carousel .owl-nav button.owl-prev.disabled {
             color: $lightgrey;
@@ -141,7 +145,7 @@
 
             }
             &:focus-visible {
-                outline:0;
+                outline:1px solid gray !important;
             }
         }
         &.owl-carousel .owl-nav button.owl-next.disabled {

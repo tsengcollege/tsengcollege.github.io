@@ -6,7 +6,9 @@
     background-position: right bottom !important;
     min-height: 40rem;
     border-bottom: 3px solid $tseng-secondary;
-    padding-top:2.38rem;
+    /*padding-top:2.38rem;*/
+    display: flex;
+    align-items: center;
 
     @include breakMaxOnly(1199px){
         background-size: 250% !important;
