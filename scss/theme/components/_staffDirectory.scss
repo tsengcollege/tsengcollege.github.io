@@ -176,6 +176,7 @@
                         padding: 0.5rem 0;
                         transition: all 0.25s ease;
                         box-shadow: 0 0.1em $grey-shade-2;
+                        white-space: normal;
           
                         &:hover,
                         &:focus {
@@ -304,7 +305,9 @@ h2{
             margin-bottom:10px;
 
             .emailIcon{
-                margin-right:18px;
+                margin-right: 15px;
+                width: 22px;
+                text-align: center;
     
             }
             .emailID {
@@ -341,7 +344,9 @@ h2{
                 }
                 
                 .otherInfoIcon{
-                    margin-right:18px;
+                    margin-right: 15px;
+                    width: 22px;
+                    text-align: center;
                 }
                 .otherInfoTxt {
                     color:$tseng-primary;
